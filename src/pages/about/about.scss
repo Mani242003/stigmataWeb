@@ -1,0 +1,245 @@
+@import "../../styles/constant";
+@import "../../styles/variables";
+.aboutPage_wrapper {
+  width: 100%;
+  .aboutPage_Container {
+    .aboutPageMain {
+      width: 100%;
+      height: 350px;
+      background: url(../../assets/homeBg3.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      .aboutPageLeft {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        // align-items: center;
+        // justify-content: center;
+        flex-direction: column;
+        padding-left: 3rem;
+        padding-top: 3rem;
+
+        .aboutPageTitel {
+          // margin-left: 10%;
+          font-size: 50px;
+          font-weight: 800;
+          color: white;
+          opacity: 0.9;
+        }
+        .aboutPageDes {
+          text-align: start;
+          font-size: 35px;
+          font-weight: 600;
+          color: white;
+          border-bottom: 2px solid white;
+          opacity: 0.9;
+          width: 170px;
+        }
+      }
+    }
+    .AboutPage_whatWeDo {
+      background: #f5f5f5;
+      display: flex;
+      // gap: 1rem;
+      padding: 2rem;
+
+      .AboutPage_headerContainer {
+        @include flexCol;
+        align-items: center;
+        // text-align: center;
+        padding: 0px 0px;
+        padding-bottom: 0;
+        text-transform: capitalize;
+        .AboutPage_whatWeDoTitel {
+          font-size: 30px;
+          font-weight: 800;
+          color: #4c4c4c;
+
+          opacity: 0.8;
+          text-transform: uppercase;
+          display: flex;
+          // position: absolute;
+          // z-index: -1;
+          // top: -25px;
+          // letter-spacing: 10px;
+        }
+      
+        img {
+          width: 400px;
+          //   margin-top: 5rem;
+        }
+        .productButtonConatiner {
+          margin-bottom: 1.5rem;
+
+          padding: 13px 13px;
+          width: 175px;
+
+          background: $green;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          gap: 8px;
+
+          margin-top: 1rem;
+          text-align: center;
+          cursor: pointer;
+          &:hover {
+            svg {
+              transform: translateX(8px);
+            }
+          }
+          a {
+            text-decoration: none;
+            color: white;
+            // color: white;
+            margin-left: 3px;
+
+            font-weight: 600;
+            letter-spacing: 1px;
+          }
+          svg {
+            color: white;
+            // color: w;
+
+            transform: translateX(0px);
+            transition: 0.5s;
+            font-size: 20px;
+          }
+        }
+
+        div {
+          padding-top: 1rem;
+          .P_S-title {
+            font-size: 30px;
+            font-weight: 600;
+
+            color: #4c4c4c;
+            span {
+              color: $green;
+            }
+            
+            margin-bottom: 0rem;
+          }
+        }
+        .seperateLine {
+          height: 3px;
+          width: 10%;
+          background: $green;
+          display: none;
+        }
+        div {
+          width: 70%;
+          .P_SDec {
+            // display: none;
+            font-size: 15px;
+            margin: 0rem 0;
+            margin-bottom: 0rem;
+
+            color: #4c4c4c;
+            text-align: start;
+          }
+        }
+      }
+      .AboutPage_whatWeDoLeft {
+        // padding-top: 12rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .ourStoryContainer{
+        // width: 100%;
+
+        display: flex;
+        // flex-direction: column;
+        padding: 2rem 4rem;
+
+      
+     
+         
+            .ourStoryLeft{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 30rem;
+                }
+
+
+            }
+            .ourStoryRight{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            padding-top: 1rem;
+                .ourStoryLeRightTitel{
+                    font-size: 35px;
+                    margin-bottom: 1rem;
+                    font-weight:700;
+
+                }
+                .ourStoryRzightDes{
+                    font-size: 15px;
+
+                }
+
+
+            }
+          
+        
+    }
+    .VisionAndMissionContainer{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 4rem;
+
+        .VisionAndMissionHeaderContainer{
+            width: 100%;
+            text-align: center;
+            padding: 1rem 2rem;
+            padding-bottom: 3rem;
+            span{
+                font-size:35px ;
+                word-spacing: 10px;
+                font-weight: 900;
+            }
+
+        }
+        .VisionAndMissionMainContainer{
+            display: flex;
+            .VisionAndMissionLeft{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+
+                .VisionAndMissionLeftTitel{
+                    font-size: 35px;
+                    margin-bottom: 1rem;
+                    font-weight:700;
+                }
+                .VisionAndMissionLeftDes{
+                    font-size: 15px;
+                }
+
+            }
+            .VisionAndMissionRight{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 30rem;
+                }
+
+
+            }
+          
+        }
+    }
+  }
+}

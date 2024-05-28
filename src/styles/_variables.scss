@@ -1,0 +1,66 @@
+//break point
+$ultraWideScreens:1400px;
+$largeDesktop:1399.98px;
+$desktop:1199.98px;
+$laptop:991.98px;
+$tablet:768px;
+$phone:575.98px;
+
+
+// /* Extra small devices (phones, less than 576px) */
+// @media (max-width: $phone) { 
+//     /* CSS rules for extra small devices */
+//   }
+  
+//   /* Small devices (tablets, 576px and up) */
+//   @media (min-width: $phone) and (max-width: $tablet) { 
+//     /* CSS rules for small devices */
+//   }
+  
+//   /* Medium devices (small laptops, 768px and up) */
+//   @media (min-width:$tablet) and (max-width: $laptop) { 
+//     /* CSS rules for medium devices */
+//   }
+  
+//   /* Large devices (laptops/desktops, 992px and up) */
+//   @media (min-width: $laptop) and (max-width: $desktop) { 
+//     /* CSS rules for large devices */
+//   }
+  
+//   /* Extra large devices (large desktops, 1200px and up) */
+//   @media (min-width: $desktop) and (max-width: $largeDesktop) { 
+//     /* CSS rules for extra large devices */
+//   }
+  
+//   /* Extra extra large devices (ultra-wide screens, 1400px and up) */
+//   @media (min-width: $ultraWideScreens) { 
+    
+//     /* CSS rules for extra extra large devices */
+//   }
+
+//color
+$secondary-color: black;
+$primary-color:#F43F5E;
+$orgGreen:#6FBE44;
+// $green:rgba(52, 152, 204, 1);
+
+$green:#3273F3;
+
+
+
+$gold:#F4911E;
+$background-color: rgba(52, 152, 204, 0.1);
+
+
+
+
+
+
+
+
+
+$trans: 0.3s ease-in-out;
+
+
+
+$md-gap: 3rem;

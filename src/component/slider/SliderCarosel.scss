@@ -1,0 +1,326 @@
+@import "../../styles/constant";
+@import "../../styles/variables";
+.silder_opacityDiv {
+  width: 90vw;
+  height: 21rem;
+  content: "";
+  display: block;
+  position: absolute;
+  @include flexCol;
+  top: 4rem;
+  left: 2rem;
+  padding: 2rem;
+  word-wrap: break-word;
+  background: linear-gradient(
+    to right,
+    rgba(52, 152, 204, 1) 0%,
+    rgba(255, 255, 255, 0) 69%
+  );
+
+  span {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+  }
+
+  .silder_customText {
+    width: 55%;
+    margin: 25px 0;
+    padding-left: 0.8rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-left: 8px solid white;
+
+    span {
+      font-size: 26px;
+      font-weight: 500;
+      color: white;
+      letter-spacing: 1px;
+    }
+  }
+
+  div {
+    margin-top: 0rem;
+
+    font-size: 18px;
+    letter-spacing: 1px;
+    .home_slider_buttonContainer {
+      @include ButtonCommon;
+      padding: 10px 8px;
+    }
+
+    img {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.socialMediaContainer {
+  @include flexCol;
+  gap: 2px;
+  position: fixed;
+  // position: relative;
+  right: 0;
+  bottom: 250px;
+  z-index: 95;
+  svg {
+    color: white;
+  }
+  .socialLink1 {
+    @include homePageSocialLink;
+    background: #007bb6;
+  }
+  .socialLink2 {
+    @include homePageSocialLink;
+    background: #00aced;
+  }
+  .socialLink3 {
+    @include homePageSocialLink;
+    background: #007bb6;
+  }
+  .socialLink4 {
+    @include homePageSocialLink;
+
+    background: #cccccc;
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: $phone) {
+  .silder_opacityDiv {
+    top: 2.5rem;
+    left: 1rem;
+    height: 29rem;
+
+    padding: 1.5rem;
+    padding-right: 0;
+    background: linear-gradient(
+      to right,
+      rgba(52, 152, 204, 1) 0%,
+      rgba(255, 255, 255, 0) 99%
+    );
+    span {
+      font-size: 35px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 2.6rem;
+    }
+
+    .silder_customText {
+      width: 90%;
+      margin: 25px 0;
+      height: 70px;
+
+      border-left: 5px solid white;
+
+      span {
+        font-size: 17px;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 1px;
+        line-height: 1.3rem;
+      }
+    }
+  }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: $phone) and (max-width: $tablet) {
+  .silder_opacityDiv {
+    top: 5rem;
+    left: 2rem;
+    height: 22rem;
+    padding: 1.5rem;
+    padding-right: 0;
+    padding-left: 2rem;
+    background: linear-gradient(
+      to right,
+      rgba(52, 152, 204, 1) 0%,
+      rgba(255, 255, 255, 0) 69%
+    );
+    span {
+      font-size: 37px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 2.6rem;
+    }
+
+    .silder_customText {
+      width: 90%;
+      margin: 25px 0;
+      height: 55px;
+
+      border-left: 5px solid white;
+
+      span {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 1px;
+        line-height: 1.3rem;
+      }
+    }
+  }
+  
+}
+
+/* Medium devices (small laptops, 768px and up) */
+@media (min-width: $tablet) and (max-width: $laptop) {
+  .silder_opacityDiv {
+    top: 5rem;
+    left: 2rem;
+    height: 28rem;
+    padding: 1.5rem;
+    padding-right: 0;
+    padding-left: 2rem;
+    background: linear-gradient(
+      to right,
+      rgba(52, 152, 204, 1) 0%,
+      rgba(255, 255, 255, 0) 99%
+    );
+    span {
+      font-size: 45px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 4rem;
+    }
+
+    .silder_customText {
+      width: 60%;
+      margin: 45px 0;
+      height: 35px;
+
+      border-left: 5px solid white;
+
+      span {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 1px;
+        line-height: 1.3rem;
+      }
+    }
+  }
+  
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: $laptop) and (max-width: $desktop) {
+   .silder_opacityDiv {
+    top: 5rem;
+    left: 2rem;
+    height: 28rem;
+    padding: 1.5rem;
+    padding-right: 0;
+    padding-left: 2rem;
+    background: linear-gradient(
+      to right,
+      rgba(52, 152, 204, 1) 0%,
+      rgba(255, 255, 255, 0) 99%
+    );
+    span {
+      font-size: 45px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 4rem;
+    }
+
+    .silder_customText {
+      width: 60%;
+      margin: 45px 0;
+      height: 35px;
+
+      border-left: 5px solid white;
+
+      span {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 1px;
+        line-height: 1.3rem;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: $desktop) and (max-width: $largeDesktop) {
+  .silder_opacityDiv {
+    top: 5rem;
+    left: 2rem;
+    height: 28rem;
+    padding: 1.5rem;
+    padding-right: 0;
+    padding-left: 2rem;
+    background: linear-gradient(
+      to right,
+      rgba(52, 152, 204, 1) 0%,
+      rgba(255, 255, 255, 0) 89%
+    );
+    span {
+      font-size: 45px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 4rem;
+    }
+
+    .silder_customText {
+      width: 60%;
+      margin: 35px 0;
+      height: 55px;
+
+      border-left: 5px solid white;
+
+      span {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 1px;
+        line-height: 1.3rem;
+      }
+    }
+  }
+}
+
+/* Extra extra large devices (ultra-wide screens, 1400px and up) */
+@media (min-width: $ultraWideScreens) {
+  /* CSS rules for extra extra large devices */
+  .silder_opacityDiv {
+    top: 5rem;
+    left: 2rem;
+    height: 28rem;
+    padding: 1.5rem;
+    padding-right: 0;
+    padding-left: 2rem;
+    background: linear-gradient(
+      to right,
+      rgba(52, 152, 204, 1) 0%,
+      rgba(255, 255, 255, 0) 99%
+    );
+    span {
+      font-size: 45px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 4rem;
+    }
+
+    .silder_customText {
+      width: 60%;
+      margin: 45px 0;
+      height: 55px;
+
+      border-left: 5px solid white;
+
+      span {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 1px;
+        line-height: 1.3rem;
+      }
+    }
+  }
+}

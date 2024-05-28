@@ -1,0 +1,56 @@
+@import "../../styles/constant";
+@import "../../styles/variables";
+.servicesContainer{
+    width: 100%;
+    padding: 1rem;
+    text-decoration: none;
+    //    background-image: url("../../assets/images/bgP.jpg"); /* Update the path to your image */
+    //   background-size: cover;
+    //   background-position: center;
+      transition: $trans;
+      background: #F3F5F9;
+      
+    
+    .ServicesHeaderContainer{
+        width: 100%;
+        text-align: center;
+        @include flexCol;
+        align-items: center;
+        padding: 1.5rem 0;
+        gap: 0.5rem;
+        .seviceTitleSmall{
+            font-size: 18px;
+            font-weight: 700;
+            color: rgba(0,0,0,0.7);
+
+        }
+        .seviceTitle{
+            font-size: 40px;
+            font-weight: 800;
+            color: #f5f5f5; /* fallback color */
+            background: linear-gradient(to right, #0565FE, #D241A4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+        .services-seperateLine{
+            height: 3px ;
+            width: 10%;
+            background: $green;
+
+        }
+        .seviceDec{
+            font-size: 16px ;
+            font-weight: 500;
+            color: rgba(0,0,0,0.7);
+            margin: 1rem 5rem;
+
+        }
+    }
+    .servicesContentConatiner{
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+       
+    }
+}
