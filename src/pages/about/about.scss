@@ -40,14 +40,14 @@
     }
     .AboutPage_whatWeDo {
       background: #f5f5f5;
-      display: flex;
+      // display: flex;
       // gap: 1rem;
       padding: 2rem;
 
       .AboutPage_headerContainer {
         @include flexCol;
         align-items: center;
-        // text-align: center;
+        text-align: center;
         padding: 0px 0px;
         padding-bottom: 0;
         text-transform: capitalize;

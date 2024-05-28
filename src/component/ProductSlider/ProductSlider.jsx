@@ -44,19 +44,13 @@ const ProductSlider = () => {
           <img src={Logo} alt="" data-aos="fade-up" />
           <div data-aos="fade-up">
             <span className="P_S-title">
-              Explore how AI expectations can become realities within your
-              organization.
+            Unlock the full potential of your digital journey with Stigmata Techno Solutions
             </span>
           </div>
           {/* <div className="seperateLine"></div> */}
           <div>
             <span className="P_SDec">
-              Foundry for AI by Rackspace (FAIR™) can help you accelerate a
-              symbiotic, secure and sustainable adoption of responsible AI
-              across your organization. We’ve defined use cases for just about
-              every industry and can take you to new levels of performance
-              through our combination of deep expertise, standardized delivery
-              practices and partnerships with other industry leaders.
+            Stigmata Techno Solutions is a 9+ year aged firm rendering software, IT development services to global customers. We are specialized in developing applications, digital transformation for specific industries like heavy construction companies, power transmission & distribution, financial institutions (governance & compliance handling PII data) and securing organisations cloud environment (ClouSec : CSPM tool – Cloud Security). Our key focus is to provide world-class quality service to our customers with utmost focus on their needs and to ensure that technology supports their business growth. We would be happy to get associated with your esteemed organization on your digital transformation / automation reducing manual efforts and cost.
             </span>
           </div>
           <div className="productButtonConatiner">

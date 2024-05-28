@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
-import logo1 from "../../assets/images/Joined forece/1639048428716.jpg";
+import logo1 from "../../assets/images/Joined forece/joinedForceKineWorks.jpeg";
 import logo2 from "../../assets/images/Joined forece/L&T.jpg";
 import logo3 from "../../assets/images/Joined forece/mx_techies_logo.jpg";
-import logo4 from "../../assets/images/Joined forece/simpleSolve.jpg";
+import logo4 from "../../assets/images/Joined forece/joinedForceAWS.jpeg";
 
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
@@ -16,25 +16,25 @@ import { FaArrowRight } from "react-icons/fa6";
 import avatar from "../../assets/images/avatar.png";
 import customer from "../../assets/images/customerSatis.png";
 const Testimonal = () => {
-  let sliderRef = useRef(null);
+  // let sliderRef = useRef(null);
   let sliderRef1 = useRef(null);
 
-  const next = () => {
-    sliderRef.slickNext();
-  };
-  const previous = () => {
-    sliderRef.slickPrev();
-  };
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-  };
+  // const next = () => {
+  //   sliderRef.slickNext();
+  // };
+  // const previous = () => {
+  //   sliderRef.slickPrev();
+  // };
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   nextArrow: <SampleNextArrow />,
+  //   prevArrow: <SamplePrevArrow />,
+  // };
 
   const next1 = () => {
     sliderRef1.slickNext();
@@ -62,12 +62,12 @@ const Testimonal = () => {
               <span>Joined Forced With</span>
             </div>
             <div className="JoinedpattnerrSliderContainer">
-              <Slider
+              {/* <Slider
                 ref={(slider) => {
                   sliderRef = slider;
                 }}
                 {...settings}
-              >
+              > */}
                 <div key={1}>
                   <img src={logo1} alt="" width={140} />
                 </div>
@@ -80,8 +80,8 @@ const Testimonal = () => {
                 <div key={4}>
                   <img src={logo4} alt="" width={150} />
                 </div>
-              </Slider>
-              <div
+              {/* </Slider> */}
+              {/* <div
                 style={{ textAlign: "end" }}
                 className="JoinedpattnerrButtonContainer"
               >
@@ -91,7 +91,7 @@ const Testimonal = () => {
                 <button className="button" onClick={previous}>
                   <FaArrowRight />
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

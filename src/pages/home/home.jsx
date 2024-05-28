@@ -22,6 +22,7 @@ import AccordionSection from "../../component/Accordion/AccordionSection";
 import CompanySkills from "../../component/CompanySkills/CompanySkills";
 import ContactUs from "../../component/ContactUs/ContactUs";
 import Navigation from "../../component/Navigation/Navigation";
+import Branches from "../../component/Branches/Branches";
 // gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 const Home = () => {
   // const main = useRef();
@@ -87,7 +88,8 @@ const Home = () => {
         <Service />
         <CustomerSlide />
         <Testimonal />
-        <TechBrains />
+        <Branches />
+        {/* <TechBrains /> */}
         {/* <Blogs /> */}
         <AccordionSection />
         <CompanySkills />

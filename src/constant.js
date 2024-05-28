@@ -9,6 +9,10 @@ import brain8 from "./assets/images/brains/brain8.jpeg";
 import brain9 from "./assets/images/brains/brain9.jpeg";
 import brain10 from "./assets/images/brains/brain10.jpeg";
 import avatar from "./assets/images/brains/avatar9.jpg";
+import TB_new1 from "./assets/images/brains/TB_new1.jpeg";
+import TB_new2 from "./assets/images/brains/TB_new2.jpeg";
+import TB_new3 from "./assets/images/brains/TB_new3.jpg";
+
 
 import logo1 from "./assets/Logo.png";
 import logo2 from "./assets/happiedinner.jpg";
@@ -410,9 +414,9 @@ export const ourBrains = [
   },
   {
     id: 6,
-    name: "Naveen",
+    name: "newOne",
     position: "Full Stack Developer",
-    img: brain6,
+    img: TB_new1,
 
     skills: [
       {
@@ -503,9 +507,30 @@ export const ourBrains = [
   },
   {
     id: 10,
-    name: "Pandi",
+    name: "new2",
     position: "Full Stack Developer",
-    img: brain10,
+    img:TB_new2,
+
+    skills: [
+      {
+        skill: "Java",
+        precentage: 100,
+      },
+      {
+        skill: "JavaScript",
+        precentage: 90,
+      },
+      {
+        skill: "SQL",
+        precentage: 70,
+      },
+    ],
+  },
+  {
+    id: 11,
+    name: "new3",
+    position: "Full Stack Developer",
+    img:TB_new3,
 
     skills: [
       {

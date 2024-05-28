@@ -47,8 +47,8 @@ const about = () => {
                 processes, and outstanding performance allows us to build strong
                 customer relationships and cultivate repeat business.
               </span>
-              <br />
-              <br />
+              {/* <br />
+              <br /> */}
               {/* <br/> */}
 
               <span className="P_SDec">
@@ -62,8 +62,8 @@ const about = () => {
                   analysis, Data processing with visualisation tool, we deliver
                   solutions tailored to your needs.
                 </span>
-                <br />
-                <br />
+                {/* <br />
+                <br /> */}
               </span>
               <span className="P_SDec">
                 At Stigmata Techno Solutions, we aim to simplify your technology

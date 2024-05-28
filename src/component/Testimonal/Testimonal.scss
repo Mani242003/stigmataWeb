@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    
     .JoinedpattnerrContainer {
       width: 90%;
       height: 240px;
@@ -34,8 +35,11 @@
         }
       }
       .JoinedpattnerrSliderContainer {
+        display: flex;
+        gap: 8rem;
         .JoinedpattnerrButtonContainer {
           text-align: center;
+
 
           button {
             margin-top: 10px;
@@ -95,7 +99,7 @@
         margin-right: 0rem;
         .testimonialSlider{
             margin: 0 10px;
-            margin-right: 2rem;
+            margin-right: 4rem;
             margin-top: 4rem;
             // margin-left: 1rem;
             .TestimaonalInnercontainer{
