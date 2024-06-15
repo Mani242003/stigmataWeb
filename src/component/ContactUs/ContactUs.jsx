@@ -29,16 +29,13 @@ const ContactUs = () => {
         </div>
         <div className="contactUsRightContainer">
           <span className="contactUsRightSmallText">
-            GET BEST IT SOLUTION 2024
+          Reach Out Us
           </span>
           <span className="contactUsRightBigText">
-            TRUST OUR BEST IT SOLUTION
+          We are excited to connect with you !
           </span>
           <span className="contactUsRightDes">
-            Compellingly mesh cross-platform portals through functional human
-            capital world-class architectures for orthogonal initiatives.
-            Assertively benchmark visionary quality vectors after covalent
-            e-tailers. Intrinsicly enhance 24/7 users and supply process
+          Have questions or need assistance? Our team is here to help! Contact us to learn more about our services and how we can support your needs.
           </span>
           <div className="contactUsRightCallContainer">
             <div className="contactUsLeftIconConatiner">

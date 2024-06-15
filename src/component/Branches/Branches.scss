@@ -6,6 +6,10 @@
         justify-content: center;
         background: #f3f5f9;
         flex-direction: column;
+        background: url(../../assets/61758.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         padding-bottom: 2rem;
         .TB_headerConatiner {
             display: flex;
@@ -28,6 +32,7 @@
               background: linear-gradient(to right, #0565fe, #d241a4);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
+              margin-top: 10px;
             }
           }
         .profileConainer{
@@ -68,21 +73,37 @@
                         align-items: center;
                         text-align: center;
                         // gap: 2rem;
-                        padding: 1rem 3rem;
+                        padding: 1rem 1rem;
                         // align-items: center;
                         .profileName{
                             font-size: 19px;
                             font-weight: 700;
+                            text-wrap: nowrap;
                         }
                         .profileDes{
-                            margin-top: 1rem;
+                            margin-top: 0.5rem;
                             margin-bottom: 2rem;
                             font-size: 16px;
                             font-weight: 500;
                             span{
                                 font-weight: 800;
+                                border-bottom: 1px dotted silver;
+                                text-align: center;
+                                color: #f5f5f5; /* fallback color */
+                                background: linear-gradient(to right, #0565fe, #d241a4);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
                             }
     
+                        }
+                        .profileAddText{
+                            font-weight: 700;
+                            border-bottom: 1px dotted silver;
+                            text-align: center;
+                            color: #f5f5f5; /* fallback color */
+                            background: linear-gradient(to right, #0565fe, #d241a4);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
                         }
     
                     }

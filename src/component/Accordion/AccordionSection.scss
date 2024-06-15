@@ -1,142 +1,80 @@
 @import "../../Styles/constant";
 @import "../../Styles/variables";
 
-.accordion_wrapper {
+.accordionSectionWrapper{
   width: 100%;
   .accordion_container {
     width: 100%;
-    // padding: 2rem $md-gap;
     display: flex;
-    position: relative;
-    height: 650px;
-    // background: red;
-
-    .accordion_right {
-      position: static;
-      z-index: 60;
-      // top: 10rem;
-      margin-top: 130px;
-      padding: 2rem;
-      
-
-      // @include flexColStart;
-
-      .MuiButtonBase-root {
-        border: none;
-      }
-      .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
-        box-shadow: none;
-        border-bottom: 1px solid gray;
-        border-radius: 0;
-        width: 100%;
-      }
-      .accordionRightHeader{
-        display: flex;
-        flex-direction: column;
-        .accordion_left_text1 {
-          font-size: 18px;
-          font-weight: 700;
-          color: rgba(0,0,0,0.8);
-          margin-bottom: 10px;
-         
-        }
-        .accordion_left_text2 {
-          font-size: 40px;
-          font-weight: 800;
-          color: #f5f5f5;
-          margin-bottom: 1.5rem; /* fallback color */
-          font-size: 40px;
-          font-weight: 800;
-          color: #f5f5f5; /* fallback color */
-          background: linear-gradient(to right, #0565FE, #D241A4);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          line-height: 3rem;
-          margin-bottom: 1rem;
-        }
-
-      }
-     
-    }
-
-    .accordion_left {
-      width: 50%;
-      .accordion_left_imgs{
-        width: 100%;
+    // position: relative;
+    // height: 650px;
+    .accordion_left{
+      width: 10%;
+      // background: red;
+      position: relative;
+      .accordion_left_img{
         position: absolute;
-       
+        width: 36rem;
+        // height: 100px;
+        margin: 3rem;
+        margin-left: 0;
+        margin-top: 5rem;
 
+        img{
+          width: 100%;
+          height:100%;
+          // border-radius: 10px;
+
+        }
+        
       }
-
-   
       
+      
+
     }
+    .accordion_right{
+      width: 90%;
+      margin-top: 0;
+      padding-top: 0;
+      background-image: url("../../assets/Free-trialbgla.jpg");
+      background-size: "cover";
+      background-position: "center";
+      background-repeat: "no-repeat";
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+        .accordionRightHeader{
+          .accordionRightTextHeader{
+            display: flex;
+            flex-direction: column;
+            .accordion_left_text1{
+              font-size: 17px;
+              color: white;
+              font-weight: 600;
+              letter-spacing: 1px;
+
+            }
+            .accordion_left_text2{
+              font-size: 35px;
+              font-weight: 700;
+              margin-top: 0.5rem;
+              margin-bottom: 1rem;
+              color: rgba(0, 0,0, 0.7);
+
+            }
+
+          }
+          margin-top: 6rem;
+          // margin-left: 10rem;
+          padding-left: 30rem;
+          margin-bottom: 3rem;
+          padding-bottom: 5rem;
+          padding-right: 2rem;
+
+        }
+    }
+
   }
-
-  .accordion_container > div {
-    flex: 1;
-  }
-}
-.accordionBg1{
-
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  z-index: 40;
-  // background-image: url("../../assets/images/duplo26.jpg");
-  background-size: "cover";
-  background-position: "center";
-  background-repeat: "no-repeat";
-  border-top-right-radius: 10px;
-  
-
-}
-.accordionBg2{
-  position: absolute;
-  width: 70%;
-  height: 550px;
-  position: absolute;
-  z-index: 40;
-  background-image: url("../../assets/images/Free-trialbg.webp");
-  // background-image: url("../../assets/images/6144249.jpg");
-
-  background-size: "cover";
-  background-position: "center";
-  background-repeat: "no-repeat";
-  right: 0;
-  bottom: 0;
-  // border-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-
-  
-}
-.accordionBg3{
-  position: absolute;
-  
-  
-}
-.accordion_left_img1{
-  top: 11rem;
-  // bottom: 0;
-  width:100%;
-  position: absolute;
-  z-index: 56;
-  img{
-    width: 36rem;
-  }
-
-}
-.accordion_left_img2{
-  position: absolute;
-  z-index: 58;
-  top: 342px;
-  left: 294px;
-  border: 10px solid white;
-  border-right: none;
-  border-bottom: none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
 }
 
 

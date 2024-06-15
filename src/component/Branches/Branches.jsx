@@ -10,26 +10,30 @@ const Branches = () => {
       <div className="branchesContainer">
         <div className="TB_headerConatiner">
           <span className="TB_headerSmallTitel">GREAT TEAM MEMBERS</span>
-          <span className="TB_headerBigTitel">WE HAVE EXPERT TEAM</span>
+          <span className="TB_headerBigTitel">
+            The People Behind Our Success
+          </span>
         </div>
         <div className="profileConainer">
           <B_CustomCard
-            name="Jerome Melkisidak, B.E, M.B.A CEO"
+            name="Jerome Melkisidak, B.E, M.B.A "
+            ceoText="CEO"
             url={img1}
-            position="Board of Study Member, SRM Valliammai Engineering College : "
-            boldText="CSE /
-          MCA Ex-TNQ"
+            position="Board of Study Member : CSE, MCA "
+            clgName="(SRM Valliammai Engineering College)"
+            boldText=""
+            addText="Ex - TNQ Books & Journals"
           />
           <B_CustomCard
             name="Mr. Youssef Azad"
             url={img2}
-            position="Business Development & Client relationship - "
+            position="Business Development & Client Relationship  "
             boldText="Canada"
           />
           <B_CustomCard
             name="Mr. Lawrence"
             url={img3}
-            position="Business Development Head & Client Relationship - "
+            position="Business Development Head & Client Relationship  "
             boldText="Zimbabwe"
           />
         </div>
@@ -40,7 +44,7 @@ const Branches = () => {
 
 export default Branches;
 
-const B_CustomCard = ({ name, url, position, boldText }) => {
+const B_CustomCard = ({ name, url, position, boldText,addText ,ceoText,clgName}) => {
   return (
     <div className="B_CustomCardContainer">
       <div className="gradiant"></div>
@@ -48,10 +52,18 @@ const B_CustomCard = ({ name, url, position, boldText }) => {
         <img src={url} alt="" />
         <div className="profileIntro">
           <span className="profileName">{name}</span>
-          <span className="profileDes">
-            {position}
-            <span>{boldText}</span>
+          <span className="profileName">{ceoText}</span>
+       
+
+          <span className="profileDes" >{position}<br/>
+          {
+            clgName ? (<span className="profileDes" style={{color:'black'}}>{clgName}</span>) :(<></>)
+          }
+      
+          <span>{boldText}</span>
+
           </span>
+          <span  className="profileAddText">{addText}</span>
         </div>
       </div>
     </div>

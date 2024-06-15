@@ -47,7 +47,7 @@ const SubRouteLinkContainer = ({ data }) => {
         <span className="SubRouteLinkTitel">{data.titel}</span>
       </div>
       <div className="subRouteSvgAndTextContainer">
-        <Link to={data.url1}>{data.link1}</Link>
+        <Link to={data.url1} style={data.id === 2 ? { cursor:"default" ,color:'black' } : {}}>{data.link1}</Link>
         {data.id === 1 ? (
           <>
             <FaAngleRight />
@@ -57,7 +57,7 @@ const SubRouteLinkContainer = ({ data }) => {
         )}
       </div>
       <div className="subRouteSvgAndTextContainer">
-        <Link to={data.url2}>{data.link2}</Link>
+        <Link to={data.url2} style={data.id === 2 ? { cursor:"default" ,color:'black' } : {}}>{data.link2}</Link>
         {data.id === 1 ? (
           <>
             <FaAngleRight />
@@ -67,28 +67,7 @@ const SubRouteLinkContainer = ({ data }) => {
         )}
       </div>
       <div className="subRouteSvgAndTextContainer">
-        <Link to={data.url3}>{data.link3}</Link>
-        {data.id === 1 ? (
-          <>
-            <FaAngleRight />
-          </>
-        ) : (
-          <></>
-        )}
-      </div>
-
-      <div className="subRouteSvgAndTextContainer">
-        <Link to={data.url4}>{data.link4}</Link>
-        {data.id === 1 ? (
-          <>
-            <FaAngleRight />
-          </>
-        ) : (
-          <></>
-        )}
-      </div>
-      <div className="subRouteSvgAndTextContainer">
-        <Link to={data.url5}>{data.link5}</Link>
+        <Link to={data.url3} style={data.id === 2 ? { cursor:"default" ,color:'black' } : {}}>{data.link3}</Link>
         {data.id === 1 ? (
           <>
             <FaAngleRight />
@@ -99,7 +78,38 @@ const SubRouteLinkContainer = ({ data }) => {
       </div>
 
       <div className="subRouteSvgAndTextContainer">
-        <Link to={data.url6}>{data.link6}</Link>
+        <Link to={data.url4} style={data.id === 2 ? { cursor:"default" ,color:'black' } : {}}>{data.link4}</Link>
+        {data.id === 1 ? (
+          <>
+            <FaAngleRight />
+          </>
+        ) : (
+          <></>
+        )}
+      </div>
+      <div className="subRouteSvgAndTextContainer">
+        <Link to={data.url5} style={data.id === 2 ? { cursor:"default" ,color:'black' } : {}}>{data.link5}</Link>
+        {data.id === 1 ? (
+          <>
+            <FaAngleRight />
+          </>
+        ) : (
+          <></>
+        )}
+      </div>
+
+      <div className="subRouteSvgAndTextContainer">
+        <Link to={data.url6} style={data.id === 2 ? { cursor:"default" ,color:'black' } : {}}>{data.link6}</Link>
+        {data.id === 1 ? (
+          <>
+            <FaAngleRight />
+          </>
+        ) : (
+          <></>
+        )}
+      </div>
+      <div className="subRouteSvgAndTextContainer">
+        <Link to={data.url7} style={data.id === 2 ? { cursor:"default" ,color:'black' } : {}}>{data.link7}</Link>
         {data.id === 1 ? (
           <>
             <FaAngleRight />

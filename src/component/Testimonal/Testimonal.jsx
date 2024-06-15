@@ -59,7 +59,7 @@ const Testimonal = () => {
         <div className="JoinedpattnerrOutterContainer">
           <div className="JoinedpattnerrContainer" data-aos="fade-up">
             <div className="JoinedpattnerHeaderContainer">
-              <span>Joined Forced With</span>
+              <span>Joined Force With</span>
             </div>
             <div className="JoinedpattnerrSliderContainer">
               {/* <Slider
@@ -68,18 +68,18 @@ const Testimonal = () => {
                 }}
                 {...settings}
               > */}
-                <div key={1}>
-                  <img src={logo1} alt="" width={140} />
-                </div>
-                <div key={2}>
-                  <img src={logo2} alt="" width={150} />
-                </div>
-                <div key={3}>
-                  <img src={logo3} alt="" width={150} />
-                </div>
-                <div key={4}>
-                  <img src={logo4} alt="" width={150} />
-                </div>
+              <div key={1}>
+                <img src={logo1} alt="" width={140} />
+              </div>
+              <div key={2}>
+                <img src={logo2} alt="" width={150} />
+              </div>
+              <div key={3}>
+                <img src={logo3} alt="" width={150} />
+              </div>
+              <div key={4}>
+                <img src={logo4} alt="" width={150} />
+              </div>
               {/* </Slider> */}
               {/* <div
                 style={{ textAlign: "end" }}
@@ -142,6 +142,12 @@ const Testimonal = () => {
                   content="I am delighted to share my experience with Stigmata Techno Solutions, the experts Mr. Jerome Melkisidak, Mr. Praveen Kumaresan and Miss Ananthi have done the incredible work for PTD EDRC MIS Enhancement Work, from initial consultation to the final implementation, their team displayed an exceptional level of professionalism, expertise, and dedication."
                   name="Mr. Vivek Singh"
                   position="Common-EDRC Chennai - PTD L&T construction "
+                />
+                <TestimonialCard
+                  key={6}
+                  content=" Your team's ability to adapt to our evolving needs and provide innovative solutions has been commendable. Thank you once again for your outstanding work. We look forward to continuing our professional relationship and achieving more milestones together."
+                  name="E.Rama Sai"
+                  position="Assistant Engineering Manager, L&T Construction – PT&D IC"
                 />
               </Slider>
             </div>
@@ -230,7 +236,7 @@ const TestimonialCard = ({ content, name, position }) => {
       }}
       className="TestimonialCard"
     >
-      <span style={{fontWeight:'600'}}>{content}</span>
+      <span style={{ fontWeight: "500", lineHeight: "1.5rem" }}>{content}</span>
       <div
         className="bottomTestimoinalContainer"
         style={{
@@ -258,6 +264,8 @@ const TestimonialCard = ({ content, name, position }) => {
               fontWeight: "900",
               letterSpacing: "1px",
               fontSize: "20px",
+              color: "black",
+              opacity: "0.7",
             }}
           >
             {" "}

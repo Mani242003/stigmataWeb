@@ -12,107 +12,48 @@ import avatar from "./assets/images/brains/avatar9.jpg";
 import TB_new1 from "./assets/images/brains/TB_new1.jpeg";
 import TB_new2 from "./assets/images/brains/TB_new2.jpeg";
 import TB_new3 from "./assets/images/brains/TB_new3.jpg";
-
+import SathishImg from "./assets/images/brains/Sathish.jpg";
 
 import logo1 from "./assets/Logo.png";
 import logo2 from "./assets/happiedinner.jpg";
 import logo3 from "./assets/logoPII.png";
 
-
 export const routes = [
-  // {
-  //   name: "Who we are",
-  //   link: "/",
-  //   subRoutes: [
-  //     {
-  //       name: "Our Story",
-  //       link: "/dev-Ops",
-  //     },
-  //     {
-  //       name: "FAQ's",
-  //       link: "/service/serverless-computing",
-  //     },
-  //     {
-  //       name: "Connect With Us",
-  //       link: "/service/mobile-app-development",
-  //     },
-  //     {
-  //       name: "Plugin Development",
-  //       link: "/service/plugin-development",
-  //     },
-  //     {
-  //       name: "Software Application Development",
-  //       link: "/service/software-application-development",
-  //     },
-  //     {
-  //       name: "Cloud Migration",
-  //       link: "/service/cloud-migration",
-  //     },
-  //   ],
-  // },
   {
     id: 1,
     name: "What we do",
-    link: "/services",
+    // link: "/services",
 
     subRoutes: [
       {
         id: 1,
         titel: "Services",
-        link1:"Serverless Computing",
-        url1:'/service/Serverless Computing',
-        link2:"DevOps",
-        url2:'/service/DevOps',
-        link3:"Mobile App Development",
-        url3:'/service/mobile-app-development',
-        link4:"Plugin Development",
-        url4:'/service/plugin-development',
-        link5:"Software Application Development",
-        url5:'/service/software-application-development',
-        link6:"Cloud Migration",
-        url6:'/service/cloud-migration'
-        
-      
+        link1: "Serverless Computing",
+        url1: "/serverless-computing",
+        link2: "DevOps",
+        url2: "/dev-Ops",
+        link3: "Mobile App Development",
+        url3: "/mobile-app-development",
+        link4: "Plugin Development",
+        url4: "/plugin-development",
+        link5: "Software Application Development",
+        url5: "/software-development",
+        link6: "Cloud Migration",
+        url6: "/cloud-migration",
+        // link7: "Artificial Intelligencen",
+        // url7: "/artificial-intelligence",
       },
       {
         id: 2,
 
         titel: "Industry",
-         link1:"Heavy Construction Companies,",
-        // url1:'/service/cloud-migration',
-        link2:"Power Transmission & Distribution,",
-        // url2:'/service/cloud-migration',
-        link3:"Financial institutions",
+        link1: "Heavy Construction Companies,",
+        link2: "Power Transmission & Distribution,",
+        link3: "Financial institutions",
 
-        // url3:'/service/mobile-app-development',
-        link4:"AWS enterprises (CSPM tool – ClouSec)",
-        // url4:'/service/cloud-migration',
-        link5:"Digital Solutions for all enterprises",
-
-        // url5:'/service/mobile-app-development',
-        // link4:"Plugin Development",
-        // url4:'/service/plugin-development',
-        // link5:"Software Application Development",
-        // url5:'/service/software-application-development',
-        // link6:"Cloud Migration",
-        // url6:'/service/cloud-migration'
-
-
-        // link: "/service/serverless-computing",
+        link4: "AWS enterprises (CSPM tool – ClouSec)",
+        link5: "Digital Solutions for all enterprises",
       },
-      // {
-      //   id: 3,
-
-      //   titel: "Region",
-
-      //   link1:"India",
-      //  url1:'/service/cloud-migration',
-      //  link2:"Canada",
-      //  url2:'/service/cloud-migration',
-      // //  link3:"Singapore",
-      // //  url3:'/service/mobile-app-development',
-      // },
-    
     ],
   },
   {
@@ -144,86 +85,18 @@ export const routes = [
     id: 3,
 
     name: "Company",
-    // link: "/about",
     subRoutes: [
       {
         id: 1,
         titel: "Company",
-        link1:"About US",
-        url1:'/about-us',
-        link2:"Contact US",
-        url2:'/service/DevOps',
-        link3:"Careers",
-        url3:'/service/mobile-app-development',
-
-       
-        // link4:"Plugin Development",
-        // url4:'/service/plugin-development',
-        // link5:"Software Application Development",
-        // url5:'/service/software-application-development',
-        // link6:"Cloud Migration",
-        // url6:'/service/cloud-migration'
-        
-        // subRoutes: [
-        //   {
-        //     name: "manii",
-        //     link: "/dev-Ops",
-        //   },
-        //   {
-        //     name: "manii",
-        //     link: "/dev-Ops",
-        //   },  {
-        //     name: "manii",
-        //     link: "/dev-Ops",
-        //   },
-        // ],
+        link1: "About US",
+        url1: "/about-us",
+        link2: "Contact US",
+        url2: "/contact",
+        link3: "Careers",
+        url3: "/careers",
       },
-      // {
-      //   id: 2,
-
-      //   titel: "Industry",
-      //    link1:"E-commers",
-      //   url1:'/service/cloud-migration',
-      //   link2:"E_learning",
-      //   url2:'/service/cloud-migration',
-      //   link3:"B2B Sass",
-
-      //   url3:'/service/mobile-app-development',
-      //   // link4:"Plugin Development",
-      //   // url4:'/service/plugin-development',
-      //   // link5:"Software Application Development",
-      //   // url5:'/service/software-application-development',
-      //   // link6:"Cloud Migration",
-      //   // url6:'/service/cloud-migration'
-
-
-      //   // link: "/service/serverless-computing",
-      // },
-      // {
-      //   id: 3,
-
-      //   titel: "Region",
-
-      //   link1:"Eroupe",
-      //  url1:'/service/cloud-migration',
-      //  link2:"USA",
-      //  url2:'/service/cloud-migration',
-      //  link3:"Singapore",
-      //  url3:'/service/mobile-app-development',
-      // },
-    
     ],
-    
-    // subRoutes: [
-    //   {
-    //     name: "Dev Ops",
-    //     link: "/dev-Ops",
-    //   },
-    //   {
-    //     name: "Serverless Computing",
-    //     link: "/service/serverless-computing",
-    //   },
-    // ],
   },
 
   {
@@ -231,58 +104,18 @@ export const routes = [
     name: "Insights",
     link: "/blog",
     subRoutes: [
-      // {
-      //   id: 3,
-      //   titel: "Insights",
-      //   link1:"Serverless Computing",
-      //   url1:'/service/Serverless Computing',
-      //   link2:"DevOps",
-      //   url2:'/service/DevOps',
-      //   link3:"Mobile App Development",
-      //   url3:'/service/mobile-app-development',
-      //   link4:"Plugin Development",
-      //   url4:'/service/plugin-development',
-      //   link5:"Software Application Development",
-      //   url5:'/service/software-application-development',
-      //   link6:"Cloud Migration",
-      //   url6:'/service/cloud-migration'
-        
-      
-      // },
       {
         id: 2,
 
-              titel: "Insights",
-         link1:"Blog",
-        url1:'/service/cloud-migration',
-        link2:"Youtube",
-        url2:'/service/cloud-migration',
-        link3:"News",
+        titel: "Insights",
+        link1: "Blog",
+        url1: "/service/cloud-migration",
+        link2: "Youtube",
+        url2: "/service/cloud-migration",
+        link3: "News",
 
-        url3:'/service/mobile-app-development',
-        // link4:"Plugin Development",
-        // url4:'/service/plugin-development',
-        // link5:"Software Application Development",
-        // url5:'/service/software-application-development',
-        // link6:"Cloud Migration",
-        // url6:'/service/cloud-migration'
-
-
-        // link: "/service/serverless-computing",
+        url3: "/service/mobile-app-development",
       },
-      // {
-      //   id: 3,
-
-      //   titel: "Region",
-
-      //   link1:"Eroupe",
-      //  url1:'/service/cloud-migration',
-      //  link2:"USA",
-      //  url2:'/service/cloud-migration',
-      //  link3:"Singapore",
-      //  url3:'/service/mobile-app-development',
-      // },
-    
     ],
   },
 
@@ -323,7 +156,7 @@ export const ourBrains = [
   {
     id: 2,
     name: "Arun Deivendran",
-    position: "Co-Founder",
+    position: "Co-Founder, Advisor",
     img: brain2,
 
     skills: [
@@ -336,7 +169,7 @@ export const ourBrains = [
   {
     id: 3,
     name: "Maria Lourdu Diana",
-    position: "Human Resource Head &Social Media Analyst",
+    position: "HR Head & Chief Marketing Head",
     img: brain3,
 
     skills: [
@@ -348,10 +181,7 @@ export const ourBrains = [
         skill: "Social media analytics",
         precentage: 70,
       },
-      // {
-      //   skill: "Engagement analysis",
-      //   precentage: 70,
-      // },
+
       {
         skill: "Trend analysis",
         precentage: 90,
@@ -414,7 +244,7 @@ export const ourBrains = [
   },
   {
     id: 6,
-    name: "newOne",
+    name: "Faisal",
     position: "Full Stack Developer",
     img: TB_new1,
 
@@ -456,6 +286,27 @@ export const ourBrains = [
       {
         skill: "JavaScript",
         precentage: 60,
+      },
+    ],
+  },
+  {
+    id: 12,
+    name: "Sathish ",
+    position: "Power Bi Developer",
+    img: SathishImg,
+
+    skills: [
+      {
+        skill: "Java",
+        precentage: 100,
+      },
+      {
+        skill: "JavaScript",
+        precentage: 90,
+      },
+      {
+        skill: "SQL",
+        precentage: 70,
       },
     ],
   },
@@ -507,9 +358,9 @@ export const ourBrains = [
   },
   {
     id: 10,
-    name: "new2",
+    name: "Logeshwaran",
     position: "Full Stack Developer",
-    img:TB_new2,
+    img: TB_new2,
 
     skills: [
       {
@@ -528,9 +379,9 @@ export const ourBrains = [
   },
   {
     id: 11,
-    name: "new3",
-    position: "Full Stack Developer",
-    img:TB_new3,
+    name: "Peter",
+    position: "Junior Backend Developer",
+    img: TB_new3,
 
     skills: [
       {
@@ -548,3 +399,18 @@ export const ourBrains = [
     ],
   },
 ];
+
+export const devOpsFaq = {
+  question1: "What is DevOps?",
+  answer1:
+    "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). The goal is to shorten the development lifecycle, deliver high-quality software continuously, and improve collaboration between development and operations teams. DevOps emphasizes automation, continuous integration, continuous delivery (CI/CD), and monitoring to achieve these objectives.",
+  question2: "What is the role of monitoring and observability in DevOps?",
+  answer2:
+    "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) ",
+  question3: "What is Continuous Integration (CI)?",
+  answer3:
+    "Continuous Integration (CI) is a DevOps practice where developers frequently integrate their code changes into a shared repository, preferably several times a day. Each integration is automatically verified by an automated build and automated tests. The primary goal of CI is to detect errors quickly and improve software quality by enabling early detection of integration issues.",
+  question4: "What is Continuous Delivery (CD)?",
+  answer4:
+    "Continuous Delivery (CD) is a DevOps practice where code changes are automatically prepared for a release to production. It builds upon Continuous Integration by deploying all code changes to a testing environment and/or a production environment after the build stage. Continuous Delivery ensures that the software can be reliably released at any time, and with minimal manual intervention.",
+};

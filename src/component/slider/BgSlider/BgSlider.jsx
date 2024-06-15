@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import sli3 from "../../../assets/Vector.png";
-// import sli4 from "../../../assets/Vectorff.png";
-import sli1 from "../../../assets/HomeBg1.png";
-import sli2 from "../../../assets/homeBg2f.png";
-import sli3 from "../../../assets/homeBg3.png";
-import sli4 from "../../../assets/hero-1-1.jpg";
+
+import sli1 from "../../../assets/homeBg/HomeBgSlide1.jpg";
+import sli2 from "../../../assets/homeBg/HomeBgSlide2.jpg";
+import sli3 from "../../../assets/homeBg/HomeBgSlide3.jpg";
+import sli4 from "../../../assets/homeBg/HomeBgSlide4.jpg";
 
 
 

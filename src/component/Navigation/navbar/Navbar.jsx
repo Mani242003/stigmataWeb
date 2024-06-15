@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
-import { TfiWorld } from "react-icons/tfi";
+// import { TfiWorld } from "react-icons/tfi";
 
-import { FaBars, FaChevronDown, FaLocationDot } from "react-icons/fa6";
-import { IoSearchOutline, IoTime } from "react-icons/io5";
-import { IoIosMail } from "react-icons/io";
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { IoIosSearch } from "react-icons/io";
-import { FaRegUserCircle } from "react-icons/fa";
-import { CiMenuBurger } from "react-icons/ci";
+// import { FaBars, FaChevronDown, FaLocationDot } from "react-icons/fa6";
+// import { IoSearchOutline, IoTime } from "react-icons/io5";
+// import { IoIosMail } from "react-icons/io";
+// import { FaFacebookF } from "react-icons/fa";
+// import { FaTwitter } from "react-icons/fa";
+// import { FaLinkedin } from "react-icons/fa";
+// import { FaYoutube } from "react-icons/fa";
+// import { IoIosSearch } from "react-icons/io";
+// import { FaRegUserCircle } from "react-icons/fa";
+// import { CiMenuBurger } from "react-icons/ci";
 import { IoMdMenu } from "react-icons/io";
 import Marquee from "react-fast-marquee";
 import { FaTimes } from "react-icons/fa";
@@ -39,6 +39,7 @@ const Navbar = ({ toggleDrawer, toggleGalleryDrawer, routes,homeMarque }) => {
                 We provide innovative IT solutions for businesses of all sizes.
                 Contact us today for expert consultancy, software development,
                 and IT support services !!!
+                
               </span>
             </Marquee>
             <div className="NAvTopCloseSvg">
@@ -49,7 +50,22 @@ const Navbar = ({ toggleDrawer, toggleGalleryDrawer, routes,homeMarque }) => {
           <></>
         )}
           </>
-        ):(<></>)
+        ):(<>
+         <div className="NavTopAnnouncement2">
+          <div className="NavTopAnnouncementinner">
+          <span className="StaticText">
+                {" "}
+                Swift AI Integration and Deployment with Quixl, AI accelerator. <Link to="./contact">Request a Demo</Link>
+                
+              </span>
+
+          </div>
+    
+            <div className="NAvTopCloseSvg">
+              <FaTimes onClick={()=>{setmarqueIsOpen(false)}} />
+            </div>
+          </div>
+        </>)
        }
 
         <div className="SNavbar">

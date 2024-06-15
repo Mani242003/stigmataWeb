@@ -7,7 +7,6 @@
     //    background-image: url("../../assets/images/bgP.jpg"); /* Update the path to your image */
     //   background-size: cover;
     //   background-position: center;
-      transition: $trans;
       background: #F3F5F9;
       
     
@@ -40,10 +39,12 @@
 
         }
         .seviceDec{
-            font-size: 16px ;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px ;
             font-weight: 500;
             color: rgba(0,0,0,0.7);
             margin: 1rem 5rem;
+            line-height: 1.5rem;
 
         }
     }

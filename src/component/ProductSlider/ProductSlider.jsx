@@ -1,21 +1,18 @@
 import React, { useState, useRef } from "react";
 import "./ProductSlider.scss";
 import Slider from "react-slick";
-import { FaArrowRightLong } from "react-icons/fa6";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-import clouSec from "../../assets/images/cloud-security-1.jpg";
-// import digitalMenu from "../../assets/images/happiedinner.jpg";
-import piiProtector from "../../assets/images/PiiProtector.png";
-import blueDots from "../../assets/images/blue-dots.png";
-import Logo from "../../assets/images/logo.png";
-import Pman from "../../assets/images/Pman.png";
+
+import blueDot from "../../assets/images/icons/blueBullet.png";
+import orangeDot from "../../assets/images/icons/orangeBullet.png";
+
 import { FaQuoteLeft } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa";
 
-import CustomSlide from "./CustomSlider/CustomSlide";
-import Video from "../Video/Video";
+import Video from "./Video/Video";
+import { Link } from "react-router-dom";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const ProductSlider = () => {
   let sliderRef = useRef(null);
@@ -39,24 +36,77 @@ const ProductSlider = () => {
   };
   return (
     <section className="P_S-wrapper">
-      <div className="P_S-container">
+      <div className="P_S-container" >
+        
         <div className="P_S-headerContainer">
-          <img src={Logo} alt="" data-aos="fade-up" />
-          <div data-aos="fade-up">
-            <span className="P_S-title">
-            Unlock the full potential of your digital journey with Stigmata Techno Solutions
-            </span>
+         
+          <div className="cloudMigrateMainSection2">
+            <div className="cloudMigrateSection2Header">
+              <span>
+              Unlock the full potential of your digital journey with Stigmata Techno Solutions
+              </span>
+            </div>
+            <>
+         
+              <div className="cloudMigrateSection2innerConatiner">
+                <div className="cloudMigrateSection2innerLeft">
+                  <div className="cloudMigrateSection1LeftBottomContainer">
+                    <img src={orangeDot} alt="" />
+
+                    <span className="feaPage-col-1-text-4">
+                      Cloud Deployment Solutions: Transform outdated manual
+                      operations into efficient, automated processes,
+                      significantly reducing maintenance overheads.
+                    </span>
+                  </div>
+                </div>
+                <div className="cloudMigrateSection2innerRight">
+                  <div className="cloudMigrateSection1LeftBottomContainer">
+                    <img src={blueDot} alt="" />
+
+                    <span className="feaPage-col-1-text-4">
+                      Cloud Migration Consulting: Overcoming performance issues
+                      from resource-intensive legacy systems.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="cloudMigrateSection2innerConatiner">
+                <div className="cloudMigrateSection2innerLeft">
+                  <div className="cloudMigrateSection1LeftBottomContainer">
+                    <img src={orangeDot} alt="" />
+
+                    <span className="feaPage-col-1-text-4">
+                      Cloud Deployment Solutions: Transform outdated manual
+                      operations into efficient, automated processes,
+                      significantly reducing maintenance overheads.
+                    </span>
+                  </div>
+                </div>
+                <div className="cloudMigrateSection2innerRight">
+                  <div className="cloudMigrateSection1LeftBottomContainer">
+                    <img src={blueDot} alt="" />
+
+                    <span className="feaPage-col-1-text-4">
+                      Cloud Migration Consulting: Overcoming performance issues
+                      from resource-intensive legacy systems.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </>
+            <div className="cloudMigrateSection2BottomContainer">
+              <span className="cloudMigrateSection2BottomText">
+              Stigmata Techno Solutions Is A 9+ Year Aged Firm Rendering Software, IT Development Services To Global Customers. We Are Specialized In Developing Applications, Digital Transformation For Specific Industries Like Heavy Construction Companies, Power Transmission & Distribution, Financial Institutions (Governance & Compliance Handling PII Data) And Securing Organisations Cloud Environment (ClouSec : CSPM Tool – Cloud Security). Our Key Focus Is To Provide World-Class Quality Service To Our Customers With Utmost Focus On Their Needs And To Ensure That Technology Supports Their Business Growth. We Would Be Happy To Get Associated With Your Esteemed Organization On Your Digital Transformation / Automation Reducing Manual Efforts And Cost.
+              </span>
+              <div className="cloudMigrateSection2BottomButton">
+                <Link to="/contact">Get Started</Link>
+                <FaArrowRightLong />
+              </div>
+            </div>
           </div>
-          {/* <div className="seperateLine"></div> */}
-          <div>
-            <span className="P_SDec">
-            Stigmata Techno Solutions is a 9+ year aged firm rendering software, IT development services to global customers. We are specialized in developing applications, digital transformation for specific industries like heavy construction companies, power transmission & distribution, financial institutions (governance & compliance handling PII data) and securing organisations cloud environment (ClouSec : CSPM tool – Cloud Security). Our key focus is to provide world-class quality service to our customers with utmost focus on their needs and to ensure that technology supports their business growth. We would be happy to get associated with your esteemed organization on your digital transformation / automation reducing manual efforts and cost.
-            </span>
-          </div>
-          <div className="productButtonConatiner">
-            <a href="">Get Started </a>
-            <FaArrowRightLong />
-          </div>
+
+        
         </div>
         <div className="productBackground">
           <div className="video_header">

@@ -3,10 +3,10 @@ import "./ServicesCustomCard.scss";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa6";
-const ServicesCustomCard = ({ name, img, des1, des2, des3, des4 }) => {
+const ServicesCustomCard = ({ name, img, des1, des2, des3, des4,url }) => {
   return (
     //    <Link to="./blog" style={{textDecoration:'none'}}>
-    <div className="ServicesCustomCardContainer" data-aos="fade-up">
+    <div className="ServicesCustomCardContainer">
       <div className="Scard_bottom">
         <div className="ScardRight">
           <img src={img} alt="" />
@@ -21,7 +21,7 @@ const ServicesCustomCard = ({ name, img, des1, des2, des3, des4 }) => {
           </span>
         </div>
         <div className="ServiceButtonContainer">
-          <Link>
+          <Link to={url}>
             Read More {" "}
           </Link>
           <FaAngleRight />

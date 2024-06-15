@@ -3,96 +3,66 @@
 
 .ServicesCustomCardContainer {
   background: white;
-    
 
   padding: 2rem;
   padding-bottom: 3rem;
   border-radius: 10px;
-  
+
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  transition: box-shadow 0.3s ease, background-image 0.3s ease; 
-  border: 1px solid rgba( 0,0,0,0.2);
+  transition: box-shadow 0.3s ease, background-image 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-top: 6px solid $green;
-  cursor: pointer;
-  transition:0.3s;
-&:hover{
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  // background: $green;
-  background-image: url("../../../assets/Free-trialbgla.jpg");
-  
-  background-size: "cover";
-  background-position: "center";
-  background-repeat: "no-repeat";
-  // border-top: none;
-  border: none;
-  .Scard_bottom {
-   
-    .ServicesTitle {
-      color:rgba(255, 255, 255, 0.9);
-      
-      
+  transition: 0.3s;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    // background: $green;
+    background: rgb(26, 116, 233,0.9);
+  background-image: url("../../../assets/images/Free-trial.jpg.webp");
     
-    }
-    @include flexCol;
-    .ServiceDesContainer {
-    
-     
-      span{
+background-position: center;
+ 
+    border-top: none;
+    // border-top: 6px solid #1A74E9;
+    .Scard_bottom {
+      .ServicesTitle {
         color: rgba(255, 255, 255, 0.9);
-    }
-    }
-    .ServiceButtonContainer{
-      padding: 5px 10px;
-      width: 130px;
-      border-radius:50px;
-      background: rgba(255, 255, 255, 1);
-      display: flex;
-      align-items: center;
-    text-align: center;
-
-      margin-top: 1rem;
-      &:hover{
-        svg{
-    
-
-            
-                transform: translateX(5px);
+      }
+      .ServiceDesContainer {
+        span {
+          color: rgba(255, 255, 255, 0.9);
         }
-    }
-
-      
-      
-      a{
-        text-decoration: none;
-      color: $green;
-      font-weight: 500;
-
       }
-      svg{
-      color: $green;
-      transform: translateX(0px);
-                        transition: 0.5s;
+      .ServiceButtonContainer {
+        background: rgba(255, 255, 255, 1);
 
+        // margin-top: 1rem;
+        &:hover {
+          svg {
+            transform: translateX(5px);
+          }
+        }
 
+        a {
+          text-decoration: none;
+          color: $green;
+        }
+        svg {
+          color: $green;
+          transform: translateX(0px);
+          transition: 0.5s;
+        }
       }
     }
-   
   }
 
-
-}
-
-
- 
   .Scard_bottom {
-    .ScardRight{
+    .ScardRight {
       img {
         width: 70px;
-  
+
         margin: 0rem;
         margin-bottom: 10px;
       }
-
     }
     .ServicesTitle {
       color: rgba(5, 63, 111, 1);
@@ -100,8 +70,7 @@
       font-weight: 700;
       margin-bottom: 1rem;
       letter-spacing: 1px;
-      text-transform: capitalize
-      
+      text-transform: capitalize;
     }
     @include flexCol;
     .ServiceDesContainer {
@@ -111,33 +80,33 @@
         margin-top: 5px;
         color: $green;
       }
-      span{
-        color: rgba( 0,0,0,0.8);
+      span {
+        color: rgba(0, 0, 0, 0.8);
         font-size: 16px;
+      }
     }
-    }
-    .ServiceButtonContainer{
-      padding: 5px 10px;
-      width: 130px;
-      border-radius:50px;
+    .ServiceButtonContainer {
+      padding: 10px 15px;
+      width: 140px;
+      border-radius: 50px;
       background: $green;
       display: flex;
       align-items: center;
-    text-align: center;
+      text-align: center;
 
-      margin-top: 1rem;
+      margin-top: 2rem;
+      cursor: pointer;
       
-      a{
-        text-decoration: none;
-      color: white;
-      font-weight: 500;
 
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
       }
-      svg{
+      svg {
         color: white;
         margin-left: 10px;
       }
     }
-   
   }
 }

@@ -73,7 +73,7 @@ const Count = () => {
               </div>
             </div>
             <div className="countRightContainer">
-            <Lottie animationData={lottie} loop={true} style={{width:'700px'}}/>
+            <Lottie animationData={lottie} loop={true} style={{width:'550px'}}/>
             </div>
 
 

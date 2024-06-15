@@ -2,6 +2,7 @@ import React from "react";
 import "./InSights.scss";
 import { FaAngleRight, FaChevronDown } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { FaBookOpen } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 import { BiWorld } from "react-icons/bi";
@@ -34,7 +35,7 @@ const SubRouteLinkContainer = ({ data }) => {
   if (data.id === 1) {
     icon = <GrServices />;
   } else if (data.id === 2) {
-    icon = <FaBuilding />;
+    icon = <FaBookOpen />;
   } else {
     icon = <BiWorld />;
   }

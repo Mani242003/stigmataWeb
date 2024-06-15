@@ -1,0 +1,180 @@
+@import "../../../styles/constant";
+@import "../../../styles/variables";
+.DevOps_wrapper {
+  width: 100%;
+  .DevOps_container {
+    .DevOpsMainHeader {
+      width: 100%;
+      height: 450px;
+
+      background: url(../../../assets/devopsPG.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      padding-left: 2rem;
+      .DevOpsPageHeaderText1 {
+        font-size: 50px;
+        color: white;
+        letter-spacing: 1px;
+        font-weight: 600;
+        opacity: 0.9;
+        line-height: 3.2rem;
+
+        font-family: "Nunito", sans-serif;
+      }
+      .DevOpsPageHeaderText2 {
+        width: 50%;
+        font-size: 18px;
+        color: white;
+        // letter-spacing: 1px;
+        word-spacing: 1px;
+        font-weight: 400;
+        margin: 2rem 0;
+        line-height: 1.5rem;
+        
+      }
+      .DevOpsPageButtonContainer {
+        margin-bottom: 1.5rem;
+
+        padding: 13px 13px;
+        width: 190px;
+        border-radius: 40px;
+
+        background: $green;
+        display: flex;
+        align-items: start;
+        text-align: start;
+        gap: 8px;
+
+        margin-top: 1rem;
+        cursor: pointer;
+        &:hover {
+          svg {
+            transform: translateX(8px);
+          }
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          // color: white;
+          margin-left: 3px;
+
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+        svg {
+          color: white;
+          // color: w;
+
+          transform: translateX(0px);
+          transition: 0.5s;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .devopsOverviewContainer{
+
+      .devopsOverviewSection1{
+        display: flex;
+        // flex-wrap: wrap-reverse;\
+        flex-direction: row-reverse;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        .devopsOverviewSection1LeftContainer{
+          // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+        .devopsOverviewSection1RightContainer{
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+          padding-left: 2rem;
+
+          .devopsOverviewSection1BigText{
+            font-size: 40px;
+            font-weight: 600;
+
+          }
+          .devopsOverviewSection1Des{
+            margin-top: 1rem;
+            font-size: 17px;
+            line-height: 1.5rem;
+            word-spacing: 1px;
+
+          }
+        }
+      }
+      .devopsOverviewSection2{
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 2rem;
+        .devopsOverviewSection2Titel{
+          margin-top: 2rem;
+          text-align: center;
+          font-size: 40px;
+          font-weight: 700;
+
+
+        }
+        .devopsOverviewSection2Des{
+          margin-top: 1rem ;
+          font-size: 17px;
+          line-height: 1.5rem;
+          word-spacing: 1px;
+
+        }
+
+      }
+      .devopsOverviewSection3{
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 2rem;
+        padding-bottom: 2rem;
+        .devopsOverviewSection3Titel{
+          margin-top: 2rem;
+          text-align: center;
+          font-size: 40px;
+          font-weight: 700;
+
+
+        }
+        .devopsOverviewSection3Des{
+          margin-top: 1rem ;
+          font-size: 17px;
+          line-height: 1.5rem;
+          word-spacing: 1px;
+
+        }
+
+      }
+
+
+    }
+    
+
+    
+  }
+  .devopsPageFqa{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem ;
+    padding-right: 0;
+    padding-left: 0;
+    
+    .devopsPageFqaHeaderText{
+      width: 100%;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      
+    }
+ 
+  }
+}
