@@ -69,16 +69,16 @@ const Testimonal = () => {
                 {...settings}
               > */}
               <div key={1}>
-                <img src={logo1} alt="" width={140} />
+                <img src={logo1} alt="" />
               </div>
               <div key={2}>
-                <img src={logo2} alt="" width={150} />
+                <img src={logo2} alt="" />
               </div>
               <div key={3}>
-                <img src={logo3} alt="" width={150} />
+                <img src={logo3} alt="" />
               </div>
               <div key={4}>
-                <img src={logo4} alt="" width={150} />
+                <img src={logo4} alt="" />
               </div>
               {/* </Slider> */}
               {/* <div
@@ -93,6 +93,7 @@ const Testimonal = () => {
                 </button>
               </div> */}
             </div>
+        
           </div>
         </div>
         <div className="testimonialMainContent">

@@ -34,7 +34,8 @@
         cursor: pointer;
       }
       @media (max-width: $phone) {
-        height: 20px;
+        height: 30px;
+
       }
     }
 
@@ -47,6 +48,7 @@
       align-items: center;
       color: white;
       padding: 0 10px;
+   
       .NavTopAnnouncementinner{
         width: 97%;
         text-align: center;
@@ -69,7 +71,7 @@
         cursor: pointer;
       }
       @media (max-width: $phone) {
-        height: 20px;
+        height: 55px;
       }
     }
 
@@ -85,6 +87,11 @@
         margin: 0 auto;
         @include flexAround;
         color: black;
+        @media (max-width: $phone)  {
+          justify-content: space-between;
+          padding: 0 1.7rem;
+          // display: none;
+        }
 
         @media (min-width: $phone) and (max-width: $tablet) {
           justify-content: space-between;
@@ -106,7 +113,8 @@
               // display: none;
             }
             @media (max-width: $phone) {
-              width: 140px;
+              margin-top: 10px;
+              width: 150px;
             }
           }
         }
@@ -192,4 +200,97 @@
       }
     }
   }
+}
+
+
+
+/* Tablet Styles ($tablet-breakpoint to $desktop-breakpoint) */
+@media (min-width: #{$tablet-breakpoint}) and (max-width: #{$desktop-breakpoint - 1}) {
+
+  .nav_wrapper {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    z-index: 999;
+    
+  
+    .nav_container {
+      border-bottom: 1px solid silver;
+  
+      .NavTopAnnouncement {
+        width: 100%;
+  
+        height: 35px;
+        background: $green;
+        display: flex;
+        align-items: center;
+        color: white;
+        padding: 0 10px;
+        justify-content: space-between;
+        .marqueeText {
+          font-weight: 500;
+          font-size: 14px;
+          word-spacing: 2px;
+        }
+     
+        .NAvTopCloseSvg {
+          // padding: 0 5px;
+          padding-left: 8px;
+          @include flexAlignCenter;
+          cursor: pointer;
+        }
+        @media (max-width: $phone) {
+          height: 20px;
+  
+        }
+      }
+  
+      .NavTopAnnouncement2 {
+        width: 100%;
+  
+        height: 45px;
+        background: $green;
+        display: flex;
+        align-items: center;
+        color: white;
+        padding: 0 10px;
+        .NavTopAnnouncementinner{
+          width: 97%;
+          text-align: center;
+          margin: 2rem 0;
+          font-weight: 600;
+          span{
+            a{
+              color: white;
+            }
+          }
+  
+        }
+     
+     
+        .NAvTopCloseSvg {
+          width: 3%;
+          // padding: 0 5px;
+          padding-left: 8px;
+          @include flexAlignCenter;
+          cursor: pointer;
+        }
+        @media (max-width: $phone) {
+          height: 20px;
+        }
+      }
+  
+  
+   
+    }
+  }
+
+}
+
+/* Desktop Styles ($desktop-breakpoint to $large-screen-breakpoint) */
+@media (min-width: #{$desktop-breakpoint}) and (max-width: #{$large-screen-breakpoint - 1}) {
+}
+
+/* Large Screen Styles ($large-screen-breakpoint and up) */
+@media (min-width: #{$large-screen-breakpoint}) {
 }

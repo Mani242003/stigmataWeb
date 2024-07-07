@@ -17,26 +17,16 @@ import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import acc1 from "../../assets/images/aboutSample/Untitled.png";
-import aboutSampleCommon from "../../assets/images/aboutSample/0urServices.jpg";
 
-import acc2 from "../../assets/acc2.png";
 import { Link } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa6";
-import aboutSampleCommon1 from "../../assets/images/aboutSample/plugin.jpg"
-import aboutSampleCommon2 from "../../assets/images/aboutSample/serverless.jpg"
-import aboutSampleCommon3 from "../../assets/images/aboutSample/devops.jpg"
-import aboutSampleCommon4 from "../../assets/images/aboutSample/aboutSampel1.jpg"
-import aboutSampleCommon5 from "../../assets/images/aboutSample/cloudMigrate.jpg"
-import aboutSampleCommon6 from "../../assets/images/aboutSample/mobileDev.jpg"
-
-
 
 const handleScrollToTop = () => {
   window.scrollTo({
     top: 0,
     // behavior: 'smooth',
   });
-}
+};
 
 const About = () => {
   const [expanded, setExpanded] = useState(false);
@@ -44,31 +34,6 @@ const About = () => {
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
-  const getImage = () => {
-    // if (expanded) {
-    switch (expanded) {
-      case "panel1":
-        // return <img src={acc2} alt="" />;
-      case "panel2":
-        // return <img src={aboutSampleCommon2} alt="" />;
-        // return <img src={acc1} alt="" />;
-      case "panel3":
-        // return <img src={aboutSampleCommon3} alt="" />;
-        // return <img src={acc2} alt="" />;
-        case "panel4":
-          // return <img src={aboutSampleCommon4} alt="" />;
-        case "panel5":
-          // return <img src={aboutSampleCommon5} alt="" />;
-        case "panel6":
-          // return <img src={aboutSampleCommon6} alt="" />;
-      default:
-        return <img src={acc1} alt="" />;
-    }
-
-    // return ;
-    // }  const handleScrollToTop = () => {
-     
-      };
 
   return (
     <section className="aboutPage_wrapper">
@@ -80,6 +45,8 @@ const About = () => {
               Welcome To Stigmata Techno Solutions
             </span>
             <br />
+            <br />
+
             <span className="aboutPageDes">About US</span>
           </div>
         </div>
@@ -159,10 +126,21 @@ const About = () => {
                       <AccordionDetails>
                         <div style={{ marginLeft: "70px" }}>
                           <span style={{ color: "rgba(0,0,0,0.8)" }}>
-                          We develop customized plugins for business applications, utilizing innovative approaches throughout our development lifecycle. With extensive experience in creating plugins for Atlassian products (Confluence, JIRA, BitBucket, DevOps, SonarQube, Jenkins), we ensure governance and compliance are maintained.
+                            We develop customized plugins for business
+                            applications, utilizing innovative approaches
+                            throughout our development lifecycle. With extensive
+                            experience in creating plugins for Atlassian
+                            products (Confluence, JIRA, BitBucket, DevOps,
+                            SonarQube, Jenkins), we ensure governance and
+                            compliance are maintained.
                           </span>
                           <div className="pluginButtonContainer">
-                            <Link to="/plugin-development" onClick={handleScrollToTop} >Read More </Link>
+                            <Link
+                              to="/plugin-development"
+                              onClick={handleScrollToTop}
+                            >
+                              Read More{" "}
+                            </Link>
                             <FaAngleRight />
                           </div>
                         </div>
@@ -236,10 +214,22 @@ const About = () => {
                           }}
                         >
                           <span style={{ color: "rgba(0,0,0,0.8)" }}>
-                          We specialize in serverless computing, enabling you to build app functionality without the hassle of infrastructure management. Let the cloud provider handle setup, capacity planning, and server management. We architect serverless applications to be highly scalable and event-driven, utilizing resources only when a specific function or trigger occurs.
+                            We specialize in serverless computing, enabling you
+                            to build app functionality without the hassle of
+                            infrastructure management. Let the cloud provider
+                            handle setup, capacity planning, and server
+                            management. We architect serverless applications to
+                            be highly scalable and event-driven, utilizing
+                            resources only when a specific function or trigger
+                            occurs.
                           </span>
                           <div className="pluginButtonContainer">
-                            <Link to="/serverless-computing" onClick={handleScrollToTop}>Read More </Link>
+                            <Link
+                              to="/serverless-computing"
+                              onClick={handleScrollToTop}
+                            >
+                              Read More{" "}
+                            </Link>
                             <FaAngleRight />
                           </div>
                         </div>
@@ -306,10 +296,18 @@ const About = () => {
                       <AccordionDetails>
                         <div style={{ marginLeft: "70px" }}>
                           <span style={{ color: "rgba(0,0,0,0.8)" }}>
-                          At Stigmata Techno Solutions, we offer agile DevOps services that intelligently automate your entire development and operations process. Our approach ensures the creation of high-quality, secure code by providing agile development, continuous integration, continuous security, continuous testing, and continuous delivery.
+                            At Stigmata Techno Solutions, we offer agile DevOps
+                            services that intelligently automate your entire
+                            development and operations process. Our approach
+                            ensures the creation of high-quality, secure code by
+                            providing agile development, continuous integration,
+                            continuous security, continuous testing, and
+                            continuous delivery.
                           </span>
                           <div className="pluginButtonContainer">
-                            <Link to="/dev-Ops" onClick={handleScrollToTop}>Read More </Link>
+                            <Link to="/dev-Ops" onClick={handleScrollToTop}>
+                              Read More{" "}
+                            </Link>
                             <FaAngleRight />
                           </div>
                         </div>
@@ -370,17 +368,29 @@ const About = () => {
                             }}
                           >
                             Web Application Developement
-
                           </h1>
                         </div>
                       </AccordionSummary>
                       <AccordionDetails>
                         <div style={{ marginLeft: "70px" }}>
                           <span style={{ color: "rgba(0,0,0,0.8)" }}>
-                          At Stigmata Techno Solutions, we harness cutting-edge artificial intelligence technologies to drive innovation and efficiency. Our AI solutions are designed to optimize processes, enhance decision-making, and deliver personalized customer experiences. Whether you need machine learning models, natural language processing, or predictive analytics, we have the expertise to help you unlock AI's full potential.
+                            At Stigmata Techno Solutions, we harness
+                            cutting-edge artificial intelligence technologies to
+                            drive innovation and efficiency. Our AI solutions
+                            are designed to optimize processes, enhance
+                            decision-making, and deliver personalized customer
+                            experiences. Whether you need machine learning
+                            models, natural language processing, or predictive
+                            analytics, we have the expertise to help you unlock
+                            AI's full potential.
                           </span>
                           <div className="pluginButtonContainer">
-                            <Link to="/software-development" onClick={handleScrollToTop}>Read More </Link>
+                            <Link
+                              to="/software-development"
+                              onClick={handleScrollToTop}
+                            >
+                              Read More{" "}
+                            </Link>
                             <FaAngleRight />
                           </div>
                         </div>
@@ -441,17 +451,27 @@ const About = () => {
                             }}
                           >
                             Cloud Migration
-
                           </h1>
                         </div>
                       </AccordionSummary>
                       <AccordionDetails>
                         <div style={{ marginLeft: "70px" }}>
                           <span style={{ color: "rgba(0,0,0,0.8)" }}>
-                          Thinking about moving your workloads to the cloud, whether it's your applications, database, or server? Unsure where to start? Stigmata Techno Solutions is here to assist your organization in migrating servers, databases, applications, and emails to cloud, dedicated, and virtual environments, with a strong focus on security.
+                            Thinking about moving your workloads to the cloud,
+                            whether it's your applications, database, or server?
+                            Unsure where to start? Stigmata Techno Solutions is
+                            here to assist your organization in migrating
+                            servers, databases, applications, and emails to
+                            cloud, dedicated, and virtual environments, with a
+                            strong focus on security.
                           </span>
                           <div className="pluginButtonContainer">
-                            <Link to="/cloud-migration" onClick={handleScrollToTop}>Read More </Link>
+                            <Link
+                              to="/cloud-migration"
+                              onClick={handleScrollToTop}
+                            >
+                              Read More{" "}
+                            </Link>
                             <FaAngleRight />
                           </div>
                         </div>
@@ -512,17 +532,106 @@ const About = () => {
                             }}
                           >
                             Mobile App Development
-
                           </h1>
                         </div>
                       </AccordionSummary>
                       <AccordionDetails>
                         <div style={{ marginLeft: "70px" }}>
                           <span style={{ color: "rgba(0,0,0,0.8)" }}>
-                          Our team excels in developing robust and scalable web portals tailored to your enterprise's unique needs. By combining innovative technology with user-centric design, we deliver portals that enhance collaboration, streamline workflows, and improve overall efficiency.
+                            Our team excels in developing robust and scalable
+                            web portals tailored to your enterprise's unique
+                            needs. By combining innovative technology with
+                            user-centric design, we deliver portals that enhance
+                            collaboration, streamline workflows, and improve
+                            overall efficiency.
                           </span>
                           <div className="pluginButtonContainer">
-                            <Link to="/mobile-app-development" onClick={handleScrollToTop}>Read More </Link>
+                            <Link
+                              to="/mobile-app-development"
+                              onClick={handleScrollToTop}
+                            >
+                              Read More{" "}
+                            </Link>
+                            <FaAngleRight />
+                          </div>
+                        </div>
+                      </AccordionDetails>
+                    </Accordion>
+                  </div>
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "20px",
+                      marginLeft: "33px",
+                      borderLeft: "1px dashed rgba(0,0,0,0.9)",
+                      display: expanded === "panel1" ? "none" : "flex",
+                    }}
+                  ></div>
+                  <div>
+                    <Accordion
+                      expanded={expanded === "panel7"}
+                      onChange={handleChange("panel7")}
+                      sx={{
+                        backgroundColor: "transparent",
+                        border: "none",
+                        boxShadow: "none",
+                      }}
+                    >
+                      <AccordionSummary
+                        aria-controls="panel7bh-content"
+                        id="panel1bh-header"
+                      >
+                        <div
+                          style={{
+                            border:
+                              expanded === "panel7" ? "none" : "1px solid gray",
+                            width: "2.5rem",
+                            height: "2.5rem",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            borderRadius: "5px",
+                            padding: "1rem",
+                            fontSize: "17px",
+                            background:
+                              expanded === "panel7" ? "#1A74E9" : "transparent",
+                            color: expanded === "panel7" ? "white" : "black",
+                          }}
+                        >
+                          <span>07</span>
+                        </div>
+                        <div>
+                          <h1
+                            style={{
+                              marginLeft: "32px",
+                              color:
+                                expanded === "panel7"
+                                  ? "#1A74E9"
+                                  : "rgba(0,0,0,0.7)",
+                              fontWeight: "800",
+                            }}
+                          >
+                            Artificial Intelligence
+                          </h1>
+                        </div>
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <div style={{ marginLeft: "70px" }}>
+                          <span style={{ color: "rgba(0,0,0,0.8)" }}>
+                            At Stigmata Techno Solutions, we harness the power
+                            of artificial intelligence to drive innovation,
+                            efficiency, and growth for your business. Our AI
+                            services are designed to provide tailored solutions
+                            that meet the unique needs of your organization.
+                            Explore our comprehensive suite of AI services:{" "}
+                          </span>
+                          <div className="pluginButtonContainer">
+                            <Link
+                              to="/artificial-intelligence"
+                              onClick={handleScrollToTop}
+                            >
+                              Read More{" "}
+                            </Link>
                             <FaAngleRight />
                           </div>
                         </div>
@@ -532,7 +641,7 @@ const About = () => {
                 </>
               </div>
               <div className="cloudMigrateMainSection3BottomRight">
-                {getImage()}
+                <img src={acc1} alt="" />
               </div>
             </div>
             <div className="cloudMigrateSection3BottomButtonOutter">

@@ -40,8 +40,8 @@ export const routes = [
         url5: "/software-development",
         link6: "Cloud Migration",
         url6: "/cloud-migration",
-        // link7: "Artificial Intelligencen",
-        // url7: "/artificial-intelligence",
+        link7: "Artificial intelligence",
+        url7: "/artificial-intelligence",
       },
       {
         id: 2,
@@ -68,7 +68,7 @@ export const routes = [
         img: logo1,
       },
       {
-        title: "Happiedinner",
+        title: "Happiediner",
         des: "Happiediner is a complete digital solution for the restaurants involving super admin, restaurant owner, customers and kitchen modules with unique feature like last minute deal, data driven recommendation system, digitalized kitchen process and food order tracking.",
         link: "https://clousec.io/",
         img: logo2,
@@ -109,7 +109,7 @@ export const routes = [
 
         titel: "Insights",
         link1: "Blog",
-        url1: "/service/cloud-migration",
+        url1: "/blog",
         link2: "Youtube",
         url2: "/service/cloud-migration",
         link3: "News",
@@ -131,7 +131,7 @@ export const ourBrains = [
   {
     id: 1,
     name: "Jerome Melkisidak B.E, M.B.A",
-    position: "Director",
+    position: "CEO",
     img: brain1,
 
     skills: [
@@ -156,7 +156,7 @@ export const ourBrains = [
   {
     id: 2,
     name: "Arun Deivendran",
-    position: "Co-Founder, Advisor",
+    position: "Advisor",
     img: brain2,
 
     skills: [

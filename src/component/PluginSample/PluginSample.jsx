@@ -25,47 +25,50 @@ const PluginSample = () => {
             ATLASSIAN:<span> Confluence space Analytics</span>
           </span>
           <span className="simplicity_right_text3">
-            With this plugin, we are eliminating that gap and providing most
-            important insights to the organization to promote the confluence
-            usage and support the users who are contributing to confluence
-            usages. Below are the features we are currently providing.
+          This plugin effectively handles PII data in reactive approach and blocks the code push with notification. Our plugin detects below PII types, masks with detailed logs for the project administrators solving the compliance and auditing problems.
           </span>
           <span className="simplicity_rightTechTitel"> Features :</span>
           <div className="feaPage-col-1-bottom-container">
             <BsFillRecord2Fill color="#5E6FEC" size={26} />
 
             <span className="feaPage-col-1-text-4">
-              Highly contributed user rank
+            Passwords
+
             </span>
           </div>
           <div className="feaPage-col-1-bottom-container">
             <BsFillRecord2Fill color="#5E6FEC" size={26} />
             <span className="feaPage-col-1-text-4">
-              Most updated pages in a space
+            NRIC
+
             </span>
           </div>
           <div className="feaPage-col-1-bottom-container">
             <BsFillRecord2Fill color="#5E6FEC" size={26} />
             <span className="feaPage-col-1-text-4">
-              Most updated pages list with their respective count
+            Email
+
             </span>
           </div>
           <div className="feaPage-col-1-bottom-container">
             <BsFillRecord2Fill color="#5E6FEC" size={26} />
             <span className="feaPage-col-1-text-4">
-              Number of likes in the space
+            Passport Number
+
             </span>
           </div>
           <div className="feaPage-col-1-bottom-container">
             <BsFillRecord2Fill color="#5E6FEC" size={26} />
             <span className="feaPage-col-1-text-4">
-              Number of Pages updated in a space
+            Credit card number
+
             </span>
           </div>
           <div className="feaPage-col-1-bottom-container">
             <BsFillRecord2Fill color="#5E6FEC" size={26} />
             <span className="feaPage-col-1-text-4">
-              Number of Pages created in a space
+            AWS key
+
             </span>
           </div>
 
@@ -101,12 +104,10 @@ const PluginSample = () => {
             ATLASSIAN: <span>PII Protector : Confluence</span>
           </span>
           <span className="simplicity_right_text3">
-            Mart Easy is an Andaman island based multiple vendor managed
-            ecommerce product. Mart Easy manages 8 different category of
-            products with several subcategories.
+          As part of our compliance management, we safeguard against unauthorized issue deletion. Our plugin allows users to submit deletion requests to the JIRA administrator. The administrator can then approve or reject these requests. All activities are logged for auditing purposes and can be exported as a CSV file when needed.
           </span>
           <span className="simplicity_rightTechTitel"> Features :</span>
-          <div className="feaPage-col-1-bottom-container">
+          {/* <div className="feaPage-col-1-bottom-container">
             <BsFillRecord2Fill color="#5E6FEC" size={26} />
 
             <span className="feaPage-col-1-text-4"> Passwords</span>
@@ -130,36 +131,20 @@ const PluginSample = () => {
           <div className="feaPage-col-1-bottom-container">
             <BsFillRecord2Fill color="#5E6FEC" size={26} />
             <span className="feaPage-col-1-text-4"> AWS key</span>
-          </div>
-          <div className="feaPage-col-1-bottom-container">
-            <BsFillRecord2Fill color="#5E6FEC" size={26} />
-            <span className="feaPage-col-1-text-4"> AWS secret key</span>
-          </div>
-          <div className="feaPage-col-1-bottom-container">
-            <BsFillRecord2Fill color="#5E6FEC" size={26} />
-            <span className="feaPage-col-1-text-4"> Custom Tables</span>
-          </div>
-          {/* <div className="simplicity_right_bottom">
-            <div className="simplicity_bottom_row1">
-              <div className="simplicity_bottom_row1_content">
-                <img src={img1} alt="" />
-
-                <span>React Native</span>
-              </div>
-              <div className="simplicity_bottom_row1_content">
-                <img src={img2} alt="" />
-                <span>Fluter</span>
-              </div>
-              <div className="simplicity_bottom_row1_content">
-              <img src={img3} alt="" />
-              <span>Wordpress</span>
-              </div>
-            </div>
-          
           </div> */}
+          <div className="feaPage-col-1-bottom-container">
+            <BsFillRecord2Fill color="#5E6FEC" size={26} />
+            <span className="feaPage-col-1-text-4"> Audit logs</span>
+          </div>
+          <div className="feaPage-col-1-bottom-container">
+            <BsFillRecord2Fill color="#5E6FEC" size={26} />
+            <span className="feaPage-col-1-text-4"> Workflow for deletion of issues
+            </span>
+          </div>
+       
         </div>
       </div>
-      <div className="PluginSample_container">
+      {/* <div className="PluginSample_container">
         <div className="PluginSample_container_left">
           <img src={plug3} alt="" />
         </div>
@@ -213,26 +198,7 @@ const PluginSample = () => {
             </span>
           </div>
 
-          {/* <div className="simplicity_right_bottom">
-            <div className="simplicity_bottom_row1">
-              <div className="simplicity_bottom_row1_content">
-                <img src={img1} alt="" />
-
-                <span>React Nativ</span>
-              </div>
-              <div className="simplicity_bottom_row1_content">
-                <img src={img2} alt="" />
-                <span>Fluter</span>
-              </div>
-              <div className="simplicity_bottom_row1_content">
-              <img src={img3} alt="" />
-              <span>Wordpress</span>
-              </div>
-            </div>
-            
-
-          
-          </div> */}
+      
         </div>
       </div>
       <div className="PluginSample_container customContainer">
@@ -285,24 +251,7 @@ const PluginSample = () => {
             <BsFillRecord2Fill color="#5E6FEC" size={26} />
             <span className="feaPage-col-1-text-4"> Custom Tables</span>
           </div>
-          {/* <div className="simplicity_right_bottom">
-            <div className="simplicity_bottom_row1">
-              <div className="simplicity_bottom_row1_content">
-                <img src={img1} alt="" />
-
-                <span>React Native</span>
-              </div>
-              <div className="simplicity_bottom_row1_content">
-                <img src={img2} alt="" />
-                <span>Fluter</span>
-              </div>
-              <div className="simplicity_bottom_row1_content">
-              <img src={img3} alt="" />
-              <span>Wordpress</span>
-              </div>
-            </div>
-          
-          </div> */}
+        
         </div>
       </div>
       <div className="PluginSample_container">
@@ -361,28 +310,9 @@ const PluginSample = () => {
             </span>
           </div>
 
-          {/* <div className="simplicity_right_bottom">
-            <div className="simplicity_bottom_row1">
-              <div className="simplicity_bottom_row1_content">
-                <img src={img1} alt="" />
-
-                <span>React Nativ</span>
-              </div>
-              <div className="simplicity_bottom_row1_content">
-                <img src={img2} alt="" />
-                <span>Fluter</span>
-              </div>
-              <div className="simplicity_bottom_row1_content">
-              <img src={img3} alt="" />
-              <span>Wordpress</span>
-              </div>
-            </div>
-            
-
-          
-          </div> */}
+        
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -8,6 +8,7 @@ import Solution from "../../../component/Solution/Solution";
 import { devOpsFaq } from "../../../constant";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
+
 import AccordionSection from "../../../component/Accordion/AccordionSection";
 import MobileSample from "../../../component/MobileSample/MobileSample";
 import TechBrains from "../../../component/TechBrain/TechBrains";
@@ -19,11 +20,10 @@ const MobileDevPage = () => {
       <div className="mobileDevPageContainer">
         <div className="mobileDevPageMainHeader">
           <span className="mobileDevPageHeaderText1">
-            Harness Agility and Speed with
-            <br /> Cloud Migration Services
+          Mobile Development with<br/> React Native
           </span>
           <span className="mobileDevPageHeaderText2">
-            Achieve 99.5% uptime and accelerate operations at 10x speed
+          At Stigmata Techno Solutions, we harness the power of React Native to create high-performance, cross-platform mobile applications that provide seamless user experiences.
           </span>
           <div className="mobileDevPageButtonContainer">
             <Link href="">Talk to Experts </Link>
@@ -41,14 +41,14 @@ const MobileDevPage = () => {
 
           <MobileSample />
         </div>
-        <TechBrains />
-        <div className="mobilePageFqa">
+        {/* <TechBrains /> */}
+        {/* <div className="mobilePageFqa">
           <span className="mobilePageFqaHeaderText">
             Application Developement Service FAQs
           </span>
           <AccordionSection  array={devOpsFaq}/>
        
-        </div>
+        </div> */}
       </div>
       
 

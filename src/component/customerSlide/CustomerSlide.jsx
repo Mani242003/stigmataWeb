@@ -52,6 +52,53 @@ const CustomerSlide = () => {
     cssEase: "linear",
     prevArrow: false,
     nextArrow: false,
+    responsive: [
+      {
+        breakpoint: 432, // Mobile devices
+        settings: {
+    speed: 4000,
+    autoplay: false,
+
+    dots: false,
+    infinite: true,
+    // speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 2,
+    autoplay: true,
+    
+
+    // Show 1 slide
+        }
+      },
+      {
+        breakpoint: 885, // Tablets
+        settings: {
+          slidesToShow: 3, 
+          speed: 4000,
+          autoplay: false,
+      
+          dots: false,
+          infinite: true,
+          // speed: 500,
+          slidesToScroll: 2,
+          autoplay: true,
+          
+      // Show 3 slides
+        }
+      },
+      // {
+      //   breakpoint: 1024, // Laptops
+      //   settings: {
+      //     slidesToShow: 5, // Show 5 slides
+      //   }
+      // },
+      // {
+      //   breakpoint: Infinity, // Larger screens
+      //   settings: {
+      //     slidesToShow: 7, // Show 7 slides
+      //   }
+      // }
+    ],
   };
   const settings2 = {
     dots: false,
@@ -65,6 +112,53 @@ const CustomerSlide = () => {
     rtl: true,
     prevArrow: false,
     nextArrow: false,
+    responsive: [
+      {
+        breakpoint: 432, // Mobile devices
+        settings: {
+    speed: 4000,
+    autoplay: false,
+
+    dots: false,
+    infinite: true,
+    // speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 2,
+    autoplay: true,
+    
+
+    // Show 1 slide
+        }
+      },
+      {
+        breakpoint: 885, // Tablets
+        settings: {
+          slidesToShow: 3, 
+          speed: 4000,
+          autoplay: false,
+      
+          dots: false,
+          infinite: true,
+          // speed: 500,
+          slidesToScroll: 2,
+          autoplay: true,
+          
+      // Show 3 slides
+        }
+      },
+      // {
+      //   breakpoint: 1024, // Laptops
+      //   settings: {
+      //     slidesToShow: 5, // Show 5 slides
+      //   }
+      // },
+      // {
+      //   breakpoint: Infinity, // Larger screens
+      //   settings: {
+      //     slidesToShow: 7, // Show 7 slides
+      //   }
+      // }
+    ],
   };
   return (
     <section className="C_S-wrapper">

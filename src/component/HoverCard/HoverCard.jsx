@@ -58,64 +58,93 @@ const HoverCard = () => {
     { img: img2 },
     { img: LAndT1, w: 200 },
 
-    { img: img3 },
-    { img: LAndT2, w: 200 },
-
     // { img: img4 },
-    { img: img5 },
 
     { img: img6, w: 110 },
+    { img: LAndT2, w: 200 },
+
+    { img: img5 },
+
     { img: img7 },
     { img: img1 },
-
 
     // { img: logo1 },
 
     { img: img11 },
-    { img: img12 ,w:180},
-    { img: img13 ,w:160},
+    { img: img12, w: 180 },
     // { img: logo1 },
 
-    { img: img14 },
     { img: img10, w: 100 },
+
     { img: img9 },
 
+    { img: img13, w: 160 },
+
+    { img: img16, w: 100 },
+    { img: img3 },
 
     { img: img15, w: 100 },
-    { img: img16, w: 100 },
+
     // { img: logo1 },
   ];
   const settings = {
     dots: false,
     infinite: true,
     slidesToShow: 5,
-    slidesToScroll: 12,
+    slidesToScroll: 1,
     autoplay: true,
-    speed: 30000,
+    speed: 3500,
     autoplaySpeed: 0,
     cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    // responsive: [
-    //   {
-    //     breakpoint: 400, // Adjust breakpoint as needed
-    //     settings: {
-    //       slidesToShow: 1, // Show 1 slide on screens smaller than 768px
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 1024, // Adjust breakpoint as needed
-    //     settings: {
-    //       slidesToShow: 2, // Show 2 slides on screens between 768px and 1024px
-    //     }
-    //   },
-    //   {
-    //     breakpoint: Infinity, // Default settings for larger screens
-    //     settings: {
-    //       slidesToShow: 5, // Show 3 slides on screens larger than 1024px
-    //     }
-    //   }
-    // ],
+    responsive: [
+      {
+        breakpoint: 400, // Mobile devices
+        settings: {
+          slidesToShow: 1,
+          speed: 4000,
+          autoplay: false,
+
+          dots: false,
+          infinite: true,
+          // speed: 500,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          autoplay: true,
+
+          // Show 1 slide
+        },
+      },
+      {
+        breakpoint: 885, // Tablets
+        settings: {
+          slidesToShow: 3,
+          speed: 4000,
+          autoplay: false,
+
+          dots: false,
+          infinite: true,
+          // speed: 500,
+          slidesToScroll: 2,
+          autoplay: true,
+
+          // Show 3 slides
+        },
+      },
+      // {
+      //   breakpoint: 1024, // Laptops
+      //   settings: {
+      //     slidesToShow: 5, // Show 5 slides
+      //   }
+      // },
+      // {
+      //   breakpoint: Infinity, // Larger screens
+      //   settings: {
+      //     slidesToShow: 7, // Show 7 slides
+      //   }
+      // }
+    ],
 
     style: {
       display: "flex",
@@ -152,13 +181,18 @@ const HoverCard = () => {
         <span>Our Trusted Customers</span>
       </div>
       <div className="hoverCardLogoConatiner">
-        <Slider {...settings} >
+        <Slider {...settings}>
           {images.map((data, i) => {
             // console.log("maonio",data.img);
             return (
               <div className="hoverLogoConatiner">
                 {" "}
-                <img src={data.img} alt="" width={data.w ? data.w : 150} style={{marginLeft:'25%'}} />
+                <img
+                  src={data.img}
+                  alt=""
+                  width={data.w ? data.w : 150}
+                  style={{ marginLeft: "25%" }}
+                />
               </div>
             );
           })}

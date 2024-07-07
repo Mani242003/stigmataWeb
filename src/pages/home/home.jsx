@@ -30,6 +30,7 @@ const Home = () => {
       id="smooth-wrapper"
       style={{ background: "#F5F5F5" }}
     >
+      
       <div>
         <Navigation homeMarque="true" />
 

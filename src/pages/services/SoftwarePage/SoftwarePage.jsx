@@ -57,18 +57,15 @@ const SoftwarePage = () => {
       <div className="softwarePageContainer">
         <div className="softwarePageMainHeader">
           <span className="softwarePageHeaderText1">
-            DevOps Service Rapid and
-            <br /> Reliable App Delivery
+          Software Application 
+          <br/> Development
           </span>
 
           <span className="softwarePageText2">
-            Experience the Future of Agile Operations with Cloud DevOps
-            Services! Embrace innovation and efficiency as Cyfuture Cloud
-            integrates cutting-edge technology into your development and
-            operations workflows.
+          At Stigmata Techno Solutions, we offer comprehensive software application development services designed to meet the unique needs of your business.
           </span>
           <div className="softwarePageButtonContainer">
-            <Link href="">HIRE OUR AI ENGINEERS! </Link>
+            <Link href="">Talk to Experts </Link>
             <FaArrowRightLong />
           </div>
         </div>
@@ -115,278 +112,15 @@ const SoftwarePage = () => {
             </div>
             <div className="cloudMigrateMainSection1Right">
               <span>
-                Transform your enterprise’s operational dynamics, eliminate
-                latency, and improve infrastructure efficiency, with Integra’s
-                cloud migration consulting services, designed to enhance
-                performance while reducing total cost of ownership (TCO).
+              Partner with Stigmata Techno Solutions for your software application development needs. 
                 <br />
                 <br />
-                Our cloud architecture services are tailored to ensure security,
-                scalability, and continuity, integrating seamlessly with
-                top-tier platforms like cloud AWS services and Azure services.
-                By leveraging cloud deployment solutions that focus on
-                infrastructure efficiency and innovative pricing models like
-                pay-per-use, Integra enhances cloud ROI and delivers consistent,
-                on-demand user experiences.
+                At Stigmata Techno Solutions, we specialize in the full lifecycle of software application development, from analysis and design to deployment and security testing, addressing and automating client pain points. We create custom software solutions to tackle everyday business challenges. With years of experience across diverse industries, we deliver high-quality work within budget using AGILE methodology, consistently delighting our clients with our progress and results.
               </span>
             </div>
           </div>
         
-          <div className="cloudMigrateMainSection3">
-            <div className="cloudMigrateMainSection3Top">
-            <div className="solution-header">
-          <span className="solution-header-text">
-            <span> Our Sample Work in</span>
-            <br />
-            Web Application Development
-          </span>
-          <div className="solution-headerDivider"></div>
-        </div>
-              <span className="cloudMigrateMainSection3Des">
-                Stigmata offers a comprehensive suite of business-focused cloud
-                transformation services, spanning across private, public,
-                hybrid, and multi-cloud environments. Our team specializes in
-                cloud consulting services, assessing legacy architectures and
-                crafting strategic roadmaps for transformation. With expertise
-                in cloud application development, we facilitate seamless
-                migrations to advanced cloud environments, incorporating cloud
-                AWS services and Azure services for robust, scalable solutions.
-                As a cloud solutions provider, we provide 24/7 managed support
-                to help businesses accelerate technology adoption. Our
-                innovative use of cloud AI/ML technologies and custom cloud
-                products further enhances operational efficiency and agility on
-                the cloud.
-              </span>
-            </div>
-
-            <div className="cloudMigrateMainSection3Bottom">
-              <div className="cloudMigrateMainSection3BottomLeft">
-                <>
-                  <div>
-                    <Accordion
-                      expanded={expanded === "panel1"}
-                      onChange={handleChange("panel1")}
-                      sx={{
-                        backgroundColor: "transparent",
-                        border: "none",
-                        boxShadow: "none",
-                      }}
-                    >
-                      <AccordionSummary
-                         expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1bh-content"
-                        id="panel1bh-header"
-                      >
-                        <div
-                          style={{
-                            border:
-                              expanded === "panel1" ? "none" : "1px solid gray",
-                            width: "2.5rem",
-                            height: "2.5rem",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            borderRadius: "5px",
-                            padding: "1rem",
-                            fontSize: "17px",
-                            background:
-                              expanded === "panel1" ? "#1A74E9" : "transparent",
-                            color: expanded === "panel1" ? "white" : "black",
-                          }}
-                        >
-                          <span>01</span>
-                        </div>
-                        <div>
-                          <h1
-                            style={{
-                              marginLeft: "30px",
-                              color:
-                                expanded === "panel1"
-                                  ? "#1A74E9"
-                                  : "rgba(0,0,0,0.7)",
-                              fontWeight: "800",
-                            }}
-                          >
-                            E-COMMERCE Development
-                          </h1>
-                        </div>
-                      </AccordionSummary>
-                      <AccordionDetails >
-                        <div style={{ marginLeft: "70px" }}>
-                          <span style={{ color: "rgba(0,0,0,0.8)" }}>
-                            Leverage our cloud transformation solutions to
-                            advance towards robust, end-to-end, multi-tier cloud
-                            platforms
-                          </span>
-                        </div>
-                      </AccordionDetails>
-                    </Accordion>
-                    <div
-                      style={{
-                        width: "100%",
-                        height: "20px",
-                        marginLeft: "33px",
-                        borderLeft: "1px dashed rgba(0,0,0,0.9)",
-                        display: expanded === "panel1" ? "none" : "flex",
-                      }}
-                    ></div>
-                  </div>
-                  <div>
-                    <Accordion
-                      expanded={expanded === "panel2"}
-                      onChange={handleChange("panel2")}
-                      sx={{
-                        backgroundColor: "transparent",
-                        border: "none",
-                        boxShadow: "none",
-                      }}
-                    >
-                      <AccordionSummary
-                       expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1bh-content"
-                        id="panel1bh-header"
-                        style={{ paddingTop: "0", paddingBottom: "0" }}
-                      >
-                        <div
-                          style={{
-                            border:
-                              expanded === "panel2" ? "none" : "1px solid gray",
-                            width: "2.5rem",
-                            height: "2.5rem",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            borderRadius: "5px",
-                            padding: "1rem",
-                            fontSize: "17px",
-                            background:
-                              expanded === "panel2" ? "#1A74E9" : "transparent",
-                            color: expanded === "panel2" ? "white" : "black",
-                          }}
-                        >
-                          <span>02</span>
-                        </div>
-                        <div>
-                          <h1
-                            style={{
-                              marginLeft: "32px",
-                              color:
-                                expanded === "panel2"
-                                  ? "#1A74E9"
-                                  : "rgba(0,0,0,0.7)",
-                              fontWeight: "800",
-                            }}
-                          >
-                            Java Based Website Development
-
-                          </h1>
-                        </div>
-                      </AccordionSummary>
-                      <AccordionDetails>
-                        <div
-                          style={{
-                            marginLeft: "70px",
-                            paddingTop: "0",
-                            paddingBottom: "0",
-                          }}
-                        >
-                          <span style={{ color: "rgba(0,0,0,0.8)" }}>
-                            Our cloud infrastructure services, including SaaS,
-                            PaaS, and microservices-based environments, create a
-                            serverless architecture for data management and
-                            operation optimization.
-                          </span>
-                        </div>
-                      </AccordionDetails>
-                    </Accordion>
-                    <div
-                      style={{
-                        width: "100%",
-                        height: "20px",
-                        marginLeft: "33px",
-                        borderLeft: "1px dashed rgba(0,0,0,0.9)",
-                        display: expanded === "panel2" ? "none" : "flex",
-                      }}
-                    ></div>
-                  </div>
-                  <div>
-                    <Accordion
-                      expanded={expanded === "panel3"}
-                      onChange={handleChange("panel3")}
-                      sx={{
-                        backgroundColor: "transparent",
-                        border: "none",
-                        boxShadow: "none",
-                      }}
-                    >
-                      <AccordionSummary
-                       expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1bh-content"
-                        id="panel1bh-header"
-                      >
-                        <div
-                          style={{
-                            border:
-                              expanded === "panel3" ? "none" : "1px solid gray",
-                            width: "2.5rem",
-                            height: "2.5rem",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            borderRadius: "5px",
-                            padding: "1rem",
-                            fontSize: "17px",
-                            background:
-                              expanded === "panel3" ? "#1A74E9" : "transparent",
-                            color: expanded === "panel3" ? "white" : "black",
-                          }}
-                        >
-                          <span>03</span>
-                        </div>
-                        <div>
-                          <h1
-                            style={{
-                              marginLeft: "32px",
-                              color:
-                                expanded === "panel3"
-                                  ? "#1A74E9"
-                                  : "rgba(0,0,0,0.7)",
-                              fontWeight: "800",
-                            }}
-                          >
-                            PHP Based Website Development
-
-                          </h1>
-                        </div>
-                      </AccordionSummary>
-                      <AccordionDetails>
-                        <div style={{ marginLeft: "70px" }}>
-                          <span style={{ color: "rgba(0,0,0,0.8)" }}>
-                            Boost ROI and modernize operations with our cloud
-                            migration services, transitioning from legacy
-                            architecture to an efficient cloud setup leveraging
-                            Cloud AWS and Azure services for a modernized cloud
-                            experience.
-                          </span>
-                        </div>
-                      </AccordionDetails>
-                    </Accordion>
-                 
-                  </div>
-           
-                </>
-              </div>
-              <div className="cloudMigrateMainSection3BottomRight">
-                {getImage()}
-              </div>
-            </div>
-            <div className="cloudMigrateSection3BottomButtonOutter">
-              <div className="cloudMigrateSection3BottomButton">
-                <Link href="">Talk to Experts</Link>
-                <FaChevronRight />
-              </div>
-            </div>
-          </div>
+         
         </div>
         <Solution />
       </div>

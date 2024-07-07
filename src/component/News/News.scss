@@ -5,34 +5,19 @@
     display: flex;
     gap: 1rem;
     // margin-top: 2.5rem;
-    padding-bottom:8rem;
+    padding-bottom:4rem;
+    overflow: hidden;
+    padding-bottom: 8rem;
   
 
 
   
-    // .NewsLeft{
-    //     width: 33%;
-    //     padding: 1.5rem;
-    //     padding-right: 0px;
-    //     @include flexCol;
-    //     gap: 2rem;
-    //     .newsLeftTitel{
-    //         font-size: 35px;
-    //         font-weight: 600;
-    //         color:rgba(0, 0,0, 0.8)
-
-    //     }
-    //     .newsLeftDes{
-    //         font-size: 17px;
-    //         font-weight: 500;
-    //         color:rgba(0, 0,0, 0.7);
-    //         // letter-spacing: 1px;
-    //         line-height: 27px;
-            
-
-    //     }
-    // }
+   
     .NewsMiddel{
+        width: 100%;
+        overflow: hidden;
+        margin: 0 5%;
+
         .NewsMiddelHeaderContainer{
             width: 100%;
             display: flex;
@@ -67,56 +52,8 @@
             }
 
         }
-        padding: 0 5rem;
 
         width: 100%;
     }
-    // .NewsBottom{
-    //     width: 33%;
-    //     padding: 1rem;
-    //     padding-right: 1rem;
-    //     padding-top: 0px;
-    //     .newsLeftTitelHeder{
-    //         padding-bottom:1rem;
-    //         .newsLeftTitel{
-    //             // margin-top: 100px;
-    //             font-size: 35px;
-    //             font-weight: 600;
-    //             color:rgba(0, 0,0, 0.8);
-                
-                
-                
-    
-    //         }
 
-    //     }
-     
-    //     .newsConatiner{
-    //         display: flex;
-    //         gap: 10px;
-    //         border-bottom: 1px solid rgba(0, 0,0, 0.4);
-    //         padding-bottom: 1rem;
-    //         margin-top: 5px;
-    //         .newsConatinerLeft{
-    //             a{
-    //                 color: #1973E7;
-    //                 font-size: 14px ;
-    //                 font-weight: 600;
-    //         // color:rgba(0, 0,0, 0.8);
-    //         text-decoration: none;
-    //         letter-spacing: 1px;
-
-
-    //             }
-                
-
-    //         }
-    //         .newsConatinerRight{
-    //             img{
-    //                 width: 150px;
-    //             }
-    //         }
-
-    //     }
-    // }
 }

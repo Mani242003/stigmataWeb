@@ -12,7 +12,7 @@ import Home from "./pages/home/home";
 import Services from "./pages/services/Services";
 import Blog from "./pages/blog/blog";
 import Contact from "./pages/contact/contact";
-
+// import ScrollToTop from "react-scroll-to-top";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import DevOps from "./pages/services/devops/DevOps";
@@ -26,7 +26,10 @@ import ServerLess from "./pages/services/serverLess/ServerLess";
 // import Careers from "./pages/Careers/Careers";
 import About from "./pages/about/About";
 import Career from "./pages/Career/Career";
-
+import ManiAPI from "./ManiAPI";
+import Policy from "./pages/Policy/Policy";
+import GoToTop from "./component/GoToTop/GoToTop";
+import ScrollToTop1 from "./component/ScrollToTop/ScrollToTop";
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -50,11 +53,20 @@ const App = () => {
       anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
     });
   }, []);
- 
+
   return (
     <Router>
-      
-      <CookieConsent
+      <ScrollToTop1 />
+
+      {/* <ManiAPI /> */}
+      {/* <div
+        className="scroll-to-top-container"
+        style={{ position: "fixed", left: "0", bottom: "20px", zIndex: "1000" }}
+      >
+        <ScrollToTop smooth />
+      </div> */}
+
+      {/* <CookieConsent
         location="bottom"
         buttonText="OK"
         cookieName="myAwesomeCookieName2"
@@ -69,11 +81,10 @@ const App = () => {
           background: "#1A74E9",
           border: "1px solid white",
           fontSize: "15px",
-          padding:"8px 13px",
-          borderRadius:"5px",
-          fontWeight:'500',
-          marginRight:"3rem"
-
+          padding: "8px 13px",
+          borderRadius: "5px",
+          fontWeight: "500",
+          marginRight: "3rem",
         }}
         expires={150}
       >
@@ -85,23 +96,24 @@ const App = () => {
           {" "}
           We use cookies to deliver the best user experience. By using our
           website, you agree to our{" "}
-          <Link style={{ color: "white" }} to="/privacy policy">
+          <Link style={{ color: "white" }} to="/cookie-policy">
             cookie policy
           </Link>
           .
         </span>
-      </CookieConsent>
+      </CookieConsent> */}
 
       <Routes>
+
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Home />} />
         <Route path="/about-us" element={<About />} />
         {/* <Route path="/services" element={<Services />} /> */}
         <Route path="/mobile-app-development" element={<MobileDevPage />} />
 
-        <Route path="/dev-Ops" element={<DevOps />} />
+        <Route path="/dev-Ops" element={<ServerLess />} />
         <Route path="/cloud-migration" element={<CloudMigrate />} />
-        <Route path="/serverless-computing" element={<ServerLess />} />
+        <Route path="/serverless-computing" element={<DevOps />} />
 
         <Route path="/blog" element={<Blog />} />
         <Route path="/plugin-development" element={<Plugin />} />
@@ -109,8 +121,11 @@ const App = () => {
         <Route path="/artificial-intelligence" element={<AIPage />} />
         <Route path="/software-development" element={<SoftwarePage />} />
         <Route path="/software-development" element={<SoftwarePage />} />
+
+        <Route path="/careers" element={<Career />} />
+        <Route path="/cookie-policy" element={<Policy />} />
+
         
-        <Route path="/careers" element={<Career  />} />
 
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<PageNotFound />} />

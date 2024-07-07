@@ -7,7 +7,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const NewsCustomCard = ({ img, titel, date, link, name }) => {
   return (
-    <div className="N_C_C-conatiner" data-aos="fade-up">
+    <div className="N_C_C-conatiner"  data-aos="fade-up">
       <div className="N_C_C-imgConatiner">
         <img src={img} alt="" />
       </div>

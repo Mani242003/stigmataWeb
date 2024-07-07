@@ -50,13 +50,14 @@ const CloudMigrate = () => {
 
       <div className="cloudMigrateContainer">
         <div className="cloudMigrateMainHeader">
-          <span className="cloudMigrateHeaderText1">
-            Harness Agility and Speed with
-            <br /> Cloud Migration Services
-          </span>
+          <span className="cloudMigrateHeaderText1">Cloud Migration</span>
 
           <span className="cloudMigrateText2">
-            Achieve 99.5% uptime and accelerate operations at 10x speed
+            At Stigmata Techno Solutions, we offer expert cloud migration
+            services that seamlessly transition your business operations to the
+            cloud. Whether you need to move applications, databases, or entire
+            infrastructures, our team ensures a smooth, secure, and efficient
+            migration process.
           </span>
           <div className="cloudMigrateButtonContainer">
             <Link href="">Talk to Experts</Link>
@@ -114,10 +115,7 @@ const CloudMigrate = () => {
           </div>
           <div className="cloudMigrateMainSection2">
             <div className="cloudMigrateSection2Header">
-              <span>
-                Tackling your Toughest Challenges with Stigmata Techno
-                Solution's
-              </span>
+              <span>Why Choose Our Cloud Migration Services?</span>
             </div>
             <>
               <div className="cloudMigrateSection2innerConatiner">
@@ -126,10 +124,64 @@ const CloudMigrate = () => {
                     <img src={orangeDot} alt="" />
 
                     <span className="feaPage-col-1-text-4">
-                      Cloud Deployment Solutions: Transform outdated manual
-                      operations into efficient, automated processes,
-                      significantly reducing maintenance overheads.
+                      <span> Expert Guidance :</span><br/>
+                      Our experienced team provides comprehensive guidance
+                      throughout the migration process. We help you navigate the
+                      complexities of cloud adoption, ensuring that your
+                      migration is aligned with your business goals and IT
+                      strategy.
                     </span>
+                  </div>
+                </div>
+                <div className="cloudMigrateSection2innerRight">
+                  <div className="cloudMigrateSection1LeftBottomContainer">
+                    <img src={blueDot} alt="" />
+
+                    <span className="feaPage-col-1-text-4">
+                      <span> Cost Efficiency :</span>
+                      <br />
+                      By leveraging the scalability and flexibility of cloud
+                      environments, we help you optimize your IT costs. Our
+                      cloud migration services enable you to take advantage of
+                      the cost savings associated with cloud computing.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="cloudMigrateSection2innerConatiner">
+                <div className="cloudMigrateSection2innerLeft">
+                  <div className="cloudMigrateSection1LeftBottomContainer">
+                    <img src={orangeDot} alt="" />
+
+                    <span className="feaPage-col-1-text-4">
+                      <span> Seamless Transition :</span><br/>
+                      We focus on minimizing downtime and disruption to your
+                      operations. Our structured approach ensures that your data
+                      and applications are migrated efficiently and securely,
+                      with minimal impact on your daily activities.
+                    </span>
+                  </div>
+                </div>
+                <div className="cloudMigrateSection2innerRight">
+                  <div className="cloudMigrateSection1LeftBottomContainer">
+                    <img src={blueDot} alt="" />
+
+                    <span className="feaPage-col-1-text-4">
+                      <span>Security and Compliance :</span><br/>
+                      Security is a top priority in our migration process. We
+                      implement robust security measures and ensure compliance
+                      with industry standards, protecting your data throughout
+                      the transition.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="cloudMigrateSection2innerConatiner">
+                <div className="cloudMigrateSection2innerLeft">
+                  <div className="cloudMigrateSection1LeftBottomContainer">
+                    <img src={orangeDot} alt="" />
+
+                  
                   </div>
                 </div>
                 <div className="cloudMigrateSection2innerRight">
@@ -149,9 +201,12 @@ const CloudMigrate = () => {
                     <img src={orangeDot} alt="" />
 
                     <span className="feaPage-col-1-text-4">
-                      Cloud Deployment Solutions: Transform outdated manual
-                      operations into efficient, automated processes,
-                      significantly reducing maintenance overheads.
+                      <span> Cost Efficiency :</span>
+                      <br />
+                      By leveraging the scalability and flexibility of cloud
+                      environments, we help you optimize your IT costs. Our
+                      cloud migration services enable you to take advantage of
+                      the cost savings associated with cloud computing.
                     </span>
                   </div>
                 </div>
@@ -165,59 +220,11 @@ const CloudMigrate = () => {
                     </span>
                   </div>
                 </div>
-              </div>
-              <div className="cloudMigrateSection2innerConatiner">
-                <div className="cloudMigrateSection2innerLeft">
-                  <div className="cloudMigrateSection1LeftBottomContainer">
-                    <img src={orangeDot} alt="" />
-
-                    <span className="feaPage-col-1-text-4">
-                      Cloud Deployment Solutions: Transform outdated manual
-                      operations into efficient, automated processes,
-                      significantly reducing maintenance overheads.
-                    </span>
-                  </div>
-                </div>
-                <div className="cloudMigrateSection2innerRight">
-                  <div className="cloudMigrateSection1LeftBottomContainer">
-                    <img src={blueDot} alt="" />
-
-                    <span className="feaPage-col-1-text-4">
-                      Cloud Migration Consulting: Overcoming performance issues
-                      from resource-intensive legacy systems.
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="cloudMigrateSection2innerConatiner">
-                <div className="cloudMigrateSection2innerLeft">
-                  <div className="cloudMigrateSection1LeftBottomContainer">
-                    <img src={orangeDot} alt="" />
-
-                    <span className="feaPage-col-1-text-4">
-                      Cloud Deployment Solutions: Transform outdated manual
-                      operations into efficient, automated processes,
-                      significantly reducing maintenance overheads.
-                    </span>
-                  </div>
-                </div>
-                <div className="cloudMigrateSection2innerRight">
-                  <div className="cloudMigrateSection1LeftBottomContainer">
-                    <img src={blueDot} alt="" />
-
-                    <span className="feaPage-col-1-text-4">
-                      Cloud Migration Consulting: Overcoming performance issues
-                      from resource-intensive legacy systems.
-                    </span>
-                  </div>
-                </div>
-              </div>
+              </div> */}
             </>
             <div className="cloudMigrateSection2BottomContainer">
               <span className="cloudMigrateSection2BottomText">
-                Stigmata Techno Solution's utilize cloud hyperscalers to create
-                collaborative, interactive, and transparent business
-                architecture ready to tackle technology challenges.
+              Transform your business with our cloud migration services. At Stigmata Techno Solutions, we are committed to helping you harness the full potential of the cloud. Contact us today to learn more about how we can assist with your cloud migration journey.
               </span>
               <div className="cloudMigrateSection2BottomButton">
                 <Link href="">Discuss With Our Experts</Link>
@@ -225,7 +232,7 @@ const CloudMigrate = () => {
               </div>
             </div>
           </div>
-          <div className="cloudMigrateMainSection3">
+          {/* <div className="cloudMigrateMainSection3">
             <div className="cloudMigrateMainSection3Top">
               <span className="cloudMigrateMainSection3Titel">What We Do</span>
               <span className="cloudMigrateMainSection3Des">
@@ -534,14 +541,12 @@ const CloudMigrate = () => {
                 <Link href="">Talk to Experts</Link>
                 <FaChevronRight />
               </div>
-              
             </div>
-          </div>
-          
+          </div> */}
         </div>
       </div>
-      <Count />
-      <ContactForm />
+      {/* <Count /> */}
+      {/* <ContactForm /> */}
       <Footer />
     </section>
   );

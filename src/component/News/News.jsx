@@ -20,20 +20,45 @@ const News = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    cssEase: 'ease-in-out', 
+    cssEase: "ease-in-out",
+
+    responsive: [
+      {
+        breakpoint: 430, // Mobile devices
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+          // Show 1 slide
+        },
+      },
+      {
+        breakpoint: 885, // Tablets
+        settings: {
+          slidesToShow: 2,
+
+          // speed: 500,
+          slidesToScroll: 1,
+
+          // Show 3 slides
+        },
+      },
+      {
+        breakpoint: 1024, // Laptops
+        settings: {
+          slidesToShow: 3, // Show 5 slides
+        },
+      },
+      {
+        breakpoint: Infinity, // Larger screens
+        settings: {
+          slidesToShow: 1, // Show 7 slides
+        },
+      },
+    ],
   };
   return (
     <div className="Newscontainer">
-      {/* <div className="NewsLeft">
-        <span className="newsLeftTitel">What’s up?</span>
-        <span className="newsLeftDes">
-          We are where the tech worlds meet. If you want to know where we are
-          coming next, you can check it out in this section. Or hop on to the
-          next section where you can discover new innovations, trending
-          technologies and smart solutions that’s taking the industries by storm
-          and transforming businesses!
-        </span>
-      </div> */}
       <div className="NewsMiddel">
         <div className="NewsMiddelHeaderContainer" data-aos="fade-up">
           <span className="NewsMiddelHeadertext1">WEEKLY UPDATES</span>
@@ -41,44 +66,54 @@ const News = () => {
           <div className="NewsMiddelHeaderdivider"></div>
         </div>
         <Slider {...settings}>
-          <NewsCustomCard
-            img={img1}
-            titel="Data analytics & designing Power BI dashboard for dairy farm in North Holland"
-            date="10 Aug, 2024"
-            name="Jerome Melkisidak"
-            link=""
-          />
-          <NewsCustomCard
-            img={img2}
-            titel="Data analytics & designing Power BI dashboard for dairy farm in North Holland"
-            date="10 Aug, 2024"
-            name="Jerome Melkisidak"
-            link=""
-          />
+          <div  >
+            <NewsCustomCard
+              img={img1}
+              titel="Data analytics & designing Power BI dashboard for dairy farm in North Holland"
+              date="10 Aug, 2024"
+              name="Jerome Melkisidak"
+              link=""
+            />
+          </div>
+          <div >
+            <NewsCustomCard
+              img={img2}
+              titel="Data analytics & designing Power BI dashboard for dairy farm in North Holland"
+              date="10 Aug, 2024"
+              name="Jerome Melkisidak"
+              link=""
+            />
+          </div>
 
-          <NewsCustomCard
-            img={img3}
-            titel="Data analytics & designing Power BI dashboard for dairy farm in North Holland"
-            date="10 Aug, 2024"
-            name="Jerome Melkisidak"
-            link=""
-          />
+          <div  >
+            <NewsCustomCard
+              img={img3}
+              titel="Data analytics & designing Power BI dashboard for dairy farm in North Holland"
+              date="10 Aug, 2024"
+              name="Jerome Melkisidak"
+              link=""
+            />
+          </div>
 
-          <NewsCustomCard
-            img={img4}
-            titel="Data analytics & designing Power BI dashboard for dairy farm in North Holland"
-            date="10 Aug, 2024"
-            link=""
-            name="Jerome Melkisidak"
-          />
+          <div  >
+            <NewsCustomCard
+              img={img4}
+              titel="Data analytics & designing Power BI dashboard for dairy farm in North Holland"
+              date="10 Aug, 2024"
+              link=""
+              name="Jerome Melkisidak"
+            />
+          </div>
 
-          <NewsCustomCard
-            img={img5}
-            titel="Data analytics & designing Power BI dashboard for dairy farm in North Holland"
-            date="10 Aug, 2024"
-            name="Jerome Melkisidak"
-            link=""
-          />
+          <div>
+            <NewsCustomCard
+              img={img5}
+              titel="Data analytics & designing Power BI dashboard for dairy farm in North Holland"
+              date="10 Aug, 2024"
+              name="Jerome Melkisidak"
+              link=""
+            />
+          </div>
         </Slider>
       </div>
     </div>

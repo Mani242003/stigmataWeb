@@ -7,6 +7,7 @@ import sample2 from "../../assets/images/sample2.png";
 import img1 from "../../assets/images/icons/react.png";
 import img2 from "../../assets/images/icons/fluter.png";
 import img3 from "../../assets/images/icons/wordpress.png";
+import restApi from "../../assets/images/icons/apiLogo.png"
 import { BsFillRecord2Fill } from "react-icons/bs";
 
 const MobileSample = () => {
@@ -46,12 +47,12 @@ const MobileSample = () => {
               <div className="simplicity_bottom_row1_content">
                 <img src={img1} alt="" />
 
-                <span>React Nativ</span>
+                <span>React Native</span>
               </div>
-              <div className="simplicity_bottom_row1_content">
+              {/* <div className="simplicity_bottom_row1_content">
                 <img src={img2} alt="" />
                 <span>Fluter</span>
-              </div>
+              </div> */}
               <div className="simplicity_bottom_row1_content">
                 <img src={img3} alt="" />
                 <span>Wordpress</span>
@@ -70,11 +71,9 @@ const MobileSample = () => {
             Larsen & Tourbo (L&T) – Costal Area Construction
           </span>
           <span className="simplicity_right_text3">
-            Mart Easy is an Andaman island based multiple vendor managed
-            ecommerce product. Mart Easy manages 8 different category of
-            products with several subcategories.
+          Grid Mobile Application Development is an enterprise solution designed to display comprehensive grid progress. It incorporates geolocation features to provide real-time updates on vendor locations and grid construction status.
           </span>
-          <span className="simplicity_rightTechTitel"> Technical Stack :</span>
+          <span className="simplicity_rightTechTitel"> Features :</span>
           <div className="feaPage-col-1-bottom-container">
             <BsFillRecord2Fill color="#5E6FEC" size={26} />
 
@@ -102,13 +101,18 @@ const MobileSample = () => {
                 <span>React Native</span>
               </div>
               <div className="simplicity_bottom_row1_content">
+                <img src={restApi} alt="" />
+
+                <span>Rest Api</span>
+              </div>
+              {/* <div className="simplicity_bottom_row1_content">
                 <img src={img2} alt="" />
                 <span>Fluter</span>
               </div>
               <div className="simplicity_bottom_row1_content">
                 <img src={img3} alt="" />
                 <span>Wordpress</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -5,12 +5,15 @@ import "./Challenges.scss";
 // import content_3Img from "../../Images/challenges/content-3.png";
 // import content_4Img from "../../Images/challenges/content-4.png";
 
-const Challenges = () => {
+const Challenges = ({id}) => {
   return (
     <section className="challenges_wrapper">
-      <div className="challenges_container">
+      <div className= {id==="custom" ?("challenges_container customC"):("challenges_container")}>
         <div className="challenges_header_title_container">
-          <span className="challenges_header_title">Our Principles</span>
+          <span className="challenges_header_title">
+          {
+                id === "custom"  ? ("We believe in"):("Our Principles")
+          }</span>
         </div>
 
         <div className="challenges_main_content">
@@ -18,20 +21,30 @@ const Challenges = () => {
             <div className="challenges_content-1 challenges_content ">
               <div className="challenges_text_container">
                 <span className="challenges_content_title">
-                1. Excellence in Software Development: 
+               {
+                id === "custom"  ?("1. Innovation:"):("1. Excellence in Software Development:")
+               }
+                 
                 </span>
                 <span className="challenges_content_des">
-                We are committed to crafting the best software with a seamless and user-friendly journey for our clients. Our focus on quality ensures that our clients receive solutions that are reliable, efficient, and tailored to their needs.
+                {
+                id === "custom"  ?(" Encouraging creative thinking and problem-solving."):("We are committed to crafting the best software with a seamless and user-friendly journey for our clients. Our focus on quality ensures that our clients receive solutions that are reliable, efficient, and tailored to their needs.")
+               }
+                
                 </span>
               </div>
             </div>
             <div className="challenges_content-2 challenges_content ">
               <div className="challenges_text_container">
                 <span className="challenges_content_title">
-                2. Dedicated Customer Support: 
+                {
+                id === "custom"  ?(" 2. Collaboration:"):("   2. Dedicated Customer Support: ")
+               }
                 </span>
                 <span className="challenges_content_des">
-                Our straightforward and effective customer approach is backed by a team that is equally responsible for supporting our clients at all times. We prioritize clear communication and prompt resolution of any issues.
+                {
+                id === "custom"  ?(" Working together to achieve common goals."):("Our straightforward and effective customer approach is backed by a team that is equally responsible for supporting our clients at all times. We prioritize clear communication and prompt resolution of any issues.")
+               }
                 </span>
               </div>
             </div>

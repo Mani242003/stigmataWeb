@@ -47,56 +47,36 @@ const ServerLess = () => {
     <section className="serverLessWrapper">
       <Navigation />
       <div className="serverLessContainer">
-      <div className="serverLessMainHeader">
+        <div className="serverLessMainHeader">
           <span className="serverLessHeaderText1">
-          DevOps Service Rapid and<br/>  Reliable App Delivery
+            DevOps Application <br /> Development
           </span>
-          
 
           <span className="serverLessHeaderText2">
-          Experience the Future of Agile Operations with Cloud DevOps Services! Embrace innovation and efficiency as Cyfuture Cloud integrates cutting-edge technology into your development and operations workflows.
+            At Stigmata Techno Solutions, we specialize in delivering agile
+            DevOps services designed to streamline your development and
+            operations processes.
           </span>
           <div className="serverLessButtonContainer">
-          <Link   href="">Talk to Experts </Link>
-          <FaChevronRight />
+            <Link href="">Talk to Experts </Link>
+            <FaChevronRight />
           </div>
         </div>
         <div className="serverLessMainHeaderSection">
           <div className="cloudMigrateMainSection1">
             <div className="cloudMigrateMainSection1Left">
               <span className="cloudMigrateSection1LeftTitel">
-                Maximize the Value of Cloud with Expert Cloud Services
+                Automate your operational tool onboarding access & deployment
+                process
               </span>
-              <div className="cloudMigrateSection1LeftBottomContainer">
-                <BsFillRecord2Fill color="#5E6FEC" size={26} />
-
-                <span className="feaPage-col-1-text-4">
-                  Boost efficiency by 60%
-                </span>
-              </div>
-              <div className="cloudMigrateSection1LeftBottomContainer">
-                <BsFillRecord2Fill color="#5E6FEC" size={26} />
-
-                <span className="feaPage-col-1-text-4">
-                  Automate tasks by 40%
-                </span>
-              </div>
-
-              <div className="cloudMigrateSection1LeftBottomContainer">
-                <BsFillRecord2Fill color="#5E6FEC" size={26} />
-
-                <span className="feaPage-col-1-text-4">
-                  10x faster time to market
-                </span>
-              </div>
+        
             </div>
             <div className="cloudMigrateMainSection1Right">
               <span>
-                Transform your enterprise’s operational dynamics, eliminate
-                latency, and improve infrastructure efficiency, with Integra’s
-                cloud migration consulting services, designed to enhance
-                performance while reducing total cost of ownership (TCO).
-                <br />
+                Our comprehensive DevOps solutions empower your organization to
+                innovate faster, maintain higher quality standards, and achieve
+                operational excellence.
+                {/* <br />
                 <br />
                 Our cloud architecture services are tailored to ensure security,
                 scalability, and continuity, integrating seamlessly with
@@ -104,28 +84,29 @@ const ServerLess = () => {
                 By leveraging cloud deployment solutions that focus on
                 infrastructure efficiency and innovative pricing models like
                 pay-per-use, Integra enhances cloud ROI and delivers consistent,
-                on-demand user experiences.
+                on-demand user experiences. */}
               </span>
             </div>
           </div>
           <div className="cloudMigrateMainSection2">
             <div className="cloudMigrateSection2Header">
               <span>
-                Tackling your Toughest Challenges with Stigmata Techno
-                Solution's
+                Tackling your Operational Challenges with Stigmata Techno
+                Solutions
               </span>
             </div>
             <>
-         
               <div className="cloudMigrateSection2innerConatiner">
                 <div className="cloudMigrateSection2innerLeft">
                   <div className="cloudMigrateSection1LeftBottomContainer">
                     <img src={orangeDot} alt="" />
 
                     <span className="feaPage-col-1-text-4">
-                      Cloud Deployment Solutions: Transform outdated manual
-                      operations into efficient, automated processes,
-                      significantly reducing maintenance overheads.
+                      <span> Agile Development: </span> <br />
+                      Our approach integrates agile methodologies, allowing your
+                      development teams to work more efficiently and
+                      collaboratively. We help you adopt agile practices to
+                      accelerate project timelines and enhance flexibility.
                     </span>
                   </div>
                 </div>
@@ -134,8 +115,15 @@ const ServerLess = () => {
                     <img src={blueDot} alt="" />
 
                     <span className="feaPage-col-1-text-4">
-                      Cloud Migration Consulting: Overcoming performance issues
-                      from resource-intensive legacy systems.
+                      <span>
+                        Continuous Integration & Continuous Delivery (CI/CD) :
+                      </span>{" "}
+                      <br />
+                      We implement CI/CD pipelines that automate code
+                      integration and deployment, ensuring faster delivery and
+                      higher code quality. Our CI/CD solutions minimize manual
+                      interventions and reduce the risk of errors, enabling
+                      seamless and reliable software releases.
                     </span>
                   </div>
                 </div>
@@ -146,9 +134,12 @@ const ServerLess = () => {
                     <img src={orangeDot} alt="" />
 
                     <span className="feaPage-col-1-text-4">
-                      Cloud Deployment Solutions: Transform outdated manual
-                      operations into efficient, automated processes,
-                      significantly reducing maintenance overheads.
+                      <span> Continuous Testing :</span>
+                      <br />
+                      Quality assurance is a critical component of our DevOps
+                      strategy. We establish continuous testing frameworks that
+                      automate testing processes, providing rapid feedback and
+                      ensuring your code is always production-ready.
                     </span>
                   </div>
                 </div>
@@ -157,8 +148,47 @@ const ServerLess = () => {
                     <img src={blueDot} alt="" />
 
                     <span className="feaPage-col-1-text-4">
-                      Cloud Migration Consulting: Overcoming performance issues
-                      from resource-intensive legacy systems.
+                      <span> Continuous Security :</span>
+                      <br />
+                      Security is integrated into every stage of the development
+                      lifecycle. Our DevSecOps approach embeds security
+                      practices within the DevOps pipeline, ensuring your
+                      applications are secure from the ground up. We implement
+                      automated security checks and compliance validations to
+                      protect your systems against vulnerabilities.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="cloudMigrateSection2innerConatiner">
+                <div className="cloudMigrateSection2innerLeft">
+                  <div className="cloudMigrateSection1LeftBottomContainer">
+                    <img src={orangeDot} alt="" />
+
+                    <span className="feaPage-col-1-text-4">
+                      <span> Infrastructure as Code (IaC) :</span>
+                      <br />
+                      We leverage IaC to manage and provision your
+                      infrastructure through code, enabling consistent and
+                      scalable environments. Our IaC solutions ensure that your
+                      infrastructure is version-controlled and easily
+                      replicable, reducing configuration drifts and enhancing
+                      deployment efficiency.
+                    </span>
+                  </div>
+                </div>
+                <div className="cloudMigrateSection2innerRight">
+                  <div className="cloudMigrateSection1LeftBottomContainer">
+                    <img src={blueDot} alt="" />
+
+                    <span className="feaPage-col-1-text-4">
+                      <span>Monitoring and Logging :</span>
+                      <br />
+                      Our DevOps services include robust monitoring and logging
+                      solutions that provide real-time insights into system
+                      performance and health. We help you implement
+                      comprehensive monitoring tools to detect issues early,
+                      optimize performance, and maintain high availability.
                     </span>
                   </div>
                 </div>
@@ -180,19 +210,7 @@ const ServerLess = () => {
             <div className="cloudMigrateMainSection3Top">
               <span className="cloudMigrateMainSection3Titel">What We Do</span>
               <span className="cloudMigrateMainSection3Des">
-                Stigmata offers a comprehensive suite of business-focused cloud
-                transformation services, spanning across private, public,
-                hybrid, and multi-cloud environments. Our team specializes in
-                cloud consulting services, assessing legacy architectures and
-                crafting strategic roadmaps for transformation. With expertise
-                in cloud application development, we facilitate seamless
-                migrations to advanced cloud environments, incorporating cloud
-                AWS services and Azure services for robust, scalable solutions.
-                As a cloud solutions provider, we provide 24/7 managed support
-                to help businesses accelerate technology adoption. Our
-                innovative use of cloud AI/ML technologies and custom cloud
-                products further enhances operational efficiency and agility on
-                the cloud.
+              Transform your development and operations with our expert DevOps services. Partner with Stigmata Techno Solutions to drive innovation, efficiency, and growth within your organization. Contact us today to learn more about how our DevOps solutions can benefit your business.
               </span>
             </div>
 
@@ -243,16 +261,15 @@ const ServerLess = () => {
                               fontWeight: "800",
                             }}
                           >
-                            Cloud Transformation
+                            
+                            Faster Time-to-Market
                           </h1>
                         </div>
                       </AccordionSummary>
                       <AccordionDetails>
                         <div style={{ marginLeft: "70px" }}>
                           <span style={{ color: "rgba(0,0,0,0.8)" }}>
-                            Leverage our cloud transformation solutions to
-                            advance towards robust, end-to-end, multi-tier cloud
-                            platforms
+                          Accelerate your software development lifecycle and deliver new features to market faster.
                           </span>
                         </div>
                       </AccordionDetails>
@@ -312,7 +329,7 @@ const ServerLess = () => {
                               fontWeight: "800",
                             }}
                           >
-                            Cloud Infrastructure
+                           Improved Collaboration
                           </h1>
                         </div>
                       </AccordionSummary>
@@ -325,10 +342,7 @@ const ServerLess = () => {
                           }}
                         >
                           <span style={{ color: "rgba(0,0,0,0.8)" }}>
-                            Our cloud infrastructure services, including SaaS,
-                            PaaS, and microservices-based environments, create a
-                            serverless architecture for data management and
-                            operation optimization.
+                           Enhance communication and collaboration between development, operations, and security teams.
                           </span>
                         </div>
                       </AccordionDetails>
@@ -387,18 +401,14 @@ const ServerLess = () => {
                               fontWeight: "800",
                             }}
                           >
-                            Cloud AWS and Azure services
+                            Higher Quality Code
                           </h1>
                         </div>
                       </AccordionSummary>
                       <AccordionDetails>
                         <div style={{ marginLeft: "70px" }}>
                           <span style={{ color: "rgba(0,0,0,0.8)" }}>
-                            Boost ROI and modernize operations with our cloud
-                            migration services, transitioning from legacy
-                            architecture to an efficient cloud setup leveraging
-                            Cloud AWS and Azure services for a modernized cloud
-                            experience.
+                          Ensure your code is continuously tested and secured, resulting in higher quality and more reliable applications.
                           </span>
                         </div>
                       </AccordionDetails>
@@ -457,18 +467,14 @@ const ServerLess = () => {
                               fontWeight: "800",
                             }}
                           >
-                            Cloud Migration
+                            Cost Efficiency 
                           </h1>
                         </div>
                       </AccordionSummary>
                       <AccordionDetails>
                         <div style={{ marginLeft: "70px" }}>
                           <span style={{ color: "rgba(0,0,0,0.8)" }}>
-                            Boost ROI and modernize operations with our cloud
-                            migration services, transitioning from legacy
-                            architecture to an efficient cloud setup leveraging
-                            Cloud AWS and Azure services for a modernized cloud
-                            experience.
+                          Reduce operational costs by automating repetitive tasks and optimizing resource usage.
                           </span>
                         </div>
                       </AccordionDetails>
@@ -487,26 +493,20 @@ const ServerLess = () => {
               </div>
             </div>
           </div>
-          <Count />
-          
+          {/* <Count /> */}
+
           <div className="cloudMigrateeFqa">
-        <span className="cloudMigrateFqaHeaderText">
-          Serverless computing Service FAQs
-        </span>
-      
-       {/* {
+            {/* <span className="cloudMigrateFqaHeaderText">
+              Serverless computing Service FAQs
+            </span> */}
+
+            {/* {
           devOpsFaq.map((item)=><CommonAccordian key={item.id} data ={item} />)
 
           
         } */}
-        <AccordionSection array={devOpsFaq}/>
-        
-        
-       
-      </div>
-
-     
-          
+            {/* <AccordionSection array={devOpsFaq} /> */}
+          </div>
         </div>
       </div>
       <ContactForm />

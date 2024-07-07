@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
-// import { TfiWorld } from "react-icons/tfi";
+import { TfiWorld } from "react-icons/tfi";
 
 // import { FaBars, FaChevronDown, FaLocationDot } from "react-icons/fa6";
 // import { IoSearchOutline, IoTime } from "react-icons/io5";
@@ -9,7 +9,7 @@ import "./Navbar.scss";
 // import { FaTwitter } from "react-icons/fa";
 // import { FaLinkedin } from "react-icons/fa";
 // import { FaYoutube } from "react-icons/fa";
-// import { IoIosSearch } from "react-icons/io";
+import { IoIosSearch } from "react-icons/io";
 // import { FaRegUserCircle } from "react-icons/fa";
 // import { CiMenuBurger } from "react-icons/ci";
 import { IoMdMenu } from "react-icons/io";
@@ -23,7 +23,7 @@ import ProductMenu from "../ProductMenu/ProductMenu";
 import ComapnyMenu from "../ComapanyMenu/ServicesMenu";
 import Insights from "../Insights/ServicesMenu";
 
-const Navbar = ({ toggleDrawer, toggleGalleryDrawer, routes,homeMarque }) => {
+const Navbar = ({ toggleDrawer, toggleGalleryDrawer, routes,homeMarque ,isOpen}) => {
   const [marqueIsOpen, setmarqueIsOpen] = useState(true);
   return (
     <section className="nav_wrapper">
@@ -55,7 +55,7 @@ const Navbar = ({ toggleDrawer, toggleGalleryDrawer, routes,homeMarque }) => {
           <div className="NavTopAnnouncementinner">
           <span className="StaticText">
                 {" "}
-                Swift AI Integration and Deployment with Quixl, AI accelerator. <Link to="./contact">Request a Demo</Link>
+                Driven by Innovation, United by Expertise <Link to="/contact"> Request a Demo</Link>
                 
               </span>
 
@@ -97,18 +97,7 @@ const Navbar = ({ toggleDrawer, toggleGalleryDrawer, routes,homeMarque }) => {
                   return <Link to={route.link}>{route.name}</Link>;
                 })}
 
-                {/* <TfiWorld
-                  size={20}
-                  color="black"
-                  opacity={0.6}
-                  style={{ cursor: "pointer" }}
-                /> */}
-                {/* <FaRegUserCircle
-                  size={20}
-                  color="black"
-                  opacity={0.6}
-                  style={{ cursor: "pointer" }}
-                /> */}
+             
 
                 <button>Schedule a Call</button>
                 <div className="NavGAlleryButton" onClick={toggleGalleryDrawer}>
@@ -117,21 +106,11 @@ const Navbar = ({ toggleDrawer, toggleGalleryDrawer, routes,homeMarque }) => {
               </div>
             </div>
             <div className="NavDrawerButton">
-              {/* <TfiWorld
-                size={20}
-                color="black"
-                opacity={0.6}
-                style={{ cursor: "pointer" }}
-              /> */}
-              {/* <FaRegUserCircle
-                size={20}
-                color="black"
-                opacity={0.6}
-                style={{ cursor: "pointer" }}
-              /> */}
+
+
 
               <div className="NavGAlleryButton" onClick={toggleDrawer}>
-                <IoMdMenu />
+<IoMdMenu />
               </div>
             </div>
           </div>

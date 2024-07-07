@@ -39,8 +39,7 @@ const GalleryDrawer = ({ isOpenGallery, toggleGalleryDrawer }) => {
           <div className="gallerLogoConatiner">
             <img src={logo} alt="" className="gallerLogo" />
             <span className="gallerDes">
-              Explore how AI expectations can become realities within your
-              organization.
+            "Transforming Ideas into Reality with Excellence"
             </span>
           </div>
 
@@ -53,16 +52,16 @@ const GalleryDrawer = ({ isOpenGallery, toggleGalleryDrawer }) => {
           </div>
           <span className="gallerHeadTittel">Working Hours</span>
           <div className="gallerworkingHourConatiner">
-            <span className="gallerDayText">Mone - Fri:</span>
-            <span className="gallerTimeText"> 09:00 - 06:00</span>
+            <span className="gallerDayText">Mon - Fri:</span>
+            <span className="gallerTimeText"> 11:00 AM - 8:00 PM</span>
           </div>
           <div className="gallerworkingHourConatiner">
-            <span className="gallerDayText">Mone - Fri:</span>
-            <span className="gallerTimeText"> 09:00 - 06:00</span>
+            <span className="gallerDayText">Saturday : </span>
+            <span className="gallerTimeText"> 11:00 AM - 06:00 PM</span>
           </div>
           <div className="gallerworkingHourConatiner">
-            <span className="gallerDayText">Mone - Fri:</span>
-            <span className="gallerTimeText"> 09:00 - 06:00</span>
+            <span className="gallerDayText">Sunday : </span>
+            <span className="gallerTimeText"> 11:00 AM - 02:00 PM</span>
           </div>
         </Scrollbars>
       </div>

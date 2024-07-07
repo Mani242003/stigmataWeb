@@ -20,44 +20,40 @@ const Plugin = () => {
       <div className="pluginContainer">
         <div className="pluginMainHeader">
           <span className="pluginHeaderText1">
-            DevOps Service Rapid and
-            <br /> Reliable App Delivery
+          Plugin Development <br/>Experts
           </span>
 
           <span className="pluginHeaderText2">
-            Experience the Future of Agile Operations with Cloud DevOps
-            Services! Embrace innovation and efficiency as Cyfuture Cloud
-            integrates cutting-edge technology into your development and
-            operations workflows.
+          At Stigmata Techno Solutions, we specialize in developing custom plugins tailored to enhance the functionality and performance of your business applications. Our innovative development approach and extensive experience with <span>ATLASSIAN tools (Confluence, JIRA, BitBucket, DevOps, SonarQube, Jenkins, and governance & compliance)</span> ensure that your plugins meet your specific needs.
           </span>
           <div className="pluginButtonContainer">
-            <Link href="">HIRE OUR PLUGIN ENGINEERS! </Link>
+            <Link href="">Talk to Experts</Link>
             <FaChevronRight />
           </div>
         </div>
         <HoverCard />
         <div className="PluginPageSample">
           <div className="PluginPageSampleheader">
-            <span>Our Sample Work</span>
+            <span>Our Works</span>
             <div className="PluginPageSampleDivider"></div>
           </div>
           
 
           <PluginSample />
         </div>
-        <TechBrains />
-        <CustomerSlide />
-        <div className="pluginPageFqa">
+        {/* <TechBrains />
+        <CustomerSlide /> */}
+        {/* <div className="pluginPageFqa">
         <span className="mobilePageFqaHeaderText">
           Cloud DevOps Service FAQs
         </span>
         <AccordionSection  array={devOpsFaq}/>
         
-      </div>
+      </div> */}
 
         
       </div>
-      <ContactForm />
+      {/* <ContactForm /> */}
       <Footer />
     </section>
   );

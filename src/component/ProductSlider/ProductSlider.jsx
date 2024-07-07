@@ -36,27 +36,30 @@ const ProductSlider = () => {
   };
   return (
     <section className="P_S-wrapper">
-      <div className="P_S-container" >
-        
+      <div className="P_S-container">
         <div className="P_S-headerContainer">
-         
           <div className="cloudMigrateMainSection2">
             <div className="cloudMigrateSection2Header">
               <span>
-              Unlock the full potential of your digital journey with Stigmata Techno Solutions
+                Can we bring the company to down in a single line ? Stigmata
+                Techno Solutions
               </span>
             </div>
             <>
-         
               <div className="cloudMigrateSection2innerConatiner">
                 <div className="cloudMigrateSection2innerLeft">
                   <div className="cloudMigrateSection1LeftBottomContainer">
                     <img src={orangeDot} alt="" />
 
                     <span className="feaPage-col-1-text-4">
-                      Cloud Deployment Solutions: Transform outdated manual
-                      operations into efficient, automated processes,
-                      significantly reducing maintenance overheads.
+                      <span>DevOps :</span>
+                      <br />
+                      Our agile DevOps services empower companies to automate
+                      their entire development and operations processes
+                      intelligently. This approach ensures the creation of
+                      high-quality, secure code through agile development,
+                      Continuous Integration, Continuous Security, Continuous
+                      Testing, and Continuous Delivery.
                     </span>
                   </div>
                 </div>
@@ -65,8 +68,14 @@ const ProductSlider = () => {
                     <img src={blueDot} alt="" />
 
                     <span className="feaPage-col-1-text-4">
-                      Cloud Migration Consulting: Overcoming performance issues
-                      from resource-intensive legacy systems.
+                      <span> Web Application Development :</span>
+                      <br />
+                      We are experts in developing web applications with
+                      state-of-the-art technology, and we have a great deal of
+                      experience with Java frameworks. Our methodology
+                      guarantees dependable, expandable, and efficient web
+                      solutions customized to fulfill your business
+                      requirements.
                     </span>
                   </div>
                 </div>
@@ -77,9 +86,13 @@ const ProductSlider = () => {
                     <img src={orangeDot} alt="" />
 
                     <span className="feaPage-col-1-text-4">
-                      Cloud Deployment Solutions: Transform outdated manual
-                      operations into efficient, automated processes,
-                      significantly reducing maintenance overheads.
+                      <span>Cloud Migration :</span>
+                      <br />
+                      Planning to move your workloads to the cloud but unsure
+                      where to start? Stigmata Techno Solutions specializes in
+                      migrating your servers, databases, applications, and
+                      emails to cloud, dedicated, and virtual environments,
+                      making the transition seamless and secure.
                     </span>
                   </div>
                 </div>
@@ -88,8 +101,50 @@ const ProductSlider = () => {
                     <img src={blueDot} alt="" />
 
                     <span className="feaPage-col-1-text-4">
-                      Cloud Migration Consulting: Overcoming performance issues
-                      from resource-intensive legacy systems.
+                      <span>Mobile App Development :</span>
+                      <br />
+                      With extensive expertise in Java frameworks, we excel in
+                      using React Native for mobile app development. This hybrid
+                      approach ensures cross-platform compatibility, providing
+                      cost-effective and timely solutions. The robust React
+                      Native community support further enhances development
+                      efficiency.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="cloudMigrateSection2innerConatiner">
+                <div className="cloudMigrateSection2innerLeft">
+                  <div className="cloudMigrateSection1LeftBottomContainer">
+                    <img src={orangeDot} alt="" />
+
+                    <span className="feaPage-col-1-text-4">
+                      <span>Plugin Development :</span>
+                      <br />
+                      We develop customized plugins tailored to your business
+                      applications. Our innovative development approach and
+                      extensive experience with ATLASSIAN tools (Confluence,
+                      JIRA, BitBucket, DevOps, SonarQube, Jenkins, and
+                      governance & compliance) ensure that your plugins meet
+                      your specific needs. If you got any customised plugin
+                      requirement, Feel free to reach us. We would be happy to
+                      develop.
+                    </span>
+                  </div>
+                </div>
+                <div className="cloudMigrateSection2innerRight">
+                  <div className="cloudMigrateSection1LeftBottomContainer">
+                    <img src={blueDot} alt="" />
+
+                    <span className="feaPage-col-1-text-4">
+                      <span>Software Application Development :</span>
+                      <br />
+                      At Stigmata Techno Solutions, we specialize in the full
+                      lifecycle of software application development, from
+                      analysis and design to deployment and security testing,
+                      addressing and automating client pain points. . We create
+                      custom software solutions to tackle everyday business
+                      challenges. efficiency.
                     </span>
                   </div>
                 </div>
@@ -97,7 +152,21 @@ const ProductSlider = () => {
             </>
             <div className="cloudMigrateSection2BottomContainer">
               <span className="cloudMigrateSection2BottomText">
-              Stigmata Techno Solutions Is A 9+ Year Aged Firm Rendering Software, IT Development Services To Global Customers. We Are Specialized In Developing Applications, Digital Transformation For Specific Industries Like Heavy Construction Companies, Power Transmission & Distribution, Financial Institutions (Governance & Compliance Handling PII Data) And Securing Organisations Cloud Environment (ClouSec : CSPM Tool – Cloud Security). Our Key Focus Is To Provide World-Class Quality Service To Our Customers With Utmost Focus On Their Needs And To Ensure That Technology Supports Their Business Growth. We Would Be Happy To Get Associated With Your Esteemed Organization On Your Digital Transformation / Automation Reducing Manual Efforts And Cost.
+                Stigmata Techno Solutions Is A 9+ Year Aged Firm Rendering
+                Software, IT Development Services To Global Customers. We Are
+                Specialized In Developing Applications, Digital Transformation
+                For Specific Industries Like{" "}
+                <span>
+                  Heavy Construction Companies, Power Transmission &
+                  Distribution, Financial Institutions (Governance & Compliance
+                  Handling PII Data) And Securing Organisations Cloud
+                  Environment (ClouSec : CSPM Tool – Cloud Security)
+                </span>
+                . Our Key Focus Is To Provide World-Class Quality Service To Our
+                Customers With Utmost Focus On Their Needs And To Ensure That
+                Technology Supports Their Business Growth. We Would Be Happy To
+                Get Associated With Your Esteemed Organization On Your Digital
+                Transformation / Automation Reducing Manual Efforts And Cost.
               </span>
               <div className="cloudMigrateSection2BottomButton">
                 <Link to="/contact">Get Started</Link>
@@ -105,8 +174,6 @@ const ProductSlider = () => {
               </div>
             </div>
           </div>
-
-        
         </div>
         <div className="productBackground">
           <div className="video_header">
@@ -115,8 +182,8 @@ const ProductSlider = () => {
             </span>
           </div>
           <div
-            style={{ textAlign: "end", marginRight: "100px" }}
-            className="ProductNextBackButtonContainer"
+           
+            className="ProductNextBackButtonTopContainer"
           >
             <button className="button" onClick={previous}>
               <FaArrowLeft />
@@ -126,7 +193,7 @@ const ProductSlider = () => {
             </button>
           </div>
 
-          <div style={{ height: "100vh", width: "100%", overflow: "hidden" }}>
+          <div >
             <Slider
               {...settings}
               ref={(slider) => {
@@ -138,9 +205,16 @@ const ProductSlider = () => {
                   key={1}
                   num="01"
                   name="ClouSec"
+                   des="ClouSec is the 1st AI based CSPM (Cloud Security Posture Management) tool with CCOE (Cloud Center of Excellence) concepts to provide significant cloud infrastructure insights through Security misconfigurations, Vulnerabilities, Threats, Comprehensive account view, Configuration issues during account setup, Cost management, Asset management, Periodic audit of user mapping to cloud accounts (remove / retain) with audit log and Cost management features."
                   title="Modernize Cloud Security. Outsmart Attackers."
-                  des=" ClouSec in an AI/Pass based cloud security platform Posture management tool to analyze your, Security, Regulatory misconfigurations ,Suppression workflow, Cloud Inventory smart monitoring, Sensitive information handling,  Periodic reports & Alerts."
-                  link="https://youtu.be/-vLYTijz370"
+//                   des="ClouSec is the 1st AI based CSPM (Cloud Security Posture Management) tool with CCOE (Cloud Center of Excellence) concepts to provide significant cloud infrastructure insights through Security misconfigurations, Vulnerabilities, Threats, Comprehensive account view, Configuration issues, Asset management, Periodic audit of user mapping to cloud accounts (remove / retain) and Cost management features. 
+// centralised, integrated approach enabling
+// security misconfigurations, cost
+// management, comprehensive account
+// view, cloud asset management with
+// extensive logs"
+
+                  link="-vLYTijz370"
                   url="https://clousec.io/"
                 />
               </div>
@@ -151,8 +225,8 @@ const ProductSlider = () => {
                   name="Happiedineer"
                   title="Modernize your Restaurants with Automation & Data driven recommendation."
                   des="Happiedinner is a Light weight Serverless architecture framework Providing
-                  digitalized Wow experience to end customers through, Digital menu's with ordering, Data Driven Recommendation, Digitalized Kictens,Last minute deals,Digital Payments."
-                  link="https://youtu.be/jEwftk8SNuA?si=spx8pH619psPFTQf"
+                  digitalized Wow experience to end customers through, Digital menu's with ordering, Data Driven Recommendation, Digitalized Kitchen's, Last minute deals, Digital Payments."
+                  link="jEwftk8SNuA"
                   url="https://clousec.io/"
                 />
               </div>
@@ -162,13 +236,24 @@ const ProductSlider = () => {
                   num="03"
                   name="PII Protector"
                   title="SAFEguard Personally Identifiable Information (PII) & be Compliant."
-                  des="In this data driven age, ensuring security and safeguarding individual's data have become Paramount concerns.  We handle PII information through, We  Define, Detect, User Acters, Mask, Send email Alert's ,Required logs for Auditing, Reports."
-                  link="https://youtu.be/-vLYTijz370"
+                  des="In this data driven age, ensuring security and safeguarding individual's data have become Paramount concerns.  We handle PII information through, Define, Detect, User Access , Mask, Send email Alert's, Required logs for Auditing, Reports."
+                  link="-vLYTijz370"
                   url="https://clousec.io/"
                 />
               </div>
             </Slider>
           </div>
+          <div
+           
+           className="ProductNextBackButtonBottomContainer"
+         >
+           <button className="button" onClick={previous}>
+             <FaArrowLeft />
+           </button>
+           <button className="button" onClick={next}>
+             <FaArrowRight />
+           </button>
+         </div>
         </div>
       </div>
     </section>

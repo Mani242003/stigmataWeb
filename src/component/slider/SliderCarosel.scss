@@ -84,9 +84,135 @@
   }
   .socialLink4 {
     @include homePageSocialLink;
+    display: none;
 
     background: #cccccc;
   }
+}
+
+/* Mobile Styles (up to $tablet-breakpoint) */
+@media (max-width: #{$tablet-breakpoint - 1}) {
+  .silder_opacityDiv {
+    background: none;
+    top: 2rem;
+    left: 0rem;
+    width: 100vw;
+    padding-left: 0.9rem;
+    text-align: start;
+    span {
+      font-size: 38px;
+      font-weight: 800;
+      // color: white;
+      // letter-spacing: 1px;
+      // font-family: 'Nunito', sans-serif;
+ 
+  
+    }
+    .silder_customText {
+      width: 96%;
+    
+      margin: 0px 0;
+      margin-top: 2.3rem;
+      height: 60px;
+   
+      border-left: none;
+      text-align: center;
+  
+      span {
+        font-size: 22px;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 1px;
+        text-align: start;
+      }
+    }
+    div {
+      margin-top: 0rem;
+  
+      font-size: 18px;
+      letter-spacing: 1px;
+      .home_slider_buttonContainer {
+        @include ButtonCommon;
+        padding: 10px 8px;
+        margin-top: 3rem;
+      }
+  
+      img {
+        // position:absol;
+        height: 120px;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+}
+
+/* Tablet Styles ($tablet-breakpoint to $desktop-breakpoint) */
+@media (min-width: #{$tablet-breakpoint}) and (max-width: #{$desktop-breakpoint - 1}) {
+  .silder_opacityDiv {
+    // background: none;
+    // top: 2rem;
+    height: 26rem;
+    // left: 0rem;
+    // width: 100vw;
+    // padding-left: 0.9rem;
+    // text-align: start;
+    span {
+      // font-size: 38px;
+      // font-weight: 800;
+      // color: white;
+      // letter-spacing: 1px;
+      // font-family: 'Nunito', sans-serif;
+ 
+  
+    }
+    .silder_customText {
+      width: 80%;
+    
+      margin: 2rem 0;
+      // margin-top: 2.3rem;
+      // height: 60px;
+   
+      // border-left: none;
+      // text-align: center;
+  
+      span {
+        // font-size: 22px;
+        // font-weight: 500;
+        // color: white;
+        // letter-spacing: 1px;
+        // text-align: start;
+      }
+    }
+    div {
+      // margin-top: 0rem;
+  
+      // font-size: 18px;
+      // letter-spacing: 1px;
+      // .home_slider_buttonContainer {
+      //   @include ButtonCommon;
+      //   padding: 10px 8px;
+      //   margin-top: 3rem;
+      // }
+  
+      img {
+        // position:absol;
+        // height: 120px;
+        // margin-top: 1rem;
+      }
+    }
+  }
+
+}
+
+/* Desktop Styles ($desktop-breakpoint to $large-screen-breakpoint) */
+@media (min-width: #{$desktop-breakpoint}) and (max-width: #{$large-screen-breakpoint - 1}) {
+
+}
+
+/* Large Screen Styles ($large-screen-breakpoint and up) */
+@media (min-width: #{$large-screen-breakpoint}) {
+
 }
 
 

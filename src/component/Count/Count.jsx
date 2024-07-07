@@ -29,6 +29,10 @@ const Count = () => {
           <span>{text2}</span>
   
         </div>
+        <div className="customCountRightResponsiveConatiner">
+          <span>{text1}{text2}</span>
+  
+        </div>
   
   
       </div>
@@ -62,7 +66,7 @@ const Count = () => {
 
                 <CustomCountConatiner num={4} text1="Products"  />
                 <div className="countButtonConatiner">
-                <Link >MORE ABOUT STIGMATA</Link>
+                <Link to="/about-us" >MORE ABOUT STIGMATA</Link>
                 <FaChevronRight />
                 </div>
 

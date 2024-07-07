@@ -13,7 +13,7 @@ const Problem = () => {
       <div className="problem-container">
         <div className="problem-header-container">
           <span className="problem-header-titel">
-          What are the Benefits of Cloud DevOps Service?
+          Our Serverless Computing Services
           </span>
          
         </div>
@@ -27,12 +27,10 @@ const Problem = () => {
               </div>
               <div className="problem-content-right">
                 <span className="problem-content-right-title">
-                  Fragmented Security Findings
+                Application Development
                 </span>
                 <span className="problem-content-right-des">
-                  Fragmented security findings across an organization's
-                  infrastructure can lead to increased exposure to cyber
-                  threats.
+We design and develop serverless applications that are tailored to your business needs. Our expert developers utilize the latest serverless technologies to build robust and scalable applications.
                 </span>
               </div>
             </div>
@@ -44,13 +42,10 @@ const Problem = () => {
               </div>
               <div className="problem-content-right">
                 <span className="problem-content-right-title">
-                  Lack of Centralized Visibility
+                Migration to Serverless
                 </span>
                 <span className="problem-content-right-des">
-                  A lack of centralized visibility into an organization's IT
-                  infrastructure can result in blind spots, making it
-                  challenging to monitor and secure the entire environment
-                  effectively.
+                Transitioning to a serverless architecture can be complex. Our team provides end-to-end migration services, ensuring a seamless transition from traditional architectures to serverless computing with minimal disruption to your operations.
                 </span>
               </div>
             </div>
@@ -62,12 +57,10 @@ const Problem = () => {
               </div>
               <div className="problem-content-right">
                 <span className="problem-content-right-title">
-                  Time-Consuming Analysis
+                Function as a Service (FaaS)
                 </span>
                 <span className="problem-content-right-des">
-                  Time-consuming analysis can delay critical decision-making,
-                  hinder productivity, and strain resources, particularly when
-                  dealing with vast datasets or complex problems.
+                We implement FaaS solutions that allow you to run your code in response to events without provisioning or managing servers. Our FaaS services support various programming languages and runtime environments.
                 </span>
               </div>
             </div>
@@ -81,13 +74,11 @@ const Problem = () => {
               </div>
               <div className="problem-content-right">
                 <span className="problem-content-right-title">
-                  Limited Collaboration and Communication
+                Backend Services 
+
                 </span>
                 <span className="problem-content-right-des">
-                  Limited collaboration and communication among team members
-                  often result in missed opportunities, reduced efficiency, and
-                  misunderstandings that can hinder project success.
-                </span>
+                From API gateways to data storage solutions, we offer a range of serverless backend services that support your application’s functionality and scalability. Our serverless architecture eliminates the need for server management, allowing you to focus on core business objectives.                </span>
               </div>
             </div>
             <div className="problem-content ">
@@ -98,13 +89,12 @@ const Problem = () => {
               </div>
               <div className="problem-content-right">
                 <span className="problem-content-right-title">
-                  Inefficient Reporting
+                Monitoring and Optimization
+
                 </span>
                 <span className="problem-content-right-des">
-                  Inefficient reporting processes can lead to delays, errors,
-                  and missed insights, making it challenging for organizations
-                  to make data-driven decisions and respond effectively to
-                  emerging issues.
+Our serverless solutions include comprehensive monitoring and optimization tools that provide real-time insights into application performance. We help you identify and resolve issues quickly, ensuring your applications run smoothly.
+
                 </span>
               </div>
             </div>

@@ -21,9 +21,9 @@ const BgSlider = () => {
     arrows: false,
     infinite: true,
     fade: true,
-    speed: 1500, // Adjust the speed as you need
+    speed: 1500, 
     autoplay: true,
-    autoplaySpeed: 5000, // Adjust the interval as you need
+    autoplaySpeed: 5000, 
     slidesToShow: 1,
     slidesToScroll: 1,
     beforeChange: (current, next) => setCurrentSlide(next),
@@ -36,7 +36,7 @@ const BgSlider = () => {
           <ExampleCarouselImage
             text="Super charge your Business with "
             text2="Artificial Intelligences."
-            text3="We Can Unlock next - level business growth with mind-blowing AI solutions, Let's Go!"
+            text3="Unlock next-level business growth with AI solutions. Let's go!"
             link="/blog"
             img={sli1}
           />
@@ -69,24 +69,7 @@ const BgSlider = () => {
           />
         </div>
       </Slider>
-      {/* <div style={{ position: 'absolute', bottom: 20, left: '50%', transform: 'translateX(-50%)', zIndex: 9 }}>
-        {Array.from({ length: 4 }).map((_, index) => (
-          <span
-            key={index}
-            style={{
-              display: 'inline-block',
-              width: 10,
-              height: 10,
-              borderRadius: '50%',
-              background: currentSlide === index ? 'white' : 'rgba(255, 255, 255, 0.5)',
-              margin: '0 5px',
-              cursor: 'pointer',
-              transition: 'background 0.3s ease', // Smooth transition for indicator
-            }}
-            onClick={() => setCurrentSlide(index)}
-          />
-        ))}
-      </div> */}
+   
     </div>
   );
 };

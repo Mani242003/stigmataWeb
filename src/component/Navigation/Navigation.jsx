@@ -19,8 +19,8 @@ const Navigation = ({homeMarque}) => {
   return (
 
     <>
-    <Drawer routes={routes} isOpen={isOpen} toggleDrawer={toggleDrawer}  />
-    <Navbar toggleDrawer={toggleDrawer} toggleGalleryDrawer={toggleGalleryDrawer} routes={routes}  homeMarque= {homeMarque} />
+    <Drawer routes={routes} isOpen={isOpen} toggleDrawer={toggleDrawer}     />
+    <Navbar toggleDrawer={toggleDrawer} toggleGalleryDrawer={toggleGalleryDrawer} routes={routes}  homeMarque= {homeMarque}  />
     <GalleryDrawer isOpenGallery={isOpenGallery} toggleGalleryDrawer={toggleGalleryDrawer} />
     </>
   )

@@ -37,8 +37,8 @@ const ExampleCarouselImage = ({ img, text, link, text2, text3 }) => {
               <span data-aos="fade-up">{text3}</span>
             </div>
             <div className="home_slider_buttonContainer">
-              <Link to={link} >
-                Know more{" "}
+              <Link to="/contact" >
+              Talk to Experts{" "}
               </Link>
               <FaArrowRightLong />
             </div>

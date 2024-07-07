@@ -96,6 +96,53 @@ const HoverCard = () => {
     cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 400, // Mobile devices
+        settings: {
+          slidesToShow: 1,
+          speed: 4000,
+          autoplay: false,
+
+          dots: false,
+          infinite: true,
+          // speed: 500,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          autoplay: true,
+
+          // Show 1 slide
+        },
+      },
+      {
+        breakpoint: 885, // Tablets
+        settings: {
+          slidesToShow: 3,
+          speed: 4000,
+          autoplay: false,
+
+          dots: false,
+          infinite: true,
+          // speed: 500,
+          slidesToScroll: 2,
+          autoplay: true,
+
+          // Show 3 slides
+        },
+      },
+      // {
+      //   breakpoint: 1024, // Laptops
+      //   settings: {
+      //     slidesToShow: 5, // Show 5 slides
+      //   }
+      // },
+      // {
+      //   breakpoint: Infinity, // Larger screens
+      //   settings: {
+      //     slidesToShow: 7, // Show 7 slides
+      //   }
+      // }
+    ],
     // responsive: [
     //   {
     //     breakpoint: 400, // Adjust breakpoint as needed

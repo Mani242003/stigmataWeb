@@ -1,18 +1,21 @@
 @import "../../../styles/constant";
 @import "../../../styles/variables";
 .N_C_C-conatiner {
-  width: 350px;
-  // height: 400px;
+  width: 370px;
+  height: 450px;
   background: white;
+  // margin: 0 2rem;
+  // margin-left: 1%;
   // background: transparent;
   //    @include flexCol;
   //    align-items: center;
   //    justify-content: center;
   //    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  margin-left: 10px;
+  // margin-left: 10px;
+  // margin-right: 10rem;
   .N_C_C-imgConatiner {
     img {
-      width: 350px;
+      width: 370px;
     }
   }
   .N_C_C-text-container {

@@ -6,27 +6,32 @@ $laptop:991.98px;
 $tablet:768px;
 $phone:575.98px;
 
-:root{
-    /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-    --first-color: hsl(175, 55%, 40%);
-    --first-color-light: hsl(175, 30%, 48%);
-    --first-color-lighten: hsl(175, 40%, 62%);
-    --gradient-color: linear-gradient(180deg, 
-                    hsl(178, 35%, 45%), 
-                    hsl(178, 55%, 28%));
-    --title-color: hsl(175, 40%, 16%);
-    --text-color: hsl(175, 8%, 50%);
-    --white-color: #fff;
-    --body-color: hsl(175, 100%, 99%);
+$mobile-breakpoint: 320px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 992px;
+$large-screen-breakpoint: 1200px;
 
-    /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: 'Poppins', sans-serif;
-    --h2-font-size: 1.25rem;
-    --normal-font-size: .938rem;
-    --smaller-font-size: .75rem;
-}
+// :root{
+//     /*========== Colors ==========*/
+//     /*Color mode HSL(hue, saturation, lightness)*/
+//     --first-color: hsl(175, 55%, 40%);
+//     --first-color-light: hsl(175, 30%, 48%);
+//     --first-color-lighten: hsl(175, 40%, 62%);
+//     --gradient-color: linear-gradient(180deg, 
+//                     hsl(178, 35%, 45%), 
+//                     hsl(178, 55%, 28%));
+//     --title-color: hsl(175, 40%, 16%);
+//     --text-color: hsl(175, 8%, 50%);
+//     --white-color: #fff;
+//     --body-color: hsl(175, 100%, 99%);
+
+//     /*========== Font and typography ==========*/
+//     /*.5rem = 8px | 1rem = 16px ...*/
+//     --body-font: 'Poppins', sans-serif;
+//     --h2-font-size: 1.25rem;
+//     --normal-font-size: .938rem;
+//     --smaller-font-size: .75rem;
+// }
 // @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
 // :root{
 //     /*========== Colors ==========*/
