@@ -65,7 +65,7 @@ const SoftwarePage = () => {
           At Stigmata Techno Solutions, we offer comprehensive software application development services designed to meet the unique needs of your business.
           </span>
           <div className="softwarePageButtonContainer">
-            <Link href="">Talk to Experts </Link>
+            <Link to="/contact">Talk to Experts </Link>
             <FaArrowRightLong />
           </div>
         </div>

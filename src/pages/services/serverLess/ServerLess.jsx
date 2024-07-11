@@ -26,23 +26,23 @@ const ServerLess = () => {
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
-  const getImage = () => {
-    // if (expanded) {
-    switch (expanded) {
-      case "panel1":
-        return <img src={acc2} alt="" />;
-      case "panel2":
-        return <img src={acc1} alt="" />;
-      case "panel3":
-        return <img src={acc2} alt="" />;
+  // const getImage = () => {
+  //   // if (expanded) {
+  //   switch (expanded) {
+  //     case "panel1":
+  //       return <img src={acc2} alt="" />;
+  //     case "panel2":
+  //       return <img src={acc1} alt="" />;
+  //     case "panel3":
+  //       return <img src={acc2} alt="" />;
 
-      default:
-        return <img src={acc1} alt="" />;
-    }
+  //     default:
+  //       return <img src={acc1} alt="" />;
+  //   }
 
-    // return ;
-    // }
-  };
+  //   // return ;
+  //   // }
+  // };
   return (
     <section className="serverLessWrapper">
       <Navigation />
@@ -58,7 +58,7 @@ const ServerLess = () => {
             operations processes.
           </span>
           <div className="serverLessButtonContainer">
-            <Link href="">Talk to Experts </Link>
+            <Link to="/contact">Talk to Experts </Link>
             <FaChevronRight />
           </div>
         </div>
@@ -201,7 +201,7 @@ const ServerLess = () => {
                 architecture ready to tackle technology challenges.
               </span>
               <div className="cloudMigrateSection2BottomButton">
-                <Link href="">Discuss With Our Experts</Link>
+                <Link to="/contact">Discuss With Our Experts</Link>
                 <FaChevronRight />
               </div>
             </div>
@@ -483,12 +483,13 @@ const ServerLess = () => {
                 </>
               </div>
               <div className="cloudMigrateMainSection3BottomRight">
-                {getImage()}
+                {/* {getImage()} */}
+                <img src={acc1} alt="" />
               </div>
             </div>
             <div className="cloudMigrateSection3BottomButtonOutter">
               <div className="cloudMigrateSection3BottomButton">
-                <Link href="">Talk to Experts</Link>
+                <Link to="/contact">Talk to Experts</Link>
                 <FaChevronRight />
               </div>
             </div>

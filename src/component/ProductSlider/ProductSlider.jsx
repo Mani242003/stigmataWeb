@@ -40,10 +40,7 @@ const ProductSlider = () => {
         <div className="P_S-headerContainer">
           <div className="cloudMigrateMainSection2">
             <div className="cloudMigrateSection2Header">
-              <span>
-                Can we bring the company to down in a single line ? Stigmata
-                Techno Solutions
-              </span>
+              <span>Stigmata Techno Solutions</span>
             </div>
             <>
               <div className="cloudMigrateSection2innerConatiner">
@@ -181,10 +178,7 @@ const ProductSlider = () => {
               Happy customers. Energized employees. <br /> That’s impact.
             </span>
           </div>
-          <div
-           
-            className="ProductNextBackButtonTopContainer"
-          >
+          <div className="ProductNextBackButtonTopContainer">
             <button className="button" onClick={previous}>
               <FaArrowLeft />
             </button>
@@ -193,7 +187,7 @@ const ProductSlider = () => {
             </button>
           </div>
 
-          <div >
+          <div>
             <Slider
               {...settings}
               ref={(slider) => {
@@ -205,14 +199,14 @@ const ProductSlider = () => {
                   key={1}
                   num="01"
                   name="ClouSec"
-                   des="ClouSec is the 1st AI based CSPM (Cloud Security Posture Management) tool with CCOE (Cloud Center of Excellence) concepts to provide significant cloud infrastructure insights through Security misconfigurations, Vulnerabilities, Threats, Comprehensive account view, Configuration issues during account setup, Cost management, Asset management, Periodic audit of user mapping to cloud accounts (remove / retain) with audit log and Cost management features."
+                  des="ClouSec is the 1st AI based CSPM (Cloud Security Posture Management) tool with CCOE (Cloud Center of Excellence) concepts to provide significant cloud infrastructure insights through Security misconfigurations, Vulnerabilities, Threats, Comprehensive account view, Configuration issues during account setup, Cost management, Asset management, Periodic audit of user mapping to cloud accounts (remove / retain) with audit log and Cost management features."
                   title="Modernize Cloud Security. Outsmart Attackers."
-//                   des="ClouSec is the 1st AI based CSPM (Cloud Security Posture Management) tool with CCOE (Cloud Center of Excellence) concepts to provide significant cloud infrastructure insights through Security misconfigurations, Vulnerabilities, Threats, Comprehensive account view, Configuration issues, Asset management, Periodic audit of user mapping to cloud accounts (remove / retain) and Cost management features. 
-// centralised, integrated approach enabling
-// security misconfigurations, cost
-// management, comprehensive account
-// view, cloud asset management with
-// extensive logs"
+                  //                   des="ClouSec is the 1st AI based CSPM (Cloud Security Posture Management) tool with CCOE (Cloud Center of Excellence) concepts to provide significant cloud infrastructure insights through Security misconfigurations, Vulnerabilities, Threats, Comprehensive account view, Configuration issues, Asset management, Periodic audit of user mapping to cloud accounts (remove / retain) and Cost management features.
+                  // centralised, integrated approach enabling
+                  // security misconfigurations, cost
+                  // management, comprehensive account
+                  // view, cloud asset management with
+                  // extensive logs"
 
                   link="-vLYTijz370"
                   url="https://clousec.io/"
@@ -243,17 +237,14 @@ const ProductSlider = () => {
               </div>
             </Slider>
           </div>
-          <div
-           
-           className="ProductNextBackButtonBottomContainer"
-         >
-           <button className="button" onClick={previous}>
-             <FaArrowLeft />
-           </button>
-           <button className="button" onClick={next}>
-             <FaArrowRight />
-           </button>
-         </div>
+          <div className="ProductNextBackButtonBottomContainer">
+            <button className="button" onClick={previous}>
+              <FaArrowLeft />
+            </button>
+            <button className="button" onClick={next}>
+              <FaArrowRight />
+            </button>
+          </div>
         </div>
       </div>
     </section>

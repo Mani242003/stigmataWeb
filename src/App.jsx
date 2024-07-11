@@ -56,7 +56,6 @@ const App = () => {
 
   return (
     <Router>
-      <ScrollToTop1 />
 
       {/* <ManiAPI /> */}
       {/* <div

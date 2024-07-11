@@ -27,7 +27,7 @@ const AIPage = () => {
           Leverage cutting-edge AI technologies to optimize processes, enhance decision-making, and deliver personalized customer experiences. Our AI solutions, including machine learning, natural language processing, and predictive analytics, help unlock the full potential of your business.
           </span>
           <div className="AIPageButtonContainer">
-          <Link   href="">Talk to Experts </Link>
+          <Link   to="/contact">Talk to Experts </Link>
           <FaChevronRight />
 
           </div>
@@ -97,7 +97,7 @@ const AIPage = () => {
               Unlock the potential of artificial intelligence with Stigmata Techno Solutions. Our AI services are designed to empower your business with intelligent solutions that drive success. Contact us today to learn more about how we can help you leverage AI to achieve your business goals.
               </span>
               <div className="cloudMigrateSection2BottomButton">
-                <Link href="">Discuss With Our Experts</Link>
+                <Link to="/contact">Discuss With Our Experts</Link>
                 <FaChevronRight />
               </div>
             </div>

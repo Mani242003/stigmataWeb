@@ -185,7 +185,7 @@ const HoverCard = () => {
           {images.map((data, i) => {
             // console.log("maonio",data.img);
             return (
-              <div className="hoverLogoConatiner">
+              <div className="hoverLogoConatiner" key={i}>
                 {" "}
                 <img
                   src={data.img}

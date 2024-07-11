@@ -53,15 +53,15 @@ const GalleryDrawer = ({ isOpenGallery, toggleGalleryDrawer }) => {
           <span className="gallerHeadTittel">Working Hours</span>
           <div className="gallerworkingHourConatiner">
             <span className="gallerDayText">Mon - Fri:</span>
-            <span className="gallerTimeText"> 11:00 AM - 8:00 PM</span>
+            <span className="gallerTimeText"> 10:30 AM - 7:00 PM</span>
           </div>
           <div className="gallerworkingHourConatiner">
             <span className="gallerDayText">Saturday : </span>
-            <span className="gallerTimeText"> 11:00 AM - 06:00 PM</span>
+            <span className="gallerTimeText"> 10:30 AM - 06:00 PM</span>
           </div>
           <div className="gallerworkingHourConatiner">
             <span className="gallerDayText">Sunday : </span>
-            <span className="gallerTimeText"> 11:00 AM - 02:00 PM</span>
+            <span className="gallerTimeText"> 10:30 AM - 02:00 PM</span>
           </div>
         </Scrollbars>
       </div>

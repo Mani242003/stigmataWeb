@@ -46,7 +46,7 @@ export const routes = [
       {
         id: 2,
 
-        titel: "Industry",
+        titel: "Our Expertise",
         link1: "Heavy Construction Companies,",
         link2: "Power Transmission & Distribution,",
         link3: "Financial institutions",
@@ -109,12 +109,12 @@ export const routes = [
 
         titel: "Insights",
         link1: "Blog",
-        url1: "/blog",
+        url1: "#",
         link2: "Youtube",
-        url2: "/service/cloud-migration",
+        url2: "#",
         link3: "News",
 
-        url3: "/service/mobile-app-development",
+        url3: "#",
       },
     ],
   },

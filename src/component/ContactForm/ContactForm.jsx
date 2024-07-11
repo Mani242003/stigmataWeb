@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./ContactForm.scss";
-import { TextField, Button, Box, Typography } from "@material-ui/core";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as Yup from "yup";
-import ReCAPTCHA from "react-google-recaptcha";
+// import { TextField, Button, Box, Typography } from "@material-ui/core";
+// import ReCAPTCHA from "react-google-recaptcha";
 import canadaFlag from "../../assets/images/icons/canada.png";
 import IndianFlag from "../../assets/images/icons/Indianflag.png";
 import { IoLocationOutline } from "react-icons/io5";
@@ -11,7 +9,8 @@ import { LuPhoneCall } from "react-icons/lu";
 import { MdMailOutline } from "react-icons/md";
 import { SlLocationPin } from "react-icons/sl";
 import usaFlag from "../../assets/images/icons/usa.png";
-
+// import { IoMdRefresh } from "react-icons/io";
+import { MdRefresh } from "react-icons/md";
 const ContactForm = () => {
   const initalValues = {
     firstName: "",
@@ -20,33 +19,80 @@ const ContactForm = () => {
     phone: "",
     message: "",
   };
-  const [capVal, setcapVal] = useState(null);
-
-  const validationSchema = Yup.object({
-    firstName: Yup.string()
-      .required("Please enter first name")
-      .min(2, "First name too short"),
-    lastName: Yup.string().min(1, "Last name too short"),
-    email: Yup.string().required("Please enter email").email("Invalid email"),
-    phone: Yup.string()
-      .required("Please enter phone number")
-      .matches(/^[0-9]+$/, "Phone number must be only digits")
-      .min(10, "Phone number should be minimum 10 digits long"),
-    message: Yup.string()
-      .required("Please enter message")
-      .min(5, "Message too short"),
-  });
-  const handleSubmit = (values, { resetForm }) => {
-    console.log(values);
-    resetForm();
-  };
-  function onChange(value) {
-    console.log("Captcha value:", value);
+  // const [capVal, setcapVal] = useState(null);
+  const randomString = Math.random().toString(36).slice(8);
+  const [captcha, setCaptcha] = useState(randomString)
+  const [text, setText] = useState("")
+  const [valid, setValid] = useState(false)
+  const refreshing =()=>{
+    setCaptcha(Math.random().toString(36).slice(8))
   }
+
+  const matchCaptcha = () => {
+    return text === captcha;
+  };
+
+
+  // const validationSchema = Yup.object({
+  //   firstName: Yup.string()
+  //     .required("Please enter first name")
+  //     .min(2, "First name too short"),
+  //   lastName: Yup.string().min(1, "Last name too short"),
+  //   email: Yup.string().required("Please enter email").email("Invalid email"),
+  //   phone: Yup.string()
+  //     .required("Please enter phone number")
+  //     .matches(/^[0-9]+$/, "Phone number must be only digits")
+  //     .min(10, "Phone number should be minimum 10 digits long"),
+  //   message: Yup.string()
+  //     .required("Please enter message")
+  //     .min(5, "Message too short"),
+  // });
+  // const handleSubmit = (values, { resetForm }) => {
+  //   console.log(values);
+  //   onSubmit()
+    
+  //   resetForm();
+  // };
+  // function onChange(value) {
+  //   console.log("Captcha value:", value);
+  // }
+
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    if (!matchCaptcha()) {
+      setValid(false);
+      setResult("Captcha does not match. Please try again.");
+      return;
+    }
+    setValid(true);
+    
+    const formData = new FormData(event.target);
+    console.log(formData,"formmmm");
+
+    formData.append("access_key", "4d175d08-6329-4667-86e6-c73e9febe81c");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      alert("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      alert("Form not submitting ! please try again later (or) contact this Number 9790845787");
+
+    }
+  };
 
 
   return (
-    <div className="contactPageForm">
+    <div className="contactPageForm" id="contactForm">
       <div className="contactPageFormLeft">
         <span className="contactPageFormLeftTitle">Our office locations</span>
         <div className="contact-info">
@@ -160,13 +206,12 @@ const ContactForm = () => {
         </div> */}
       </div>
       <div className="contactPageFormRight">
-        <Formik
+        {/* <Formik
           initialValues={initalValues}
           validationSchema={validationSchema}
-          onSubmit={handleSubmit}
         >
           {({ errors, isValid, touched, dirty }) => (
-            <Form>
+            <Form onSubmit={onSubmit} >
               <div className="contactFormRow1">
                 <Field
                   name="firstName"
@@ -253,9 +298,71 @@ const ContactForm = () => {
               </div>
             </Form>
           )}
-        </Formik>
+        </Formik> */}
+         <form onSubmit={onSubmit }>
+       <div className="contactRow">
+      <div className="inputItem">
+        <label >First Name</label>
+      <input type="text" name="First name" placeholder="eg.Jerome" required/>
+      </div>
+       <div className="inputItem">
+        <label >Last Name</label>
+        <input type="text" name="Last Name" placeholder="eg.David" required/>
+
+      </div>
+       </div>
+       <div className="contactRow">
+       <div className="inputItem">
+        <label >Email</label>
+       <input type="email" name="email" placeholder="eg.abc@gmail.com" required/>
+
+      </div>
+       <div className="inputItem">
+        <label >Phone</label>
+       <input type="number" name="phone" placeholder="eg.111-111-1111" required/>
+
+
+      </div>
+
+       </div>
+       <div className="contactRow customInputArea">
+       <div className="inputItem">
+
+        <label >How can we help you?</label>
+       <textarea className="txinput" rows={10} name="message" required></textarea>
+     
+       <div className="contactCaptchaContainer">
+       <span >{captcha} </span>
+       <MdRefresh onClick={()=> refreshing()} />
+
+       </div>
+        <input type="text" name="" placeholder="Enter Captcha" value={text} onChange={(e)=> setText(e.target.value)} id="" required  />
+        <label className="captcheresult">{result}</label>
+
+       </div>
+      
+
+       </div>
+       {/* <ReCAPTCHA
+                  sitekey="6LfX0PgpAAAAANnJZERY4jy7U5r3wa_E4fqBWmLA"
+                  onChange={(val) => setcapVal(val)}
+                /> */}
+               
+
+
+         
+
+        <div className="contactRow customButton">
+        <button type="submit"  >Submit Form</button>
+
+        </div>
+
+      </form>
+
+    
       </div>
     </div>
+   
   );
 };
 

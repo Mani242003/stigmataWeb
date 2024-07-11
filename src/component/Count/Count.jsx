@@ -49,7 +49,9 @@ const Count = () => {
           <div className="count_main_container">
             <div className="countLeftContainer">
               <div className="countLeftHeader">
-                <span>Made in India.<br/>Made for the World.</span>
+                <span>Loved by Customers. <br/>Made for the World.</span>
+               
+
               </div>
               <div className="countLeftNumContainer">
                 <div className="countLeftNumInnerCol_1">

@@ -644,12 +644,12 @@ const About = () => {
                 <img src={acc1} alt="" />
               </div>
             </div>
-            <div className="cloudMigrateSection3BottomButtonOutter">
+            {/* <div className="cloudMigrateSection3BottomButtonOutter">
               <div className="cloudMigrateSection3BottomButton">
                 <Link href="">Talk to Experts</Link>
                 <FaChevronRight />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

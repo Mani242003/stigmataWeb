@@ -39,7 +39,7 @@ const SubRouteLinkContainer = ({ data }) => {
   } else {
     icon = <BiWorld />;
   }
-  console.log("maniainaaiaia", data);
+  // console.log("maniainaaiaia", data);
   return (
     <div className="SubRouteLinkContainer">
       <div className="subRouteIconContaner">

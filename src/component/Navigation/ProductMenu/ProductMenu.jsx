@@ -37,7 +37,7 @@ const ProductMenu = ({route}) => {
 export default ProductMenu
 
 const P_SubRouteLinkContainer= ({data})=>{
-    console.log(data);
+    // console.log(data);
     return(
      <Link to={data.link} >
       <div className="P_subRouteLinkContainer">

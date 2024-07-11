@@ -44,7 +44,7 @@ const Solution = () => {
               solutions that meet the diverse needs of your business.
             </span>
             <div className="cloudMigrateSection2BottomButton">
-              <Link href="">Discuss With Our Experts</Link>
+              <Link to="/contact">Discuss With Our Experts</Link>
               <FaChevronRight />
             </div>
           </div>

@@ -60,7 +60,7 @@ const CloudMigrate = () => {
             migration process.
           </span>
           <div className="cloudMigrateButtonContainer">
-            <Link href="">Talk to Experts</Link>
+            <Link to="/contact">Talk to Experts</Link>
             <FaChevronRight />
           </div>
         </div>
@@ -227,7 +227,7 @@ const CloudMigrate = () => {
               Transform your business with our cloud migration services. At Stigmata Techno Solutions, we are committed to helping you harness the full potential of the cloud. Contact us today to learn more about how we can assist with your cloud migration journey.
               </span>
               <div className="cloudMigrateSection2BottomButton">
-                <Link href="">Discuss With Our Experts</Link>
+                <Link to="/contact">Discuss With Our Experts</Link>
                 <FaChevronRight />
               </div>
             </div>

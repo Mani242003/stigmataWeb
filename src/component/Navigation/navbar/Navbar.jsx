@@ -1,20 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
 import { TfiWorld } from "react-icons/tfi";
-
-// import { FaBars, FaChevronDown, FaLocationDot } from "react-icons/fa6";
-// import { IoSearchOutline, IoTime } from "react-icons/io5";
-// import { IoIosMail } from "react-icons/io";
-// import { FaFacebookF } from "react-icons/fa";
-// import { FaTwitter } from "react-icons/fa";
-// import { FaLinkedin } from "react-icons/fa";
-// import { FaYoutube } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
-// import { FaRegUserCircle } from "react-icons/fa";
-// import { CiMenuBurger } from "react-icons/ci";
 import { IoMdMenu } from "react-icons/io";
 import Marquee from "react-fast-marquee";
 import { FaTimes } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 import logo from "../../../assets/images/logo.png";
 import { Link } from "react-router-dom";
@@ -23,50 +14,86 @@ import ProductMenu from "../ProductMenu/ProductMenu";
 import ComapnyMenu from "../ComapanyMenu/ServicesMenu";
 import Insights from "../Insights/ServicesMenu";
 
-const Navbar = ({ toggleDrawer, toggleGalleryDrawer, routes,homeMarque ,isOpen}) => {
+const Navbar = ({
+  toggleDrawer,
+  toggleGalleryDrawer,
+  routes,
+  homeMarque,
+  isOpen,
+}) => {
+
+  
+
+    const navigate = useNavigate();
   const [marqueIsOpen, setmarqueIsOpen] = useState(true);
   return (
     <section className="nav_wrapper">
       <div className="nav_container">
-       {
-        homeMarque ==="true" ?(
+        {homeMarque === "true" ? (
           <>
-           {marqueIsOpen ? (
-          <div className="NavTopAnnouncement">
-            <Marquee speed={60} gradient={false}>
-              <span className="marqueeText">
-                {" "}
-                We provide innovative IT solutions for businesses of all sizes.
-                Contact us today for expert consultancy, software development,
-                and IT support services !!!
-                
-              </span>
-            </Marquee>
-            <div className="NAvTopCloseSvg">
-              <FaTimes onClick={()=>{setmarqueIsOpen(false)}} />
-            </div>
-          </div>
-        ) : (
-          <></>
-        )}
+            {marqueIsOpen ? (
+              <div className="NavTopAnnouncement">
+                <Marquee speed={60} gradient={false}>
+                  <span className="marqueeText">
+                    {" "}
+                    We provide expert IT consultancy, software development, and
+                    support for businesses of all sizes. Contact us today!
+                  </span>
+                </Marquee>
+                <div className="NAvTopCloseSvg">
+                  <FaTimes
+                    onClick={() => {
+                      setmarqueIsOpen(false);
+                    }}
+                  />
+                </div>
+              </div>
+            ) : (
+              <></>
+            )}
           </>
-        ):(<>
-         <div className="NavTopAnnouncement2">
-          <div className="NavTopAnnouncementinner">
-          <span className="StaticText">
-                {" "}
-                Driven by Innovation, United by Expertise <Link to="/contact"> Request a Demo</Link>
-                
-              </span>
+        ) : (
 
-          </div>
-    
-            <div className="NAvTopCloseSvg">
-              <FaTimes onClick={()=>{setmarqueIsOpen(false)}} />
+          <>
+          {marqueIsOpen ? (
+            <div className="NavTopAnnouncement ">
+               <span className="StaticText">
+                  {" "}
+                   "Driven by Innovation, United by Expertise"
+                </span>
+              <div className="NAvTopCloseSvg">
+                <FaTimes
+                  onClick={() => {
+                    setmarqueIsOpen(false);
+                  }}
+                />
+              </div>
             </div>
-          </div>
-        </>)
-       }
+          ) : (
+            <></>
+          )}
+        </>
+
+          
+          // <>
+          //   <div className=" NavTopAnnouncement NavTopAnnouncement2">
+          //     <div className="NavTopAnnouncementinner">
+          //       <span className="StaticText">
+          //         {" "}
+          //         "Driven by Innovation, United by Expertise"
+          //       </span>
+          //     </div>
+
+          //     <div className="NAvTopCloseSvg">
+          //       <FaTimes
+          //         onClick={() => {
+          //           setmarqueIsOpen(false);
+          //         }}
+          //       />
+          //     </div>
+          //   </div>
+          // </>
+        )}
 
         <div className="SNavbar">
           <div className="NavConatiner">
@@ -94,23 +121,23 @@ const Navbar = ({ toggleDrawer, toggleGalleryDrawer, routes,homeMarque ,isOpen})
 
                     // return ;
                   }
-                  return <Link to={route.link}>{route.name}</Link>;
+                  return <Link key={route.name} to={route.link}>{route.name}</Link>;
                 })}
 
-             
+<div className="cloudMigrateSection2BottomButton">
+                <Link to="/contact">Schedule a Call</Link>
+                {/* <FaArrowRightLong /> */}
+              </div>
 
-                <button>Schedule a Call</button>
+                {/* <button onClick={ navigate('/contact')}>Schedule a Call</button> */}
                 <div className="NavGAlleryButton" onClick={toggleGalleryDrawer}>
                   <IoMdMenu />
                 </div>
               </div>
             </div>
             <div className="NavDrawerButton">
-
-
-
               <div className="NavGAlleryButton" onClick={toggleDrawer}>
-<IoMdMenu />
+                <IoMdMenu />
               </div>
             </div>
           </div>

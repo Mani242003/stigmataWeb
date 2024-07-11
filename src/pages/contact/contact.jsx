@@ -9,20 +9,28 @@ import ContactForm from "../../component/ContactForm/ContactForm";
 const contact = () => {
   return (
     <section className="contactPage_wrapper">
-      <Navigation homeMarque="false"/>
+      <Navigation homeMarque="false" />
 
       <div className="contactPage_container">
         <div className="contactPageMainHeader">
           <span className="contactPageHeaderText1">
-            We appreciate your interest in Stigmata !
+            We appreciate your interest in Stigmata!
           </span>
           <span className="contactPageHeaderText2">
             Let's have a discussion!!
           </span>
           <div className="contactPageMainSocialContainer">
-            <FiPhoneCall />
-            <IoMailOutline />
-            <TiMessages />
+          
+            <a href="tel:+91 93453 36553">
+              <FiPhoneCall />
+            </a>
+            <a href="mailto:jerome@stigmatatech.com">
+              <IoMailOutline />
+            </a>
+
+            <a href="#">
+              <TiMessages />
+            </a>
           </div>
         </div>
         <ContactForm />

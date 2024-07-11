@@ -13,20 +13,20 @@ const NewsCustomCard = ({ img, titel, date, link, name }) => {
       </div>
       <div className="N_C_C-text-container">
         <div className="N_C_C-top">
-          <div className="N_C_C-top_Text">
+          {/* <div className="N_C_C-top_Text">
             <MdDateRange />
             <span> {date}</span>
           </div>
           <div className="N_C_C-top_Text">
             <RxAvatar />
             <span> {name}</span>
-          </div>
+          </div> */}
         </div>
         <div className="N_C_C-middel">
           <span>{titel}</span>
         </div>
         <div className="N_C_C-bottom">
-          <Link to={link}>Read Deatils </Link>
+          <a href={link}>Read Deatils </a>
           <GoArrowRight />
         </div>
       </div>

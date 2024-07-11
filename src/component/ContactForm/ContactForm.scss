@@ -1,13 +1,12 @@
 @import "../../Styles/constant";
 @import "../../Styles/variables";
 
-
 .contactPageForm {
   display: flex;
   // background: red;
 
   .contactPageFormLeft {
-    flex: 1;
+    // flex: 1;
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -81,7 +80,7 @@
           a {
             text-decoration: none;
             color: black;
-          
+            cursor: default;
           }
         }
         // span::after {
@@ -132,44 +131,90 @@
     }
   }
   .contactPageFormRight {
-    flex: 1;
+    // flex: 1;
     margin: 2rem;
     margin-left: 0;
     // background:yellow;
     height: 30rem;
     display: flex;
     flex-direction: column;
-    // gap: 2rem;
-    .contactFormRow1 {
+    .contactRow {
       display: flex;
-      gap: 2rem;
-      .contactInput {
-        margin-top: 3rem;
-      }
-    }
-    .contactFormRow2 {
-      display: flex;
-      gap: 2rem;
-      .contactInput {
+      // justify-content: s;
+      gap: 1rem;
+      .inputItem {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
         margin-top: 2rem;
+        label {
+          color: #0565fe;
+          font-size: 16px;
+        }
+
+        input {
+          outline: none;
+          border: none;
+          border: 1px solid silver;
+          // margin-top: 1rem;
+          width: 250px;
+          padding: 1rem;
+          border-radius: 5px;
+        }
+        .contactCaptchaContainer {
+          margin: 1rem 0;
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          span {
+            background: black;
+            color: white;
+            padding: 5px 10px;
+          }
+          svg {
+            color: #0565fe;
+            font-size: 20px;
+            cursor: pointer;
+          }
+        }
+        .captcheresult{
+color: red;
+          font-size: 16px;
+
+        }
       }
     }
-    .conatctTextButtonField {
+    .customInputArea {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
-      margin-top: 3rem;
+      .inputItem {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .customButton{
+      button{
+        cursor: pointer;
+        padding: 10px 15px;
+        margin-top: 1rem;
+        outline: none;
+        border: none;
+        background: #0565fe;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+      }
     }
   }
 }
-
 
 @media (max-width: #{$tablet-breakpoint - 1}) {
   .contactPageForm {
     // display: flex;
     // background: red;
     flex-direction: column;
-  
+
     .contactPageFormLeft {
       // flex: 1;
       // display: flex;
@@ -185,7 +230,7 @@
         // background: linear-gradient(to right, #0565fe, #d241a4);
         // -webkit-background-clip: text;
         // -webkit-text-fill-color: transparent;
-        text-wrap:wrap;
+        text-wrap: wrap;
         // margin-bottom: 1.5rem;
         // text-transform: capitalize;
       }
@@ -208,13 +253,13 @@
           //   content: "";
           //   position: absolute;
           //   color: black;
-  
+
           //   left: 0;
           //   bottom: 0;
           //   width: 100%;
           //   height: 2px;
           //   background: black;
-  
+
           //   transform: scaleX(0);
           //   margin-top: 1rem;
           //   transform-origin: right;
@@ -235,7 +280,7 @@
           svg {
             font-size: 20px;
           }
-  
+
           span {
             font-size: 16px;
             word-spacing: 2px;
@@ -252,13 +297,13 @@
           //   content: "";
           //   position: absolute;
           //   color: black;
-  
+
           //   left: 0;
           //   bottom: 0;
           //   width: 100%;
           //   height: 2px;
           //   background: rgba(0, 0,0,0.8);
-  
+
           //   transform: scaleX(0);
           //   margin-top: 1rem;
           //   transform-origin: right;
@@ -297,38 +342,97 @@
       // display: flex;
       // flex-direction: column;
       gap: 2rem;
-      .contactFormRow1 {
-        // display: flex;
-        gap: 0.5rem;
-        .contactInput {
-          margin-top: 0rem;
+      .contactRow {
+        width: 100%;
+        padding-right: 1rem;
+        display: flex;
+        // justify-content: s;
+        gap: 1rem;
+        flex-direction: column;
+        .inputItem {
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+          margin-top: 2rem;
+          label {
+            color: #0565fe;
+            font-size: 16px;
+          }
+  
+          input {
+            outline: none;
+            border: none;
+            border: 1px solid silver;
+            // margin-top: 1rem;
+            // width: 240px;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 5px;
+          }
+          .contactCaptchaContainer {
+            margin: 1rem 0;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            span {
+              background: black;
+              color: white;
+              padding: 5px 10px;
+            }
+            svg {
+              color: #0565fe;
+              font-size: 20px;
+              cursor: pointer;
+            }
+          }
+          .captcheresult{
+  color: red;
+            font-size: 16px;
+  
+          }
         }
       }
-      .contactFormRow2 {
-        // display: flex;
-        gap: 0.5rem;
-        .contactInput {
-          margin-top: 1rem;
-        }
-      }
-      .conatctTextButtonField {
+      .customInputArea {
         display: flex;
         flex-direction: column;
-        gap: 0.8rem;
-        margin-top: 1rem;
+        .inputItem {
+          display: flex;
+          flex-direction: column;
+          .txinput{
+            // display: none;
+            outline: none;
+            border: none;
+            border: 1px solid silver;
+
+
+          }
+        }
+      }
+      .customButton{
+        button{
+          cursor: pointer;
+          padding: 10px 15px;
+          margin-top: 1rem;
+          outline: none;
+          border: none;
+          background: #0565fe;
+          color: white;
+          font-size: 16px;
+          border-radius: 5px;
+          margin-bottom: 2rem;
+        }
       }
     }
   }
-  
 }
 
 /* Tablet Styles ($tablet-breakpoint to $desktop-breakpoint) */
 @media (min-width: #{$tablet-breakpoint}) and (max-width: #{$desktop-breakpoint - 1}) {
-
   .contactPageForm {
     display: flex;
     // background: red;
-  
+    flex-direction: column;
+
     .contactPageFormLeft {
       flex: 1;
       display: flex;
@@ -368,13 +472,13 @@
           //   content: "";
           //   position: absolute;
           //   color: black;
-  
+
           //   left: 0;
           //   bottom: 0;
           //   width: 100%;
           //   height: 2px;
           //   background: black;
-  
+
           //   transform: scaleX(0);
           //   margin-top: 1rem;
           //   transform-origin: right;
@@ -395,7 +499,7 @@
           svg {
             font-size: 20px;
           }
-  
+
           span {
             font-size: 16px;
             word-spacing: 2px;
@@ -412,13 +516,13 @@
           //   content: "";
           //   position: absolute;
           //   color: black;
-  
+
           //   left: 0;
           //   bottom: 0;
           //   width: 100%;
           //   height: 2px;
           //   background: rgba(0, 0,0,0.8);
-  
+
           //   transform: scaleX(0);
           //   margin-top: 1rem;
           //   transform-origin: right;
@@ -448,32 +552,97 @@
     }
     .contactPageFormRight {
       flex: 1;
-      margin: 2rem;
-      margin-left: 0;
-      // background:yellow;
-      height: 30rem;
+      margin: 0rem;
+      padding: 1rem;
+      padding-bottom: 3rem;
+      // margin-left: 0;
+      // // background:yellow;
+      // height: 30rem;
+      // display: flex;
+      // flex-direction: column;
+      gap: 2rem;
       display: flex;
-      flex-direction: column;
-      // gap: 2rem;
-      .contactFormRow1 {
+      align-items: center;
+      justify-content: center;
+      .contactRow {
         display: flex;
-        gap: 0.8rem;
-        .contactInput {
-          margin-top: 3rem;
-        }
-      }
-      .contactFormRow2 {
-        display: flex;
-        gap: 0.8rem;
-        .contactInput {
+        // justify-content: s;
+        gap: 1rem;
+        .inputItem {
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
           margin-top: 2rem;
+          label {
+            color: #0565fe;
+            font-size: 16px;
+          }
+  
+          input {
+            outline: none;
+            border: none;
+            border: 1px solid silver;
+            // margin-top: 1rem;
+            width: 250px;
+            padding: 1rem;
+            border-radius: 5px;
+          }
+          .contactCaptchaContainer {
+            margin: 1rem 0;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            span {
+              background: black;
+              color: white;
+              padding: 5px 10px;
+            }
+            svg {
+              color: #0565fe;
+              font-size: 20px;
+              cursor: pointer;
+            }
+          }
+          .captcheresult{
+  color: red;
+            font-size: 16px;
+  
+          }
         }
       }
-      .conatctTextButtonField {
+      .customInputArea {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
-        margin-top: 3rem;
+        .inputItem {
+          display: flex;
+          flex-direction: column;
+         
+          .txinput{
+            // display: none;
+            outline: none;
+            border: none;
+            border: 1px solid silver;
+
+
+          }
+        
+
+        }
+     
+      }
+      .customButton{
+        button{
+          cursor: pointer;
+          padding: 10px 15px;
+          margin-top: 1rem;
+          outline: none;
+          border: none;
+          background: #0565fe;
+          color: white;
+          font-size: 16px;
+          border-radius: 5px;
+          margin-bottom: 2rem;
+        }
       }
     }
   }

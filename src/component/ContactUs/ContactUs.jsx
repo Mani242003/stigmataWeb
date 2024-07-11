@@ -53,7 +53,7 @@ const ContactUs = () => {
         <div className="contactUsRightContainer">
           <span className="contactUsRightSmallText">Reach Out Us</span>
           <span className="contactUsRightBigText">
-            We are excited to connect with you !
+            We are excited to connect with you!
           </span>
           <span className="contactUsRightDes">
             Have questions or need assistance? Our team is here to help! Contact

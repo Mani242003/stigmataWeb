@@ -92,7 +92,7 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
             </div>
             <div className="item">
               <div className="titel" onClick={() => accordianToggel(2)}>
-                <span>Industry</span>
+                <span>Our Expertise</span>
                 {selected === 2 ? <FaAngleUp /> : <FaAngleDown />}
               </div>
               <div

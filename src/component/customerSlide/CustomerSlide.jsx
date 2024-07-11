@@ -185,7 +185,7 @@ const CustomerSlide = () => {
         <div className="C_S-bottomRunSlider" style={{paddingBottom:'2rem'}}>
           <Slider {...settings2}>
             {imgaes2.map((data, i) => {
-              console.log("maonio", data.img);
+              // console.log("maonio", data.img);
               return (
                 <CustomCustmerSlide
                   key={i}

@@ -3,7 +3,7 @@
 .N_C_C-conatiner {
   width: 370px;
   height: 450px;
-  background: white;
+  background: #f3f5f9;
   // margin: 0 2rem;
   // margin-left: 1%;
   // background: transparent;
@@ -13,9 +13,12 @@
   //    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   // margin-left: 10px;
   // margin-right: 10rem;
+  padding: 0;
+  margin: 0;
   .N_C_C-imgConatiner {
     img {
       width: 370px;
+      height: 220px
     }
   }
   .N_C_C-text-container {
@@ -29,23 +32,24 @@
       // display: flex;
       display: flex;
       gap: 1rem;
-      .N_C_C-top_Text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      // .N_C_C-top_Text {
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
 
-        text-align: center;
-        gap: 5px;
-        svg {
-          font-size: 16px;
-          color: $green;
-        }
-        span {
-          font-size: 14px;
-        }
-      }
+      //   text-align: center;
+      //   gap: 5px;
+      //   svg {
+      //     font-size: 16px;
+      //     color: $green;
+      //   }
+      //   span {
+      //     font-size: 10px;
+      //   }
+      // }
     }
     .N_C_C-middel {
+      height: 140px;
     }
     .N_C_C-bottom {
       display: flex;
@@ -56,11 +60,15 @@
       color: $green;
       gap: 10px;
       font-weight: 600;
+      
 
       a {
         color: $green;
         text-decoration: none;
         font-weight: 600;
+      margin-bottom: 0;
+position: static;
+bottom: 0;
         &:hover {
           opacity: 0.8;
         }

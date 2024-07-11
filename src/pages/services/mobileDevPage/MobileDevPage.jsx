@@ -26,7 +26,7 @@ const MobileDevPage = () => {
           At Stigmata Techno Solutions, we harness the power of React Native to create high-performance, cross-platform mobile applications that provide seamless user experiences.
           </span>
           <div className="mobileDevPageButtonContainer">
-            <Link href="">Talk to Experts </Link>
+            <Link to="/contact">Talk to Experts </Link>
             <FaChevronRight />
           </div>
         </div>

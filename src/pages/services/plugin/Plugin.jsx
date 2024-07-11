@@ -27,7 +27,7 @@ const Plugin = () => {
           At Stigmata Techno Solutions, we specialize in developing custom plugins tailored to enhance the functionality and performance of your business applications. Our innovative development approach and extensive experience with <span>ATLASSIAN tools (Confluence, JIRA, BitBucket, DevOps, SonarQube, Jenkins, and governance & compliance)</span> ensure that your plugins meet your specific needs.
           </span>
           <div className="pluginButtonContainer">
-            <Link href="">Talk to Experts</Link>
+            <Link to="/contact">Talk to Experts</Link>
             <FaChevronRight />
           </div>
         </div>

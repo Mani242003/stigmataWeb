@@ -38,7 +38,7 @@ const DevOps = () => {
             management.
           </span>
           <div className="DevOpsPageButtonContainer">
-            <Link href="">Talk to Experts </Link>
+            <Link to="/contact">Talk to Experts </Link>
             <FaChevronRight />
           </div>
         </div>

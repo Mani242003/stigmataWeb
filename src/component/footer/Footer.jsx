@@ -8,7 +8,6 @@ import fbLogo from "../../assets/images/icons/facebook.png";
 import instaLog from "../../assets/images/icons/instagram.png";
 import xLogo from "../../assets/images/icons/twitter-x.png";
 import linkInLogo from "../../assets/images/icons/linkedin.png";
-import { Accordion, AccordionItem } from '@szhsin/react-accordion';
 // const handleScrollToTop = () => {
 //   window.scrollTo({
 //     top: 0,
@@ -22,10 +21,10 @@ const Footer = () => {
         <div className="footerSection1">
           <span className="F_section1Titel">"Driven by Innovation, United by Expertise"</span>
           <span className="F_section1SubTitel">Let's get you started.</span>
-          <div className="F_section1ButtonContainer">
+          {/* <div className="F_section1ButtonContainer">
             <Link to="/contact">SIGN UP NOW</Link>
             <MdKeyboardArrowRight />
-          </div>
+          </div> */}
         </div>
         <div className="footerSection2">
           <div className="F_subSection2.1 F_subSection2">
@@ -62,25 +61,32 @@ const Footer = () => {
           </div>
           <div className="F_subSection2_5 F_subSection2">
             <span className="F_subSection2Titel">Contact Sales</span>
-            <span className="F_subSection2SubTitel">Phone</span>
+            {/* <span className="F_subSection2SubTitel">Phone</span>
            
-            <a href="tel:+91 9790845787">+91 9790845787</a>
-            <a href="tel:+91 93453 36553">+91 93453 36553</a>
+            <a href="tel:+91 97908 45787">+91 97908 45787
+            </a>
+            <a href="tel:+91 93453 36553">+91 93453 36553</a> */}
+            
+
+           
 
             {/* <Link>1800 572 3535</Link> */}
             <span className="F_subSection2SubTitel">Email</span>
+            <a href="mailto:jerome@stigmatatech.com">sales@stigmatatech.com
+            </a>
            
+           <a href="mailto:jerome@stigmatatech.com">jerome@stigmatatech.com
+           </a>
            <a href="mailto:jerome@stigmata.co.in">jerome@stigmata.co.in</a>
-           <a href="mailto:jerome@stigmatatech.com">jerome@stigmatatech.com</a>
 
            <Link> </Link>
 
            
            <div className="F_subSection2DottedBorder"></div>
-           <div className="F_subSection2ButtonConatiner">
+           {/* <div className="F_subSection2ButtonConatiner">
             <Link to="/contact">Support</Link>
             <MdKeyboardArrowRight />
-          </div>
+          </div> */}
           <div className="F_subSection2ButtonConatiner">
             <Link to="/contact">Talk to Concierge</Link>
             <MdKeyboardArrowRight />
@@ -89,78 +95,7 @@ const Footer = () => {
 
           </div>
         </div>
-        {/* <div className="footerSection2Responsive">
-        <Accordion style={{width:'100%'}}>
-      <AccordionItem header="What is Lorem Ipsum?">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </AccordionItem>
-
-      <AccordionItem header="Where does it come from?">
-        Quisque eget luctus mi, vehicula mollis lorem. Proin fringilla
-        vel erat quis sodales. Nam ex enim, eleifend venenatis lectus
-        vitae, accumsan auctor mi.
-      </AccordionItem>
-
-      <AccordionItem header="Why do we use it?" >
-        Suspendisse massa risus, pretium id interdum in, dictum sit
-        amet ante. Fusce vulputate purus sed tempus feugiat.
-      </AccordionItem>
-    </Accordion>
-
-        </div> */}
-        {/* <div className="footerSection3">
-          <div className="F_section3SocialMediaContainer">
-            <Link>
-              <img src={xLogo} alt="" />
-            </Link>
-            <Link>
-              <img src={fbLogo} alt="" />
-            </Link>
-            <Link>
-              <img src={instaLog} alt="" />
-            </Link>
-            <Link>
-              <img src={linkInLogo} alt="" />
-            </Link>
-            <Link>
-              <img src={ytLogo} alt="" />
-            </Link>
-          </div>
-          <div className="F_section3Quillinks">
-            <Link>Text here</Link>
-            <div className="section3TextDivider"></div>
-            <Link>Text here</Link>
-            <div className="section3TextDivider"></div>
-
-            <Link>Text here</Link>
-            <div className="section3TextDivider"></div>
-
-            <Link>Text here</Link>
-            <div className="section3TextDivider"></div>
-
-            <Link>Text here</Link>
-            <div className="section3TextDivider"></div>
-
-            <Link>Text here</Link>
-            <div className="section3TextDivider"></div>
-
-            <Link>Text here</Link>
-
-          
-          </div>
-          <div className="F_section3Quillinks">
-            <Link>Text here</Link>
-            <div className="section3TextDivider"></div>
-            <Link>Text here</Link>
-            <div className="section3TextDivider"></div>
-
-            <Link>Text here</Link>
-
-
-          
-          </div>
-        </div> */}
+       
 
         <div className="footerSection4">
           <img src={logo} alt="" />
