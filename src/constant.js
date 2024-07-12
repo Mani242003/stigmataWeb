@@ -111,10 +111,10 @@ export const routes = [
         link1: "Blog",
         url1: "#",
         link2: "Youtube",
-        url2: "#",
+        url2: "https://youtube.com/@stigmatatechnosolutionsclousec?si=-jlrQuNQ6ACViNae",
         link3: "News",
 
-        url3: "#",
+        url3: "#news",
       },
     ],
   },

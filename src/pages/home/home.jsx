@@ -21,6 +21,7 @@ import CompanySkills from "../../component/CompanySkills/CompanySkills";
 import ContactUs from "../../component/ContactUs/ContactUs";
 import Navigation from "../../component/Navigation/Navigation";
 import Branches from "../../component/Branches/Branches";
+
 const Home = () => {
 
 

@@ -65,8 +65,8 @@ const News = () => {
     ],
   };
   return (
-    <div className="Newscontainer">
-      <div className="NewsMiddel">
+    <div className="Newscontainer" >
+      <div className="NewsMiddel" id="news">
         <div className="NewsMiddelHeaderContainer" data-aos="fade-up">
           <span className="NewsMiddelHeadertext1">WEEKLY UPDATES</span>
           <span className="NewsMiddelHeadertext2">LATEST NEWS</span>

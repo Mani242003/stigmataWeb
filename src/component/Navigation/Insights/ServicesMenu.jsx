@@ -56,7 +56,7 @@ const SubRouteLinkContainer = ({ data }) => {
         <FaAngleRight />
       </div>
       <div className="subRouteSvgAndTextContainer">
-        <Link to={data.url3}>{data.link3}</Link>
+        <a href="#news">{data.link3}</a>
         <FaAngleRight />
       </div>
       {data.id === 1 ? (

@@ -40,7 +40,7 @@ const Service = () => {
             />
             <ServicesCustomCard
               name="Web Application Development"
-              des1="At Stigmata Techno Solutions, we harness cutting-edge artificial intelligence technologies to drive innovation and efficiency. Our AI solutions are designed to optimize processes, enhance decision-making, and deliver personalized customer experiences. Whether you need machine learning models, natural language processing, or predictive analytics, we have the expertise to help you unlock AI's full potential."
+              des1="At Stigmata Techno Solutions, we leverage cutting-edge AI to drive innovation and efficiency. Our solutions optimize processes, enhance decision-making, and deliver personalized customer experiences. From machine learning to natural language processing and predictive analytics, we unlock AI's full potential for your needs."
               img={software}
               url="/software-development"
 

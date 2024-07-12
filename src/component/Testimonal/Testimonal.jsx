@@ -97,7 +97,7 @@ const Testimonal = () => {
           </div>
         </div>
         <div className="testimonialMainContent">
-          <div className="testimonialLeftConatiner" data-aos="fade-up">
+          <div className="testimonialLeftConatiner" >
             <span className="T_title">TESTIMONIALS</span>
             <span className="T_mainTitle">
               100% Customer <br /> References

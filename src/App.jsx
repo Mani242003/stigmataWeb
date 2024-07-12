@@ -13,7 +13,7 @@ import Services from "./pages/services/Services";
 import Blog from "./pages/blog/blog";
 import Contact from "./pages/contact/contact";
 // import ScrollToTop from "react-scroll-to-top";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 
 import DevOps from "./pages/services/devops/DevOps";
 import MobileDevPage from "./pages/services/mobileDevPage/MobileDevPage";
@@ -29,6 +29,7 @@ import Career from "./pages/Career/Career";
 import ManiAPI from "./ManiAPI";
 import Policy from "./pages/Policy/Policy";
 import GoToTop from "./component/GoToTop/GoToTop";
+import ScrollToTop from "./component/ScrollToTop/ScrollToTop";
 import ScrollToTop1 from "./component/ScrollToTop/ScrollToTop";
 const App = () => {
   useEffect(() => {
@@ -56,13 +57,15 @@ const App = () => {
 
   return (
     <Router>
+     
+        <ScrollToTop smooth />
+      
 
       {/* <ManiAPI /> */}
       {/* <div
         className="scroll-to-top-container"
         style={{ position: "fixed", left: "0", bottom: "20px", zIndex: "1000" }}
       >
-        <ScrollToTop smooth />
       </div> */}
 
       {/* <CookieConsent
@@ -129,7 +132,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-    </Router>
+     </Router>
   );
 };
 

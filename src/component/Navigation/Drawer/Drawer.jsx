@@ -150,9 +150,9 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
                 <div className="itemInneItem">
                   <Link>Blog</Link>
                   <div></div>
-                  <Link>Youtube</Link>
+                  <Link to="https://youtube.com/@stigmatatechnosolutionsclousec?si=-jlrQuNQ6ACViNae">Youtube</Link>
                   <div></div>
-                  <Link>News</Link>
+                  <a href="#news" onClick={toggleDrawer}>News</a>
                   <div className="customDiv"></div>
                 </div>
               </div>

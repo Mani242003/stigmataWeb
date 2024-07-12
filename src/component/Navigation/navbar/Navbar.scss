@@ -21,6 +21,9 @@
       color: white;
       padding: 0 10px;
       justify-content: space-between;
+      @media (max-width: $phone) {
+        height: 100p;
+      }
       .marqueeText {
         font-weight: 500;
         font-size: 15px;
@@ -32,6 +35,11 @@
         font-size: 18px;
         font-weight: 700;
         word-spacing: 1px;
+
+        @media (max-width: $phone) {
+          font-size: 17px;
+          font-weight: 600;
+        }
      
       }
    
@@ -46,6 +54,12 @@
 
       }
     }
+    .CustomNavTopAnnouncement{
+      width: 100%;
+      @media (max-width: $phone) {
+        height: 55px;
+      }
+    }
 
     .NavTopAnnouncement2 {
       width: 100%;
@@ -56,6 +70,7 @@
       align-items: center;
       color: white;
       padding: 0 10px;
+  
    
       .NavTopAnnouncementinner{
         width: 97%;

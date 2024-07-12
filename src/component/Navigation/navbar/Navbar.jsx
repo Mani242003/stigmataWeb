@@ -56,7 +56,7 @@ const Navbar = ({
 
           <>
           {marqueIsOpen ? (
-            <div className="NavTopAnnouncement ">
+            <div className="NavTopAnnouncement CustomNavTopAnnouncement ">
                <span className="StaticText">
                   {" "}
                    "Driven by Innovation, United by Expertise"

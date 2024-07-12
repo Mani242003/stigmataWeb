@@ -122,8 +122,12 @@ const ContactForm = () => {
             <IoLocationOutline />
             <span className="contact-common-text-style">
               <a href="">
-                Stigmata Technology Solutions LLC 11700 Lebanon Road, Apt 1527
-                Frisco, TX 75035-75035
+                {/* Stigmata Technology Solutions LLC 11700 Lebanon Road, Apt 1527
+                Frisco, TX 75035-75035 */}
+
+               <span> Stigmata Technology Solutions LLC</span> <br/>
+11700 Lebanon Road, Apt 1527 Frisco, <br/>
+TX 75035-75025
               </a>
             </span>
           </div>
@@ -153,7 +157,7 @@ const ContactForm = () => {
             <SlLocationPin />
             <span className="contact-common-text-style">
               <a href="">
-                No.52/1, 2nd Floor, Meenambal Salai, Vivekandhar Nagar, Near S.K
+                No.52/1, 2nd Floor, Meenambal Salai, Vivekandhar Nagar,<br/>Near S.K
                 Mahal, Chennai, India - 600118.
               </a>
             </span>
