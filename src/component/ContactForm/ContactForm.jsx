@@ -116,7 +116,7 @@ const ContactForm = () => {
         <div className="contact-info USAContact-info">
           <div className="contactinfoHeder">
             <img src={usaFlag} alt="" />
-            <span>USA</span>
+            <span>USA (Head Office)</span>
           </div>
           <div className="contact-content">
             <IoLocationOutline />
@@ -151,7 +151,7 @@ TX 75035-75025
         <div className="contact-info customContact-info">
           <div className="contactinfoHeder">
             <img src={IndianFlag} alt="" />
-            <span>India (Head Office)</span>
+            <span>India </span>
           </div>
           <div className="contact-content">
             <SlLocationPin />
