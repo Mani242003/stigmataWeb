@@ -7,7 +7,7 @@ import erp1 from "../../assets/images/erp1.png";
 import erp2 from "../../assets/images/erp2.png";
 import erp3 from "../../assets/images/erp3.png";
 import erp4 from "../../assets/images/erp4.png";
-import softwareSample from "../../assets/Vector-removebg-preview.png"
+import softwareSample from "../../assets/Vector-removebg-preview.png";
 import android from "../../assets/images/icons/android-1.svg";
 import orangeDot from "../../assets/images/icons/orangeBullet.png";
 
@@ -155,20 +155,22 @@ const Solution = () => {
             <div className="solution-main-content-left ">
               <>
                 <span className="solution-left-content-text2">
-                Power Transmission & Distribution  – Management Information System
+                  Power Transmission & Distribution – Management Information
+                  System
                   <span> (L&T Construction)</span>
                 </span>
                 <div className="cloudMigrateSection1LeftBottomContainer">
                   <img src={orangeDot} alt="" />
 
-                  <span className="feaPage-col-1-text-4">Masters : Cost code, Region, Calendar, Project/Tenders, Employee, Timesheet, SLA revision.
+                  <span className="feaPage-col-1-text-4">
+                    Masters : Cost code, Region, Calendar, Project/Tenders,
+                    Employee, Timesheet, SLA revision.
                   </span>
                 </div>
                 <div className="cloudMigrateSection1LeftBottomContainer">
                   <img src={orangeDot} alt="" />
 
-                  <span className="feaPage-col-1-text-4"> Unfilled MH’s
-                  </span>
+                  <span className="feaPage-col-1-text-4"> Unfilled MH’s</span>
                 </div>
                 <div className="cloudMigrateSection1LeftBottomContainer">
                   <img src={orangeDot} alt="" />
@@ -178,23 +180,19 @@ const Solution = () => {
                 <div className="cloudMigrateSection1LeftBottomContainer">
                   <img src={orangeDot} alt="" />
 
-                  <span className="feaPage-col-1-text-4">
-                    {" "}
-                    User Delegation
-                  </span>
+                  <span className="feaPage-col-1-text-4"> User Delegation</span>
+                </div>
+                <div className="cloudMigrateSection1LeftBottomContainer">
+                  <img src={orangeDot} alt="" />
+
+                  <span className="feaPage-col-1-text-4"> Monthly Report</span>
                 </div>
                 <div className="cloudMigrateSection1LeftBottomContainer">
                   <img src={orangeDot} alt="" />
 
                   <span className="feaPage-col-1-text-4">
                     {" "}
-                    Monthly Report
-                  </span>
-                </div>
-                <div className="cloudMigrateSection1LeftBottomContainer">
-                  <img src={orangeDot} alt="" />
-
-                  <span className="feaPage-col-1-text-4"> Cross Booking Report
+                    Cross Booking Report
                   </span>
                 </div>
               </>
@@ -221,7 +219,7 @@ const Solution = () => {
             style={{ background: "#F6FDD6" }}
           >
             <div className="solution-main-content-right">
-              <img  src={erp4} alt=""   />
+              <img src={erp4} alt="" />
             </div>
             <div className="solution-main-content-left ">
               <>
@@ -240,8 +238,7 @@ const Solution = () => {
                 <div className="cloudMigrateSection1LeftBottomContainer">
                   <img src={orangeDot} alt="" />
 
-                  <span className="feaPage-col-1-text-4">Foundation Loads
-                  </span>
+                  <span className="feaPage-col-1-text-4">Foundation Loads</span>
                 </div>
                 <div className="cloudMigrateSection1LeftBottomContainer">
                   <img src={orangeDot} alt="" />
@@ -251,24 +248,20 @@ const Solution = () => {
                 <div className="cloudMigrateSection1LeftBottomContainer">
                   <img src={orangeDot} alt="" />
 
-                  <span className="feaPage-col-1-text-4">
-                    {" "}
-                    Pedestal
+                  <span className="feaPage-col-1-text-4"> Pedestal</span>
+                </div>
+                <div className="cloudMigrateSection1LeftBottomContainer">
+                  <img src={orangeDot} alt="" />
 
-                  </span>
+                  <span className="feaPage-col-1-text-4"> Pile Cap</span>
                 </div>
                 <div className="cloudMigrateSection1LeftBottomContainer">
                   <img src={orangeDot} alt="" />
 
                   <span className="feaPage-col-1-text-4">
                     {" "}
-                    Pile Cap
+                    Bar Bending Schedule
                   </span>
-                </div>
-                <div className="cloudMigrateSection1LeftBottomContainer">
-                  <img src={orangeDot} alt="" />
-
-                  <span className="feaPage-col-1-text-4"> Bar Bending Schedule</span>
                 </div>
               </>
 
@@ -277,9 +270,8 @@ const Solution = () => {
                 Technical Stack{" "}
                 <span>
                   <br />
-                  <span>Front End : </span>Asp.Net, Store Procedures <span> </span>{" "}
-                 
-                  <span> Backend:</span> MSSQL <span></span> 
+                  <span>Front End : </span>Asp.Net, Store Procedures{" "}
+                  <span> </span> <span> Backend:</span> MSSQL <span></span>
                 </span>{" "}
                 <span></span>{" "}
               </span>
@@ -296,8 +288,7 @@ const Solution = () => {
             <div className="solution-main-content-left ">
               <>
                 <span className="solution-left-content-text2">
-                Day Closure & Patient Token Automation
-
+                  Day Closure & Patient Token Automation
                   {/* <span> ( Sri Ramachandra Hospital)</span> */}
                 </span>
                 {/* <span className="solution-left-content-titel">
@@ -312,12 +303,14 @@ const Solution = () => {
                     process and sometime error in decision making.
                   </span>
                 </span> */}
-                <br/>
+                <br />
                 <span className="solution-left-content-titel1">
-
                   <span>
-                  This web application streamlines patient appointments by generating automated token numbers, which are issued through receipts and SMS notifications. It eliminates the need for manual billing and simplifies the process of account reconciliation at the end of the day.
-
+                    This web application streamlines patient appointments by
+                    generating automated token numbers, which are issued through
+                    receipts and SMS notifications. It eliminates the need for
+                    manual billing and simplifies the process of account
+                    reconciliation at the end of the day.
                   </span>
                 </span>
               </>

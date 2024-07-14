@@ -24,6 +24,36 @@ const PluginSample = () => {
           <span className="simplicity_right_text2">
             ATLASSIAN:<span> Confluence space Analytics</span>
           </span>
+        
+
+
+          <span className="simplicity_right_text3">
+          As part of our compliance management, we safeguard against unauthorized issue deletion. Our plugin allows users to submit deletion requests to the JIRA administrator. The administrator can then approve or reject these requests. All activities are logged for auditing purposes and can be exported as a CSV file when needed.
+          </span>
+          <span className="simplicity_rightTechTitel"> Features :</span>
+         
+          <div className="feaPage-col-1-bottom-container">
+            <BsFillRecord2Fill color="#5E6FEC" size={26} />
+            <span className="feaPage-col-1-text-4"> Audit logs</span>
+          </div>
+          <div className="feaPage-col-1-bottom-container">
+            <BsFillRecord2Fill color="#5E6FEC" size={26} />
+            <span className="feaPage-col-1-text-4"> Workflow for deletion of issues
+            </span>
+          </div>
+
+      
+        </div>
+      </div>
+      <div className="PluginSample_container customContainer">
+        <div className="PluginSample_container_left">
+          <img src={plug2} alt="" />
+        </div>
+
+        <div className="PluginSample_container_right">
+          <span className="simplicity_right_text2">
+            ATLASSIAN: <span>PII Protector : Confluence</span>
+          </span>
           <span className="simplicity_right_text3">
           This plugin effectively handles PII data in reactive approach and blocks the code push with notification. Our plugin detects below PII types, masks with detailed logs for the project administrators solving the compliance and auditing problems.
           </span>
@@ -72,75 +102,6 @@ const PluginSample = () => {
             </span>
           </div>
 
-          {/* <div className="simplicity_right_bottom">
-            <div className="simplicity_bottom_row1">
-              <div className="simplicity_bottom_row1_content">
-                <img src={img1} alt="" />
-
-                <span>React Nativ</span>
-              </div>
-              <div className="simplicity_bottom_row1_content">
-                <img src={img2} alt="" />
-                <span>Fluter</span>
-              </div>
-              <div className="simplicity_bottom_row1_content">
-              <img src={img3} alt="" />
-              <span>Wordpress</span>
-              </div>
-            </div>
-            
-
-          
-          </div> */}
-        </div>
-      </div>
-      <div className="PluginSample_container customContainer">
-        <div className="PluginSample_container_left">
-          <img src={plug2} alt="" />
-        </div>
-
-        <div className="PluginSample_container_right">
-          <span className="simplicity_right_text2">
-            ATLASSIAN: <span>PII Protector : Confluence</span>
-          </span>
-          <span className="simplicity_right_text3">
-          As part of our compliance management, we safeguard against unauthorized issue deletion. Our plugin allows users to submit deletion requests to the JIRA administrator. The administrator can then approve or reject these requests. All activities are logged for auditing purposes and can be exported as a CSV file when needed.
-          </span>
-          <span className="simplicity_rightTechTitel"> Features :</span>
-          {/* <div className="feaPage-col-1-bottom-container">
-            <BsFillRecord2Fill color="#5E6FEC" size={26} />
-
-            <span className="feaPage-col-1-text-4"> Passwords</span>
-          </div>
-          <div className="feaPage-col-1-bottom-container">
-            <BsFillRecord2Fill color="#5E6FEC" size={26} />
-            <span className="feaPage-col-1-text-4">NRIC</span>
-          </div>
-          <div className="feaPage-col-1-bottom-container">
-            <BsFillRecord2Fill color="#5E6FEC" size={26} />
-            <span className="feaPage-col-1-text-4"> Email</span>
-          </div>
-          <div className="feaPage-col-1-bottom-container">
-            <BsFillRecord2Fill color="#5E6FEC" size={26} />
-            <span className="feaPage-col-1-text-4"> Passport Number</span>
-          </div>
-          <div className="feaPage-col-1-bottom-container">
-            <BsFillRecord2Fill color="#5E6FEC" size={26} />
-            <span className="feaPage-col-1-text-4"> Credit card number</span>
-          </div>
-          <div className="feaPage-col-1-bottom-container">
-            <BsFillRecord2Fill color="#5E6FEC" size={26} />
-            <span className="feaPage-col-1-text-4"> AWS key</span>
-          </div> */}
-          <div className="feaPage-col-1-bottom-container">
-            <BsFillRecord2Fill color="#5E6FEC" size={26} />
-            <span className="feaPage-col-1-text-4"> Audit logs</span>
-          </div>
-          <div className="feaPage-col-1-bottom-container">
-            <BsFillRecord2Fill color="#5E6FEC" size={26} />
-            <span className="feaPage-col-1-text-4"> Workflow for deletion of issues
-            </span>
-          </div>
        
         </div>
       </div>
